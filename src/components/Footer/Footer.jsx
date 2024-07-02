@@ -48,6 +48,36 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className="flex justify-center flex-col">
+        <div className="flex">
+          <h1 className="font-bold font-customFont text-[#333]">ABOUT US</h1>
+        </div>
+        <div className="flex flex-col p-5">
+          <p className="">About</p>
+          <p className="">Contact</p>
+          <p className="">Blog</p>
+        </div>
+      </div>
+      <div className="flex justify-center flex-col">
+        <div className="flex">
+          <h1 className="font-bold font-customFont text-[#333]">CONTACT</h1>
+        </div>
+        <div className="flex flex-col p-5">
+          <p className="">About</p>
+          <p className="">Contact</p>
+          <p className="">Blog</p>
+        </div>
+      </div>
+      <div className="flex justify-center flex-col">
+        <div className="flex">
+          <h1 className="font-bold font-customFont text-[#333]">MULATION</h1>
+        </div>
+        <div className="flex flex-col p-5">
+          <p className="">About</p>
+          <p className="">Contact</p>
+          <p className="">Blog</p>
+        </div>
+      </div>
     </div>
   </div>
     )
