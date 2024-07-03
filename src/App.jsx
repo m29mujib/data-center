@@ -7,20 +7,24 @@ import Komunik from './components/Komunik/Komunik'
 import Kolaborate from './components/Kolaborate/Kolaborate'
 import Search from './components/Pencarian/Search'
 import Footer from './components/Footer/Footer'
+import HorizontalParallax from './components/BannerParallax/Paralax'
+
 function App() {
 
   return (
     <>
-     <About/>
-     <Navbar/>
-     <Iklan/>
-     <Home/>
-     <Komunik/>
-     <Kolaborate/>
-     <Search/>
-     <Footer/>
+      <HorizontalParallax />
+      {/* <About /> */}
+
+      <Navbar />
+      <Iklan />
+      <Home />
+      <Komunik />
+      <Kolaborate />
+      <Search />
+      <Footer />
     </>
-  )
+  );
 }
 
 export default App
