@@ -44,22 +44,35 @@
     color: #fff;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    /* Adjust the width as needed */
+    padding: 20px;
+    /* Add padding for spacing */
+    box-sizing: border-box;
+    
+    /* Optional: add background for readability */
+    border-radius: 10px;
+    /* Optional: add border radius for rounded corners */
 }
 
 .text-title {
-    font-size: 2.5em;
+    font-size: 5em;
     margin: 0;
 }
 
 .text-subtitle {
-    font-size: 1.5em;
+    font-size: 2em;
     margin: 0;
 }
 
 .text-description {
     font-size: 1em;
     margin: 0;
-    max-width: 70%;
+    margin-top: 10px;
+}
+
+.text-extended-description {
+    font-size: 0.9em;
     margin-top: 10px;
 }
 

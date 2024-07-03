@@ -10,21 +10,28 @@ const HorizontalParallax = () => {
   const images = [image1, image2, image3];
   const texts = [
     {
-      title: "Data Center Icon Plus",
-      subtitle: "Subtitle for Image 1",
-      description: "Description for Image 1",
+      title: "Percayakan keamanan data Anda bersama kami",
+      subtitle: "Data Center PLN Icon Plus",
+      description: "Depok, Gandul",
+      extendedDescription:
+        "Kami menawarkan solusi keamanan data terdepan dengan teknologi terbaru. Tim kami yang berpengalaman selalu siap memberikan dukungan yang Anda butuhkan. Dengan fasilitas canggih dan infrastruktur yang andal, data Anda akan terlindungi setiap saat.",
     },
     {
-      title: "Text for Image 2",
-      subtitle: "Subtitle for Image 2",
-      description: "Description for Image 2",
+      title: "Profesional dan terpercaya",
+      subtitle: "Keunggulan Layanan Kami",
+      description: "Pakar IT Berpengalaman",
+      extendedDescription:
+        "Kami memiliki reputasi yang solid dalam menyediakan layanan profesional dan terpercaya. Kepuasan pelanggan adalah prioritas utama kami. Dengan tim ahli yang berdedikasi, kami menjamin bahwa semua kebutuhan IT Anda terpenuhi dengan standar tertinggi.",
     },
     {
-      title: "Text for Image 3",
-      subtitle: "Subtitle for Image 3",
-      description: "Description for Image 3",
+      title: "Inovasi Tanpa Batas",
+      subtitle: "Teknologi Masa Depan",
+      description: "Pusat Riset dan Pengembangan",
+      extendedDescription:
+        "Kami berkomitmen untuk memberikan layanan terbaik dengan standar kualitas yang tinggi. Inovasi adalah kunci kami dalam mengembangkan solusi yang dapat diandalkan. Mari bekerja sama untuk mencapai tujuan Anda dan membawa bisnis Anda menuju masa depan yang lebih cerah.",
     },
   ];
+
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -71,6 +78,9 @@ const HorizontalParallax = () => {
                 <h1 className="text-title">{texts[index].title}</h1>
                 <h2 className="text-subtitle">{texts[index].subtitle}</h2>
                 <p className="text-description">{texts[index].description}</p>
+                <p className="text-extended-description">
+                  {texts[index].extendedDescription}
+                </p>
               </div>
             </div>
           </Parallax>

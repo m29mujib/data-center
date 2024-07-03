@@ -2,7 +2,7 @@ const Navbar = () => {
   return (
     <div className="w-full h-[50px] bg-black bg-opacity-10 backdrop-blur-lg py-10 px-[8%] flex justify-between items-center fixed top-0 left-0 z-10">
       <div className="flex">
-        <img src="../src/assets/a.png" alt="" className="w-[30px] mr-[8px]" />
+        <img src="../src/assets/a.png" alt="" className="w-[90px] mr-[8px]" />
         <h1 className="font-semibold tracking-wide font-customFont text-[#ffffff]">
           Data Center
         </h1>
