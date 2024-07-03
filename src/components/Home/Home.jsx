@@ -1,10 +1,14 @@
 const Home = () => {
   return (
-    <div className="w-full h-screen md:flex justify-between items-center px-[8%] py-[0%] md:py-[5%] flex-wrap">
+    <div className="w-full h-full md:flex justify-between items-center px-[8%] py-[0%] md:py-[5%] flex-wrap">
       <div className="flex justify-between">
-        <img src="../src/assets/b.jpg" alt="" class="w-[400px] h-[400px]" />
+        <img
+          src="../src/assets/b.jpg"
+          alt=""
+          class="md:w-[400px] md:h-[400px] w-[300px] h-[300px] hover:scale-105 duration-300"
+        />
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center mt-5 md:mt-0">
         <div>
           <div className="atas">
             <p className="text-blue-600 font-semibold text-sm font-customFont">
