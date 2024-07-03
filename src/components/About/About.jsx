@@ -1,7 +1,7 @@
 const About = () => {
   return (
-    <div className="w-full h-screen flex  items-center justify-between px-[8%]">
-      <div className="">
+    <div className="w-full h-screen flex items-center justify-between px-[8%] flex-wrap">
+      <div className="py-[100px] md:py-[0px] ">
         <h1 className="text-5xl font-semibold mb-5 max-w-[500px] font-customFont text-[#333]">
           Search & Rent Apartment Easily
         </h1>
@@ -22,11 +22,11 @@ const About = () => {
       </div>
       <div className="flex">
         <div className="flex justify-between">
-          <div className="w-[350px] h-[350px] rounded-full bg-blue-600 relative border">
+          <div className="md:w-[350px] md:h-[350px] w-[300px] h-[300px] rounded-full bg-blue-600 relative border">
             <img
               src="../src/assets/hp.png"
               alt=""
-              className="absolute top-[-0px] left-[-0px] w-[500px] h-[500px]"
+              className="absolute top-[-0px] left-[-0px] md:w-[500px] md:h-[500px] w-[350px] h-[350px]"
             />
           </div>
         </div>

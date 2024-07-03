@@ -8,7 +8,7 @@ const Navbar = () => {
         </h1>
       </div>
       <div className="flex items-center justify-right">
-        <ul>
+        <ul class="hidden md:block">
           <li>
             <a
               href="/home"
