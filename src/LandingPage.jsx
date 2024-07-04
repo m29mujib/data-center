@@ -7,6 +7,7 @@ import Kolaborate from "./components/Kolaborate/Kolaborate";
 import Search from "./components/Pencarian/Search";
 import Footer from "./components/Footer/Footer";
 import HorizontalParallax from "./components/BannerParallax/Paralax";
+import Contact from "./components/Contact/Contact";
 
 function LandingPage() {
   return (
@@ -19,6 +20,7 @@ function LandingPage() {
       <Komunik />
       <Kolaborate />
       <Search />
+      <Contact />
       <Footer />
     </>
   );
