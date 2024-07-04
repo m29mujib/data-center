@@ -3,20 +3,20 @@ import React from "react";
 const Collocation = () => {
     const incentives = [
         {
-          name: 'Free shipping',
+          name: 'Reliabel',
           imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-shipping-simple.svg',
-          description: "It's not actually free we just price it into the products. Someone's paying for it, and it's not us.",
+          description: "99.982% tingkat kepastian ketersediaan layanan per tahun didukung oleh data center tier-3",
         },
         {
-          name: '10-year warranty',
+          name: 'Dukungan Teknis',
           imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg',
-          description: "If it breaks in the first 10 years we'll replace it. After that you're on your own though.",
+          description: "Dukungan teknis dari tim ahli yang tersedia sepanjang waktu untuk membantu pemeliharaan dan pemecahan masalah.",
         },
         {
-          name: 'Exchanges',
+          name: 'Efisiensi Operasional',
           imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg',
           description:
-            "If you don't like it, trade it to one of your friends for something of theirs. Don't send it here though.",
+            "Menjamin uptime yang tinggi untuk memastikan operasi bisnis tidak terganggu.",
         },
       ]
         return (
@@ -29,9 +29,7 @@ const Collocation = () => {
                Collocation
                     </h2>
                     <p className="mt-4 text-gray-500">
-                      At the beginning at least, but then we realized we could make a lot more money if we kinda stopped
-                      caring about that. Our new strategy is to write a bunch of things that look really good in the
-                      headlines, then clarify in the small print but hope people don't actually read it.
+                    Nikmati keamanan dan keandalan terbaik dengan layanan Data Center Colocation dari PLN Icon Plus. Kami menyediakan penempatan perangkat server dan jaringan pelanggan dalam fasilitas yang dirancang untuk mendukung performa optimal dan keberlanjutan operasional bisnis Anda. Dengan pengawasan 24/7, kontrol akses biometrik, dan proteksi fisik yang canggih, kami memastikan keamanan perangkat Anda setiap saat. Sistem kelistrikan dengan redundansi dan backup generator memastikan ketersediaan daya tanpa henti, sementara sistem pendinginan canggih menjaga suhu dan kelembaban ideal untuk perangkat Anda.
                     </p>
                   </div>
                   <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">
