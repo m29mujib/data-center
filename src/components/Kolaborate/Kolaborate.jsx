@@ -40,7 +40,7 @@ const Kolaborate = () => {
     </div>,
     <div className="mx-[10px]" key="4">
       <img
-        src="../src/assets/r.jpg"
+        src="../src/assets/aa.jpg"
         className="w-[600px] h-[190px] rounded-lg"
         onDragStart={handleDragStart}
         role="presentation"
@@ -51,7 +51,7 @@ const Kolaborate = () => {
   return (
     <div className="w flex flex-col items-center justify-center px-[5%] py-[3%] md:px-[5%] md:py-[5%]">
       <div>
-        <h1 className="text-4xl font-customFont text-[#333]">Kolaborasi</h1>
+        <h1 className="text-4xl font-customFont text-[#333] mb-10"> Data Center Icon Plus</h1>
       </div>
       <div className="w-full h-full mt-5">
         <AliceCarousel

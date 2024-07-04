@@ -21,6 +21,7 @@ function LandingPage() {
       <Kolaborate />
       <Search />
       <Contact />
+      {/* <Search /> */}
       <Footer />
     </>
   );
