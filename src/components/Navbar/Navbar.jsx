@@ -56,7 +56,7 @@ const Navbar = () => {
             {/* start nav main */}
             <a
               href="/"
-              className="decoration-0 px-5 font-regular font-customFont text-[#ffffff] hover:underline hover:text-blue-500"
+              className="decoration-0 px-5 font-regular font-customFont text-[#000000] hover:underline hover:text-blue-500"
             >
               Home
             </a>
@@ -67,7 +67,7 @@ const Navbar = () => {
             >
               <a
                 href="#"
-                className="decoration-0 px-5 font-regular font-customFont text-[#ffffff] hover:underline hover:text-blue-500"
+                className="decoration-0 px-5 font-regular font-customFont text-[#000000] hover:underline hover:text-blue-500"
               >
                 Layanan
               </a>
@@ -119,13 +119,13 @@ const Navbar = () => {
             </div>
             <a
               href="/home"
-              className="decoration-0 px-5 font-regular font-customFont text-[#ffffff] hover:underline hover:text-blue-500"
+              className="decoration-0 px-5 font-regular font-customFont text-[#000000] hover:underline hover:text-blue-500"
             >
               Lokasi
             </a>
             <a
               href="/home"
-              className="decoration-0 px-5 font-regular font-customFont text-[#ffffff] hover:underline hover:text-blue-500"
+              className="decoration-0 px-5 font-regular font-customFont text-[#000000] hover:underline hover:text-blue-500"
             >
               Bantuan
             </a>
