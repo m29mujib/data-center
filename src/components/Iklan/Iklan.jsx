@@ -29,7 +29,7 @@ const Iklan = () => {
               </div>
             </div>
             <p className="md:text-xl pr-10 pt-6 md:ml-5 text-sm text-gray-600 font-semibold font-customFont text-[#333]">
-              Pengguna
+              Numbers of
             </p>
           </div>
           <p className="md:text-sm text-sm text-gray-600 font-regular font-customFont text-[#333]">

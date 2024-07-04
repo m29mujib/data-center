@@ -7,7 +7,7 @@ import DDOS from "./components/Produk/DDOS/DDOS";
 import Sanbox from "./components/Produk/SanBox/SanbOX";
 import Collocation from "./components/Produk/Collocation/Collocation";
 import IconFilter from "./components/Produk/IconFilter/IconFilter";
-import IconMon from "./components/Produk/IconFilter/IconFilter";
+import IconMon from "./components/Produk/IconMon/IconMon";
 import IconMail from "./components/Produk/IconMail/IconMail";
 
 function App() {
@@ -19,8 +19,8 @@ function App() {
     <Route path="/about" element={<About />} />
     <Route path="/icon-cloud" element={<IconCloud />} />
     <Route path="/icon-mail" element={<IconMail />} />
-    <Route path="/DNS" element={<DNS />} />
-    <Route path="/DDOS" element={<DDOS />} />
+    <Route path="/dns" element={<DNS />} />
+    <Route path="/ddos" element={<DDOS />} />
     <Route path="/sanbox" element={<Sanbox />} />
     <Route path="/collocation" element={<Collocation />} />
     <Route path="/icon-filter" element={<IconFilter />} />

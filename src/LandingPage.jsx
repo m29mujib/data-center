@@ -18,7 +18,7 @@ function LandingPage() {
       <Home />
       <Komunik />
       <Kolaborate />
-      <Search />
+      {/* <Search /> */}
       <Footer />
     </>
   );

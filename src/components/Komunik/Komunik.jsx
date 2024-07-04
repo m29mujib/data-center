@@ -4,16 +4,18 @@ const Komunik = () => {
       <div className="flex justify-center">
         <div>
           <div className="atas mt-5 md:mt-0">
-            <p className="text-blue-600 font-semibold text-sm font-customFont">
-              OUR SERVICES
+            <p className="text-blue-600 font-semibold text-xl font-customFont mb-3">
+              LAYANAN KAMI
             </p>
-            <h2 className="font-bold text-3xl mb-3 max-w-[500px] font-customFont text-[#333]">
-              Know Detail Information About Apartment
-            </h2>
-            <p className="md:max-w-[600px] w-full text-sm font-customFont text-[#333]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              ducimus suscipit nobis quia quaerat dolor aperiam neque
-              perspiciatis quidem possimus.
+
+            <p className="max-w-[600px] text-sm font-customFont text-[#333]">
+              Layanan kelebihan data center mencakup berbagai fasilitas dan
+              solusi yang bertujuan untuk memastikan keandalan, keamanan, dan
+              efisiensi dalam pengelolaan data, termasuk infrastruktur redundan,
+              sistem keamanan berlapis, skalabilitas, konektivitas cepat,
+              penghematan biaya operasional, solusi pemulihan bencana, manajemen
+              data canggih, dukungan teknis 24/7, lingkungan terkendali, dan
+              kepatuhan terhadap berbagai standar serta regulasi industri.
             </p>
           </div>
           <div className="bawah flex mt-5">
@@ -25,8 +27,8 @@ const Komunik = () => {
               />
             </div>
             <div className="kanan">
-              <p className="md:max-w-[400px] w-full text-xs font-customFont text-[#333]">
-                Lorem ipsum dolor sit amet consectetur
+              <p className="font-semibold text-xl font-customFont text-[#333] hover:text-[#3163b8] cursor-default">
+                Konektivitas Jaringan Yang Handal
               </p>
             </div>
           </div>
@@ -39,8 +41,8 @@ const Komunik = () => {
               />
             </div>
             <div className="kanan">
-              <p className="md:max-w-[400px] w-full text-xs font-customFont text-[#333]">
-                Lorem ipsum dolor sit amet consectetur
+              <p className="font-semibold text-xl font-customFont text-[#333] hover:text-[#3163b8] cursor-default">
+                Keamanan Fisik 24 X 7
               </p>
             </div>
           </div>
@@ -53,8 +55,8 @@ const Komunik = () => {
               />
             </div>
             <div className="kanan">
-              <p className="md:max-w-[400px] w-full text-xs font-customFont text-[#333]">
-                Lorem ipsum dolor sit amet consectetur
+              <p className="font-semibold text-xl font-customFont text-[#333] hover:text-[#3163b8] cursor-default">
+                Ruang Server menggunakan PAC (Precision Air Conditioning)
               </p>
             </div>
           </div>
@@ -64,7 +66,7 @@ const Komunik = () => {
         <img
           src="../src/assets/r.jpg"
           alt=""
-          className="md:w-[400px] md:h-[400px] w-[300px] h-[300px] hover:scale-105 duration-300"
+          className="md:w-[600px] md:h-[370px] w-[300px] h-[300px] hover:scale-105 duration-300"
         />
       </div>
     </div>
