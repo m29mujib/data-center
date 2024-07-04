@@ -113,7 +113,7 @@ const Navbar = () => {
                   IconMonitoring
                 </a>
                 <a href="sanbox" className="block px-4 py-2 hover:bg-gray-200">
-                  SanBox
+                  SandBox
                 </a>
               </div>
             </div>
