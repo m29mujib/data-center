@@ -10,6 +10,9 @@ function App() {
     <Routes>
     <Route path="/" element={<LandingPage />} />
     <Route path="/icon-cloud" element={<IconCloud />} />
+    <Route path="/icon-mail" element={<IconMail />} />
+    <Route path="/icon-cloud" element={<IconCloud />} />
+    <Route path="/icon-cloud" element={<IconCloud />} />
     <Route path="/about" element={<About />} />
     </Routes>
     </BrowserRouter>
