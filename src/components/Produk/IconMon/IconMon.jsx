@@ -3,20 +3,20 @@ import React from "react";
 const IconMon = () => {
     const incentives = [
         {
-          name: 'Free shipping',
+          name: 'Real-Time Monitoring',
           imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-shipping-simple.svg',
-          description: "It's not actually free we just price it into the products. Someone's paying for it, and it's not us.",
+          description: "Memantau performa jaringan, server, dan aplikasi secara real-time.",
         },
         {
-          name: '10-year warranty',
+          name: 'Statistic Analysis',
           imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg',
-          description: "If it breaks in the first 10 years we'll replace it. After that you're on your own though.",
+          description: "Menyediakan visualisasi data yang mudah dipahami dengan dasbor yang dapat disesuaikan.",
         },
         {
-          name: 'Exchanges',
+          name: 'Service Desk Efficiency',
           imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg',
           description:
-            "If you don't like it, trade it to one of your friends for something of theirs. Don't send it here though.",
+            "Memberikan laporan analitik yang mendalam untuk membantu pengambilan keputusan yang cepat dan tepat.",
         },
       ]
         return (
@@ -29,14 +29,15 @@ const IconMon = () => {
                     IconMon 
                     </h2>
                     <p className="mt-4 text-gray-500">
-                      At the beginning at least, but then we realized we could make a lot more money if we kinda stopped
-                      caring about that. Our new strategy is to write a bunch of things that look really good in the
-                      headlines, then clarify in the small print but hope people don't actually read it.
+                    IconMon, atau Icon Monitoring, adalah produk Monitoring System dari PLN Icon Plus yang memberikan wawasan real-time dan peringatan proaktif, memastikan operasi yang lancar dan kepuasan pelanggan yang meningkat. Dengan antarmuka yang user-friendly dan analitik mendalam, IconMon mempermudah pemantauan dan pengelolaan infrastruktur IT Anda. Sistem ini dirancang untuk mendeteksi dan mencegah masalah sebelum berdampak pada bisnis Anda, memungkinkan tim IT untuk fokus pada inovasi dan pengembangan.
                     </p>
+                    {/* <p className="mt-4 text-gray-500">
+                    IconMon juga menawarkan integrasi yang mulus dengan berbagai platform dan alat yang sudah Anda gunakan, memberikan fleksibilitas maksimal dan penghematan waktu. Dengan fitur-fitur seperti pelaporan yang dapat disesuaikan, dasbor interaktif, dan notifikasi yang dapat dikonfigurasi, IconMon menjadi solusi yang komprehensif untuk kebutuhan pemantauan Anda.
+                    </p> */}
                   </div>
                   <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">
                     <img
-                      src="../src/assets/IconMon.gif"
+                      src="../src/assets/IconMon - Modified.gif"
                       alt=""
                       className="object-cover object-center"
                     />

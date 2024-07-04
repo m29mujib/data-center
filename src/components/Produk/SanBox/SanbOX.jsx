@@ -3,20 +3,20 @@ import React from "react";
 const SanBox = () => {
     const incentives = [
         {
-          name: 'Free shipping',
+          name: 'Isolated Environment Analysis',
           imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-shipping-simple.svg',
-          description: "It's not actually free we just price it into the products. Someone's paying for it, and it's not us.",
+          description: "Menjalankan file atau kode mencurigakan dalam lingkungan virtual yang aman, memastikan bahwa ancaman dapat dianalisis tanpa risiko terhadap sistem utama.",
         },
         {
-          name: '10-year warranty',
+          name: 'Zero-Day Threat Detection',
           imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg',
-          description: "If it breaks in the first 10 years we'll replace it. After that you're on your own though.",
+          description: "Mendeteksi ancaman zero-day dan malware yang tidak terdeteksi oleh metode tradisional, memberikan perlindungan proaktif terhadap serangan baru dan tidak dikenal.",
         },
         {
-          name: 'Exchanges',
+          name: 'Behavior Monitoring',
           imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg',
           description:
-            "If you don't like it, trade it to one of your friends for something of theirs. Don't send it here though.",
+            "Memantau perilaku file atau kode selama eksekusi dalam sandbox, memungkinkan identifikasi pola perilaku berbahaya untuk pencegahan yang lebih akurat dan efektif.",
         },
       ]
         return (
@@ -29,9 +29,7 @@ const SanBox = () => {
                     SanBox 
                     </h2>
                     <p className="mt-4 text-gray-500">
-                      At the beginning at least, but then we realized we could make a lot more money if we kinda stopped
-                      caring about that. Our new strategy is to write a bunch of things that look really good in the
-                      headlines, then clarify in the small print but hope people don't actually read it.
+                    SanBox Unknown adalah solusi keamanan canggih dari ICON+ yang dirancang untuk mendeteksi dan menganalisis ancaman yang tidak dikenal dalam lingkungan yang terisolasi. Dengan menggunakan teknologi sandboxing, SanBox Unknown menjalankan file atau kode mencurigakan dalam lingkungan virtual yang aman untuk memonitor perilaku berbahaya tanpa risiko terhadap sistem utama. Solusi ini memungkinkan identifikasi ancaman zero-day dan malware yang tidak terdeteksi oleh metode tradisional, memberikan lapisan perlindungan tambahan bagi perusahaan. Dengan SanBox Unknown, perusahaan dapat meningkatkan keamanan dan kepercayaan diri mereka dalam menghadapi ancaman siber yang semakin kompleks.
                     </p>
                   </div>
                   <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">
