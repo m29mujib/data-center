@@ -3,20 +3,20 @@ import React from "react";
 const IconCloud = () => {
     const incentives = [
         {
-          name: 'Free shipping',
+          name: ' ICON+ Virtual Machine',
           imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-shipping-simple.svg',
-          description: "It's not actually free we just price it into the products. Someone's paying for it, and it's not us.",
+          description: "Pelanggan seperti memiliki server sendiri yang terpartisi secara virtual, sehingga fleksibel dan private.",
         },
         {
-          name: '10-year warranty',
+          name: ' ICON+ Virtual Private Data Center',
           imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg',
-          description: "If it breaks in the first 10 years we'll replace it. After that you're on your own though.",
+          description: "Layanan Data Center andal yang tervisualisasi secara private.",
         },
         {
-          name: 'Exchanges',
+          name: ' ICON+ Virtual Dedicated Machine',
           imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg',
           description:
-            "If you don't like it, trade it to one of your friends for something of theirs. Don't send it here though.",
+            "Layanan ini memberikan infrasturktur Virtual Data Center secara fisik (resource computing, storage, dan network).",
         },
       ]
         return (
@@ -29,9 +29,7 @@ const IconCloud = () => {
                ICONCLOUD
                     </h2>
                     <p className="mt-4 text-gray-500">
-                      At the beginning at least, but then we realized we could make a lot more money if we kinda stopped
-                      caring about that. Our new strategy is to write a bunch of things that look really good in the
-                      headlines, then clarify in the small print but hope people don't actually read it.
+                    ICONCloud Virtual Data Center menawarkan solusi layanan yang lengkap untuk berbagai kebutuhan infrastruktur cloud computing, memastikan kinerja bisnis yang optimal dan efisien. Dengan ICONCloud, Anda dapat menikmati keamanan data yang tinggi melalui enkripsi end-to-end dan protokol keamanan canggih, serta skalabilitas yang fleksibel yang memungkinkan penambahan sumber daya sesuai pertumbuhan bisnis Anda. Layanan ini dirancang untuk mengurangi biaya operasional dengan model pembayaran fleksibel dan menyediakan konektivitas superior dengan latensi rendah untuk performa aplikasi yang optimal.
                     </p>
                   </div>
                   <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">

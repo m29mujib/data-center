@@ -3,20 +3,20 @@ import React from "react";
 const DDOS = () => {
     const incentives = [
         {
-          name: 'Free shipping',
+          name: 'Real-Time Monitoring',
           imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-shipping-simple.svg',
-          description: "It's not actually free we just price it into the products. Someone's paying for it, and it's not us.",
+          description: "Memberikan visibilitas penuh terhadap kinerja sistem secara langsung, memungkinkan respons cepat terhadap perubahan atau masalah yang muncul.",
         },
         {
-          name: '10-year warranty',
+          name: 'Scalability',
           imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg',
-          description: "If it breaks in the first 10 years we'll replace it. After that you're on your own though.",
+          description: "Memungkinkan perluasan infrastruktur dengan mudah sesuai dengan kebutuhan bisnis yang berkembang, tanpa mengorbankan performa atau keamanan.",
         },
         {
-          name: 'Exchanges',
+          name: 'Enhanced Security',
           imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg',
           description:
-            "If you don't like it, trade it to one of your friends for something of theirs. Don't send it here though.",
+            "Melindungi data dan infrastruktur dari ancaman cyber dengan teknologi terbaru dan kontrol akses yang ketat.",
         },
       ]
         return (
@@ -29,9 +29,10 @@ const DDOS = () => {
                     DDoS Protection & Hidden Master
                     </h2>
                     <p className="mt-4 text-gray-500">
-                      At the beginning at least, but then we realized we could make a lot more money if we kinda stopped
-                      caring about that. Our new strategy is to write a bunch of things that look really good in the
-                      headlines, then clarify in the small print but hope people don't actually read it.
+                    Perlindungan DDoS dari PLN Icon Plus dirancang untuk melindungi infrastruktur digital Anda dari serangan DDoS yang dapat mengganggu operasi bisnis. Dengan teknologi canggih, sistem kami mendeteksi dan mengurangi serangan dalam hitungan detik, memastikan ketersediaan dan kinerja layanan tetap optimal.
+                    </p>
+                    <p className="mt-4 text-gray-500">
+                    Hidden Master dari PLN Icon Plus adalah solusi manajemen server yang memungkinkan Anda mengendalikan dan mengelola server utama secara tersembunyi, meningkatkan keamanan dan kinerja sistem. Solusi ini dirancang untuk melindungi server utama dari ancaman eksternal dengan memanfaatkan teknik penyembunyian yang canggih, memastikan hanya pengguna yang berwenang yang dapat mengaksesnya.
                     </p>
                   </div>
                   <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">

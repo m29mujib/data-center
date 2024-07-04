@@ -3,20 +3,20 @@ import React from "react";
 const IconFilter = () => {
     const incentives = [
         {
-          name: 'Free shipping',
+          name: 'Defense in depth protection',
           imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-shipping-simple.svg',
-          description: "It's not actually free we just price it into the products. Someone's paying for it, and it's not us.",
+          description: "Sistem ini memastikan email yang dikirim keluar melalui jaringan ICON+ telah difilter dan dibersihkan dari konten berbahaya, meningkatkan keamanan dan keandalan komunikasi email.",
         },
         {
-          name: '10-year warranty',
+          name: 'Optimalisasi Reputasi email',
           imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg',
-          description: "If it breaks in the first 10 years we'll replace it. After that you're on your own though.",
+          description: "Dengan menyaring dan memblokir email berbahaya, ICONMAIL Filter membantu meningkatkan reputasi email perusahaan, mengurangi kemungkinan email ditandai sebagai spam oleh penerima.",
         },
         {
-          name: 'Exchanges',
+          name: 'Sistem Relay ICONMAIL Filter-Out',
           imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg',
           description:
-            "If you don't like it, trade it to one of your friends for something of theirs. Don't send it here though.",
+            "Menggunakan metode perlindungan berlapis, email difilter oleh dua brand filter berbeda untuk meningkatkan akurasi dan keandalan proteksi, meminimalkan risiko ancaman yang lolos.",
         },
       ]
         return (
@@ -29,9 +29,7 @@ const IconFilter = () => {
                 IconFilter
                     </h2>
                     <p className="mt-4 text-gray-500">
-                      At the beginning at least, but then we realized we could make a lot more money if we kinda stopped
-                      caring about that. Our new strategy is to write a bunch of things that look really good in the
-                      headlines, then clarify in the small print but hope people don't actually read it.
+                    ICONMAIL Filter adalah solusi penyaringan email yang efektif dari ICON+ yang dirancang untuk melindungi jaringan dari berbagai ancaman siber. Dengan menggunakan metode penyaringan berlapis, email yang masuk akan melalui serangkaian filter dari dua brand berbeda, masing-masing dengan database dan signature mereka sendiri. Pendekatan ini memastikan bahwa proteksi lebih akurat dan andal, karena jika salah satu filter melewatkan ancaman, filter lainnya dapat mendeteksinya. ICONMAIL Filter juga berperan penting dalam optimalisasi bandwidth jaringan dengan memblokir 30%-50% email berbahaya setiap harinya, termasuk spam, malware, dan serangan APT Zeroday.
                     </p>
                   </div>
                   <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">

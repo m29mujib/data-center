@@ -3,20 +3,20 @@ import React from "react";
 const IconMail = () => {
     const incentives = [
         {
-          name: 'Free shipping',
+          name: 'Efficient Mass Email Delivery',
           imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-shipping-simple.svg',
-          description: "It's not actually free we just price it into the products. Someone's paying for it, and it's not us.",
+          description: "Memungkinkan pengiriman email dalam jumlah besar dengan cepat dan tepat sasaran, mendukung kampanye pemasaran digital yang efektif.",
         },
         {
-          name: '10-year warranty',
+          name: 'Advanced Campaign Analytics',
           imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg',
-          description: "If it breaks in the first 10 years we'll replace it. After that you're on your own though.",
+          description: "Dilengkapi dengan fitur analitik yang memberikan wawasan mendalam tentang kinerja kampanye, membantu perusahaan mengukur keberhasilan dan mengoptimalkan strategi pemasaran.",
         },
         {
-          name: 'Exchanges',
+          name: 'Security and Layered Filtering',
           imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg',
           description:
-            "If you don't like it, trade it to one of your friends for something of theirs. Don't send it here though.",
+            "Sistem penyaringan berlapis dari ICON+ memastikan email yang dikirim bersih dari konten berbahaya, menjaga reputasi dan integritas komunikasi bisnis.",
         },
       ]
         return (
@@ -29,9 +29,7 @@ const IconMail = () => {
                     Iconmail Blasting & Marketing
                     </h2>
                     <p className="mt-4 text-gray-500">
-                      At the beginning at least, but then we realized we could make a lot more money if we kinda stopped
-                      caring about that. Our new strategy is to write a bunch of things that look really good in the
-                      headlines, then clarify in the small print but hope people don't actually read it.
+                    ICONMAIL Blasting & Marketing adalah layanan pengiriman email massal dari ICON+ yang dirancang untuk memenuhi kebutuhan kampanye pemasaran digital. Dengan platform yang aman dan andal, layanan ini memungkinkan pengiriman email dalam jumlah besar secara efisien dan tepat sasaran. ICONMAIL Blasting & Marketing dilengkapi dengan fitur analitik canggih yang memberikan wawasan mendalam tentang kinerja kampanye, membantu perusahaan mengoptimalkan strategi pemasaran mereka.
                     </p>
                   </div>
                   <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">
