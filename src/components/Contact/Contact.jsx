@@ -1,3 +1,7 @@
+import G from "../../assets/gmail.png";
+import T from "../../assets/phone-call.png";
+import F from "../../assets/printer.png";
+import L from "../../assets/placeholder.png";
 const Contact = () => {
   return (
     <div class="w-full h-screen flex justify-center items-center">
@@ -80,46 +84,46 @@ const Contact = () => {
         </div>
         <div className="flex mt-5 items-center">
           <div className="mr-3">
-            <img
-              src="../src/assets/linkedin.png"
-              alt=""
-              className="w-[30px] h-[30px]"
-            />
+            <img src={T} alt="" className="w-[30px] h-[30px]" />
           </div>
           <div className="flex flex-col justify-center">
             <p className="text-xs">Telepon: </p>
-            <p className="font-bold font-customeFont text-lg text-[#333]">
+            <p className="font-bold font-customeFont text-sm text-[#333]">
               021 1500071
             </p>
           </div>
         </div>
         <div className="flex mt-5 items-center">
           <div className="mr-3">
-            <img
-              src="../src/assets/twitter.png"
-              alt=""
-              className="w-[30px] h-[30px]"
-            />
+            <img src={F} alt="" className="w-[30px] h-[30px]" />
           </div>
           <div className="flex flex-col justify-center">
             <p className="text-xs">Fax</p>
-            <p className="font-bold font-customeFont text-lg text-[#333]">
+            <p className="font-bold font-customeFont text-sm text-[#333]">
               21-5253659
             </p>
           </div>
         </div>
         <div className="flex mt-5 items-center">
           <div className="mr-3">
-            <img
-              src="../src/assets/facebook.png"
-              alt=""
-              className="w-[30px] h-[30px]"
-            />
+            <img src={G} alt="" className="w-[30px] h-[30px]" />
           </div>
           <div className="flex flex-col justify-center">
             <p className="text-xs">Email</p>
-            <p className="font-bold font-customeFont text-lg text-[#333]">
+            <p className="font-bold font-customeFont text-sm text-[#333]">
               humas@iconpln.co.id{" "}
+            </p>
+          </div>
+        </div>
+        <div className="flex mt-5 items-center">
+          <div className="mr-3">
+            <img src={L} alt="" className="w-[30px] h-[30px]" />
+          </div>
+          <div className="flex flex-col justify-center">
+            <p className="text-xs">Location</p>
+            <p className="font-bold font-customeFont max-w-[400px] text-sm text-[#333]">
+              Alamat: Jl. Damai No.100, Gandul, Kec. Cinere, Kota Depok,
+              Jawa Barat 16514
             </p>
           </div>
         </div>
