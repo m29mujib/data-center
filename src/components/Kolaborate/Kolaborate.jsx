@@ -7,31 +7,31 @@ const Kolaborate = () => {
   const items = [
     <img
       src="../src/assets/comm1.jpg"
-      className=" w-[350px] h-[350px] rounded-xl"
+      className=" w-[350px] h-[350px] mr-5 rounded-lg"
       onDragStart={handleDragStart}
       role="presentation"
     />,
     <img
       src="../src/assets/comm3.jpg"
-      className=" w-[350px] h-[350px] rounded-xl"
+      className=" w-[350px] h-[350px] rounded-lg"
       onDragStart={handleDragStart}
       role="presentation"
     />,
     <img
       src="../src/assets/comm2.jpg"
-      className=" w-[350px] h-[350px] rounded-xl"
+      className=" w-[350px] h-[350px] rounded-lg"
       onDragStart={handleDragStart}
       role="presentation"
     />,
     <img
       src="../src/assets/r.jpg"
-      className="w-[350px] h-[350px]"
+      className="w-[350px] h-[350px] rounded-lg"
       onDragStart={handleDragStart}
       role="presentation"
     />,
   ];
   return (
-    <div className="w-full h-full flex flex-col items-center justify-center px-[5%] py-[3%] md:px-[8%] md:py-[5%]">
+    <div className="w-full h-full flex flex-col items-center justify-center px-[5%] py-[3%] md:px-[5%] md:py-[5%]">
       <div>
         <h1 className="text-4xl font-customFont text-[#333]">Kolaborasi</h1>
       </div>
