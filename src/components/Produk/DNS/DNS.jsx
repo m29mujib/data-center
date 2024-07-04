@@ -3,20 +3,20 @@ import React from "react";
 const DNS = () => {
     const incentives = [
         {
-          name: 'Free shipping',
+          name: 'Automated Failover',
           imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-shipping-simple.svg',
-          description: "It's not actually free we just price it into the products. Someone's paying for it, and it's not us.",
+          description: "Memastikan layanan tersedia secara terus menerus tanpa downtime yang signifikan, meningkatkan ketersediaan sistem secara keseluruhan.",
         },
         {
-          name: '10-year warranty',
+          name: 'Wide area persistence',
           imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg',
-          description: "If it breaks in the first 10 years we'll replace it. After that you're on your own though.",
+          description: "Memungkinkan data atau layanan tetap tersedia dan dapat diakses dari berbagai lokasi geografis, mengoptimalkan akses global dan redundansi data.",
         },
         {
-          name: 'Exchanges',
+          name: 'Always-on availability',
           imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg',
           description:
-            "If you don't like it, trade it to one of your friends for something of theirs. Don't send it here though.",
+            "Mengaktifkan proses otomatis untuk beralih ke sumber daya cadangan atau alternatif secara cepat jika terjadi kegagalan, meminimalkan waktu pemulihan dan mengurangi dampak downtime.",
         },
       ]
         return (
@@ -29,9 +29,7 @@ const DNS = () => {
                     DNS GSLB RV
                     </h2>
                     <p className="mt-4 text-gray-500">
-                      At the beginning at least, but then we realized we could make a lot more money if we kinda stopped
-                      caring about that. Our new strategy is to write a bunch of things that look really good in the
-                      headlines, then clarify in the small print but hope people don't actually read it.
+                    DNS (Domain Name System) oleh PLN Icon Plus adalah infrastruktur krusial dalam internet yang memetakan nama domain menjadi alamat IP, memungkinkan akses yang lancar dan aman ke situs web dan layanan online. Layanan ini mencakup ICON DNS Resolver, yang memfasilitasi pencarian cepat alamat IP dari nama domain, dan ICON DNS Authoritative, yang memberikan jawaban akurat atas permintaan DNS. 
                     </p>
                   </div>
                   <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">
