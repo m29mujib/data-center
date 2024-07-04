@@ -13,7 +13,7 @@ const Iklan = () => {
         <p className="max-w-[500px] text-sm text-[#666] font-custemFont text-[#333]"></p>
       </div>
       <div className="bawah mt-5 flex justify-between items-center">
-        <div className="flex flex-col md:flex-row items-center">
+        <div className="flex flex-col md:flex-row items-center relative px-5">
           <div className="App ">
             <div className="content flex justify-center items-center" />
             <CountUp enableScrollSpy className="opacity-0 " />
@@ -27,7 +27,7 @@ const Iklan = () => {
             Google Calender
           </p>
         </div>
-        <div className="flex flex-col md:flex-row items-center">
+        <div className="flex flex-col md:flex-row items-center px-5">
           <div className="App">
             <div className="content" />
             <p className="opacity-0">0</p>

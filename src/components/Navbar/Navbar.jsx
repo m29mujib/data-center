@@ -75,7 +75,7 @@ const Navbar = () => {
             {/* end nav main */}
             <a
               href="/home"
-              className="decoration-0 px-5 text-white bg-blue-500 font-semibold font-customFont py-3 rounded-sm hover:underline hover:text-blue-500"
+              className="decoration-0 px-5 text-white bg-blue-500 font-semibold font-customFont py-3 rounded-sm hover:bg-blue-700 hover:text-white"
             >
               Get Contact
             </a>
