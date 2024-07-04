@@ -28,8 +28,8 @@ const Kolaborate = () => {
           <div className="atas p-5">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
-          <div className="bawah flex p-5">
-            <div className="kiri">
+          <div className="bawah flex items-center p-5">
+            <div className="kiri mr-3">
               <img src="../src/assets/r.jpg" alt="" className="w-[40px]" />
             </div>
             <div className="kanan">
@@ -44,8 +44,8 @@ const Kolaborate = () => {
           <div className="atas p-5">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
-          <div className="bawah flex p-5">
-            <div className="kiri">
+          <div className="bawah flex items-center p-5">
+            <div className="kiri mr-3">
               <img src="../src/assets/r.jpg" alt="" className="w-[40px]" />
             </div>
             <div className="kanan">
@@ -60,8 +60,8 @@ const Kolaborate = () => {
           <div className="atas p-5">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
-          <div clasName="bawah flex p-5">
-            <div className="kiri">
+          <div className="bawah flex items-center p-5">
+            <div className="kiri mr-3">
               <img src="../src/assets/r.jpg" alt="" className="w-[40px]" />
             </div>
             <div className="kanan">
@@ -76,8 +76,40 @@ const Kolaborate = () => {
           <div className="atas p-5">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
-          <div className="bawah flex p-5">
-            <div className="kiri">
+          <div className="bawah items-center flex p-5">
+            <div className="kiri mr-3">
+              <img src="../src/assets/r.jpg" alt="" className="w-[40px]" />
+            </div>
+            <div className="kanan">
+              <h4 className="font-semibold font-customFont text-[#333]">
+                Lorem, ipsum.
+              </h4>
+              <p className="text-xs font-customFont text-[#333]">Lorem</p>
+            </div>
+          </div>
+        </div>
+        <div className="card w-[300px] p-5 bg-white shadow-lg mb-3">
+          <div className="atas p-5">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div className="bawah items-center flex p-5">
+            <div className="kiri mr-3">
+              <img src="../src/assets/r.jpg" alt="" className="w-[40px]" />
+            </div>
+            <div className="kanan">
+              <h4 className="font-semibold font-customFont text-[#333]">
+                Lorem, ipsum.
+              </h4>
+              <p className="text-xs font-customFont text-[#333]">Lorem</p>
+            </div>
+          </div>
+        </div>
+        <div className="card w-[300px] p-5 bg-white shadow-lg mb-3">
+          <div className="atas p-5">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div className="bawah items-center flex p-5">
+            <div className="kiri mr-3">
               <img src="../src/assets/r.jpg" alt="" className="w-[40px]" />
             </div>
             <div className="kanan">
