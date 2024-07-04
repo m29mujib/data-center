@@ -48,7 +48,7 @@ const Navbar = () => {
               Home
             </a>
             <a
-              href="/home"
+              href="/iconcloud"
               className="decoration-0 px-5 font-regular font-customFont text-[#ffffff] hover:underline hover:text-blue-500"
             >
               About Us
