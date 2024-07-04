@@ -10,7 +10,7 @@ const Iklan = () => {
   return (
     <div className="flex  flex-col px-20 py-[3%]">
       <div className="bawah mt-5 flex flex-wrap justify-evenly items-center  bg-white shadow-md rounded-lg">
-        <div className="h-full " style={{ borderRight: "2px solid #808080" }}>
+        <div className="h-full " style={{ borderRight: "3px solid #808080" }}>
           <div className="flex flex-col md:flex-row items-center  rounded-lg">
             <div className="w-20">
               <div className="App">
@@ -39,7 +39,7 @@ const Iklan = () => {
 
         <div
           className="flex flex-col pr-20"
-          style={{ borderRight: "2px solid #808080" }}
+          style={{ borderRight: "3px solid #808080" }}
         >
           <div className="flex flex-col md:flex-row items-center  rounded-lg">
             <div className="w-20">
@@ -103,7 +103,7 @@ const Iklan = () => {
 
           <div
             className=" h-20 mt-4 "
-            style={{ borderRight: "2px solid #808080", paddingRight:"20px" }}
+            style={{ borderRight: "3px solid #808080", paddingRight:"20px" }}
           >
             <div className="App mt-6 pr-10">
               <p className="md:text-sm  md:ml-3 text-sm text-gray-600 font-bold font-customFont text-[#333]">
