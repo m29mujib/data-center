@@ -8,6 +8,7 @@ import Kolaborate from "./components/Kolaborate/Kolaborate";
 import Search from "./components/Pencarian/Search";
 import Footer from "./components/Footer/Footer";
 import HorizontalParallax from "./components/BannerParallax/Paralax";
+import IconCloud from "./components/IconCloud/IconCloud";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Kolaborate />
       <Search />
       <Footer />
+      <IconCloud />
     </>
   );
 }
