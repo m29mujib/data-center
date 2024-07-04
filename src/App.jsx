@@ -8,7 +8,7 @@ import Kolaborate from "./components/Kolaborate/Kolaborate";
 import Search from "./components/Pencarian/Search";
 import Footer from "./components/Footer/Footer";
 import HorizontalParallax from "./components/BannerParallax/Paralax";
-import IconCloud from "./components/IconCloud/IconCloud";
+import IconCloud from "./components/Produk/IconCloud/IconCloud";
 
 function App() {
   return (
