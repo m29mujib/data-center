@@ -3,23 +3,28 @@ import React from "react";
 import Navbar from "../../Navbar/Navbar";
 const IconMon = () => {
     const incentives = [
-        {
-          name: 'Real-Time Monitoring',
-          imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-shipping-simple.svg',
-          description: "Memantau performa jaringan, server, dan aplikasi secara real-time.",
-        },
-        {
-          name: 'Statistic Analysis',
-          imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg',
-          description: "Menyediakan visualisasi data yang mudah dipahami dengan dasbor yang dapat disesuaikan.",
-        },
-        {
-          name: 'Service Desk Efficiency',
-          imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg',
-          description:
-            "Memberikan laporan analitik yang mendalam untuk membantu pengambilan keputusan yang cepat dan tepat.",
-        },
-      ]
+      {
+        name: "Real-Time Monitoring",
+        imageSrc:
+          "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
+        description:
+          "Memantau performa jaringan, server, dan aplikasi secara real-time.",
+      },
+      {
+        name: "Statistic Analysis",
+        imageSrc:
+          "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
+        description:
+          "Menyediakan visualisasi data yang mudah dipahami dengan dasbor yang dapat disesuaikan.",
+      },
+      {
+        name: "Service Desk Efficiency",
+        imageSrc:
+          "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
+        description:
+          "Memberikan laporan analitik yang mendalam untuk membantu pengambilan keputusan yang cepat dan tepat.",
+      },
+    ];
   return (
     <div>
       <Navbar />

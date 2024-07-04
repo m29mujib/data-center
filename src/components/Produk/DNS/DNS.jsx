@@ -6,7 +6,7 @@ const DNS = () => {
     {
       name: "Automated Failover",
       imageSrc:
-        "https://tailwindui.com/img/ecommerce/icons/icon-shipping-simple.svg",
+        "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
       description:
         "Memastikan layanan tersedia secara terus menerus tanpa downtime yang signifikan, meningkatkan ketersediaan sistem secara keseluruhan.",
     },
@@ -20,7 +20,7 @@ const DNS = () => {
     {
       name: "Always-on availability",
       imageSrc:
-        "https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg",
+        "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
       description:
         "Mengaktifkan proses otomatis untuk beralih ke sumber daya cadangan atau alternatif secara cepat jika terjadi kegagalan, meminimalkan waktu pemulihan dan mengurangi dampak downtime.",
     },

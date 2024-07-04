@@ -2,24 +2,29 @@ import CountUp, { useCountUp } from "react-countup";
 import React from "react";
 import Navbar from "../../Navbar/Navbar";
 const SanBox = () => {
-    const incentives = [
-        {
-          name: 'Isolated Environment Analysis',
-          imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-shipping-simple.svg',
-          description: "Menjalankan file atau kode mencurigakan dalam lingkungan virtual yang aman, memastikan bahwa ancaman dapat dianalisis tanpa risiko terhadap sistem utama.",
-        },
-        {
-          name: 'Zero-Day Threat Detection',
-          imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg',
-          description: "Mendeteksi ancaman zero-day dan malware yang tidak terdeteksi oleh metode tradisional, memberikan perlindungan proaktif terhadap serangan baru dan tidak dikenal.",
-        },
-        {
-          name: 'Behavior Monitoring',
-          imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg',
-          description:
-            "Memantau perilaku file atau kode selama eksekusi dalam sandbox, memungkinkan identifikasi pola perilaku berbahaya untuk pencegahan yang lebih akurat dan efektif.",
-        },
-      ]
+  const incentives = [
+    {
+      name: "Isolated Environment Analysis",
+      imageSrc:
+        "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
+      description:
+        "Menjalankan file atau kode mencurigakan dalam lingkungan virtual yang aman, memastikan bahwa ancaman dapat dianalisis tanpa risiko terhadap sistem utama.",
+    },
+    {
+      name: "Zero-Day Threat Detection",
+      imageSrc:
+        "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
+      description:
+        "Mendeteksi ancaman zero-day dan malware yang tidak terdeteksi oleh metode tradisional, memberikan perlindungan proaktif terhadap serangan baru dan tidak dikenal.",
+    },
+    {
+      name: "Behavior Monitoring",
+      imageSrc:
+        "https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg",
+      description:
+        "Memantau perilaku file atau kode selama eksekusi dalam sandbox, memungkinkan identifikasi pola perilaku berbahaya untuk pencegahan yang lebih akurat dan efektif.",
+    },
+  ];
   return (
     <div>
       <Navbar />
@@ -80,6 +85,6 @@ const SanBox = () => {
       </div>
     </div>
   );
-      }
+};
 
 export default SanBox;

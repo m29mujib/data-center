@@ -6,7 +6,7 @@ const DDOS = () => {
     {
       name: "Real-Time Monitoring",
       imageSrc:
-        "https://tailwindui.com/img/ecommerce/icons/icon-shipping-simple.svg",
+        "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
       description:
         "Memberikan visibilitas penuh terhadap kinerja sistem secara langsung, memungkinkan respons cepat terhadap perubahan atau masalah yang muncul.",
     },
@@ -20,7 +20,7 @@ const DDOS = () => {
     {
       name: "Enhanced Security",
       imageSrc:
-        "https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg",
+        "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
       description:
         "Melindungi data dan infrastruktur dari ancaman cyber dengan teknologi terbaru dan kontrol akses yang ketat.",
     },

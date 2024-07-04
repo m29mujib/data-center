@@ -6,7 +6,7 @@ const IconMail = () => {
     {
       name: "Efficient Mass Email Delivery",
       imageSrc:
-        "https://tailwindui.com/img/ecommerce/icons/icon-shipping-simple.svg",
+        "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
       description:
         "Memungkinkan pengiriman email dalam jumlah besar dengan cepat dan tepat sasaran, mendukung kampanye pemasaran digital yang efektif.",
     },
@@ -20,7 +20,7 @@ const IconMail = () => {
     {
       name: "Security and Layered Filtering",
       imageSrc:
-        "https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg",
+        "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
       description:
         "Sistem penyaringan berlapis dari ICON+ memastikan email yang dikirim bersih dari konten berbahaya, menjaga reputasi dan integritas komunikasi bisnis.",
     },

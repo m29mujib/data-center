@@ -3,23 +3,28 @@ import React from "react";
 import Navbar from "../../Navbar/Navbar";
 const IconFilter = () => {
     const incentives = [
-        {
-          name: 'Defense in depth protection',
-          imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-shipping-simple.svg',
-          description: "Sistem ini memastikan email yang dikirim keluar melalui jaringan ICON+ telah difilter dan dibersihkan dari konten berbahaya, meningkatkan keamanan dan keandalan komunikasi email.",
-        },
-        {
-          name: 'Optimalisasi Reputasi email',
-          imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg',
-          description: "Dengan menyaring dan memblokir email berbahaya, ICONMAIL Filter membantu meningkatkan reputasi email perusahaan, mengurangi kemungkinan email ditandai sebagai spam oleh penerima.",
-        },
-        {
-          name: 'Sistem Relay ICONMAIL Filter-Out',
-          imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg',
-          description:
-            "Menggunakan metode perlindungan berlapis, email difilter oleh dua brand filter berbeda untuk meningkatkan akurasi dan keandalan proteksi, meminimalkan risiko ancaman yang lolos.",
-        },
-      ]
+      {
+        name: "Defense in depth protection",
+        imageSrc:
+          "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
+        description:
+          "Sistem ini memastikan email yang dikirim keluar melalui jaringan ICON+ telah difilter dan dibersihkan dari konten berbahaya, meningkatkan keamanan dan keandalan komunikasi email.",
+      },
+      {
+        name: "Optimalisasi Reputasi email",
+        imageSrc:
+          "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
+        description:
+          "Dengan menyaring dan memblokir email berbahaya, ICONMAIL Filter membantu meningkatkan reputasi email perusahaan, mengurangi kemungkinan email ditandai sebagai spam oleh penerima.",
+      },
+      {
+        name: "Sistem Relay ICONMAIL Filter-Out",
+        imageSrc:
+          "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
+        description:
+          "Menggunakan metode perlindungan berlapis, email difilter oleh dua brand filter berbeda untuk meningkatkan akurasi dan keandalan proteksi, meminimalkan risiko ancaman yang lolos.",
+      },
+    ];
   return (
     <div>
       <Navbar />
