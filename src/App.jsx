@@ -9,6 +9,14 @@ import Search from "./components/Pencarian/Search";
 import Footer from "./components/Footer/Footer";
 import HorizontalParallax from "./components/BannerParallax/Paralax";
 import IconCloud from "./components/Produk/IconCloud/IconCloud";
+import Collocation from "./components/Produk/Collocation/Collocation";
+import DDOS from "./components/Produk/DDOS/DDOS";
+import DNS from "./components/Produk/DNS/DNS";
+import IconFilter from "./components/Produk/IconFilter/IconFilter";
+import IconMon from "./components/Produk/IconMon/IconMon";
+import IconMail from "./components/Produk/IconMail/IconMail";
+import SanBox from "./components/Produk/SanBox/SanbOX";
+
 
 function App() {
   return (
@@ -23,6 +31,13 @@ function App() {
       <Search />
       <Footer />
       <IconCloud />
+      <Collocation />
+      <DDOS />
+      <DNS />
+      <IconFilter />
+      <IconMail />
+      <IconMon />
+      <SanBox />
     </>
   );
 }
