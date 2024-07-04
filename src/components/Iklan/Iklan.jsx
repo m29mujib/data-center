@@ -1,4 +1,12 @@
+import CountUp, { useCountUp } from "react-countup";
+import React from "react";
 const Iklan = () => {
+  useCountUp({
+    ref: "counter",
+    end: 100,
+    enableScrollSpy: true,
+    scrollSpyDelay: 1000,
+  });
   return (
     <div className="w-full h-100% p-10 flex justify-center items center flex-col px-[8%] py-[3%]">
       <div className="atas">
@@ -6,42 +14,70 @@ const Iklan = () => {
       </div>
       <div className="bawah mt-5 flex justify-between items-center">
         <div className="flex flex-col md:flex-row items-center">
-          <img
-            src="../src/assets/calendar.png"
-            alt=""
-            class="w-[30px] h-[30px] mr-3 mb-2 md:mb-0"
-          />
-          <p className="md:text-xl text-sm text-gray-600 font-semibold font-custemFont text-[#333]">
+          <div className="App">
+            <div className="content" />
+            <CountUp enableScrollSpy />
+            <br />
+            <span
+              id="counter"
+              className="text-[#333] text-xl font-custemFont font-bold"
+            />
+          </div>
+          <p className="md:text-xl md:ml-5 text-sm text-gray-600 font-semibold font-custemFont text-[#333]">
             Google Calender
           </p>
         </div>
         <div className="flex flex-col md:flex-row items-center">
-          <img
-            src="../src/assets/slack.png"
-            alt=""
-            class="w-[30px] h-[30px] mr-3 mb-2 md:mb-0"
-          />
-          <p className="md:text-xl text-sm text-gray-600 font-semibold font-custemFont text-[#333]">
+          <div className="App">
+            <div className="content" />
+            <CountUp
+              end={200}
+              enableScrollSpy
+              className="text-[#333] text-xl font-custemFont font-bold"
+            />
+            <br />
+            <span
+              id="counter"
+              className="text-[#333] text-xl font-custemFont font-bold"
+            />
+          </div>
+          <p className="md:text-xl md:ml-5 text-sm text-gray-600 font-semibold font-custemFont text-[#333]">
             Slack
           </p>
         </div>
         <div className="flex flex-col md:flex-row items-center">
-          <img
-            src="../src/assets/cal.png"
-            alt=""
-            class="w-[30px] h-[30px] mr-3 mb-2 md:mb-0"
-          />
-          <p className="md:text-xl text-sm text-gray-600 font-semibold font-custemFont text-[#333]">
+          <div className="App">
+            <div className="content" />
+            <CountUp
+              end={300}
+              enableScrollSpy
+              className="text-[#333] text-xl font-custemFont font-bold"
+            />
+            <br />
+            <span
+              id="counter"
+              className="text-[#333] text-xl font-custemFont font-bold"
+            />
+          </div>
+          <p className="md:text-xl md:ml-5 text-sm text-gray-600 font-semibold font-custemFont text-[#333]">
             University
           </p>
         </div>
         <div className="flex flex-col md:flex-row items-center">
-          <img
-            src="../src/assets/user.png"
-            alt=""
-            class="w-[30px] h-[30px] mr-3 mb-2 md:mb-0"
-          />
-          <p className="md:text-xl text-sm text-gray-600 font-semibold font-custemFont text-[#333]">
+          <div className="App">
+            <div className="content" />
+            <CountUp
+              end={400}
+              enableScrollSpy
+              className="text-[#333] text-xl font-custemFont font-bold"
+            />
+            <br />
+            <span
+              id="counter"
+              className="text-[#333] text-xl font-custemFont font-bold"
+            />
+          </div>
+          <p className="md:text-xl md:ml-5 text-sm text-gray-600 font-semibold font-custemFont text-[#333]">
             Avere
           </p>
         </div>

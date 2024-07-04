@@ -32,7 +32,6 @@ const HorizontalParallax = () => {
     },
   ];
 
-
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length);
@@ -59,7 +58,7 @@ const HorizontalParallax = () => {
 
   return (
     <ParallaxProvider>
-      <div className="slider-container">
+      <div className="relative slider-container flex justify-center items-center w-full h-screen">
         {images.map((image, index) => (
           <Parallax
             key={index}
@@ -68,19 +67,31 @@ const HorizontalParallax = () => {
             className={`slide ${index === currentSlide ? "active" : ""}`}
           >
             <div
-              className="parallax-item"
+              className="parallax-item flex justify-center items-center w-full h-screen"
               style={{
                 ...parallaxStyle,
                 backgroundImage: `url(${image})`,
               }}
             >
-              <div className="image-text">
-                <h1 className="text-title">{texts[index].title}</h1>
-                <h2 className="text-subtitle">{texts[index].subtitle}</h2>
-                <p className="text-description">{texts[index].description}</p>
-                <p className="text-extended-description">
-                  {texts[index].extendedDescription}
-                </p>
+              <div className="image-text flex justify-center items-center flex-col w-full h-screen">
+                <div className="atas flex justify-center items-center w-full">
+                  <h1 className="text-title font-customFont text-4xl max-w-[90%] md:text-6xl md:max-w-[90%] text-center">
+                    {texts[index].title}
+                  </h1>
+                </div>
+                <div className="tengah flex justify-center items-center w-full">
+                  <h2 className="text-subtitle font-customFont text-lg max-w-[80%] md:text-2xl mt-2">
+                    {texts[index].subtitle}
+                  </h2>
+                </div>
+                <div className="bawah flex flex-col w-[90%] items-center w-full">
+                  <p className="text-description font-customFont tracking-wide">
+                    {texts[index].description}
+                  </p>
+                  <p className="text-extended-description font-customFont tracking-wide">
+                    {texts[index].extendedDescription}
+                  </p>
+                </div>
               </div>
             </div>
           </Parallax>

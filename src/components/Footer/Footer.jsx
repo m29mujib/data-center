@@ -25,21 +25,21 @@ const Footer = () => {
                 <img
                   src="../src/assets/twitter.png"
                   alt=""
-                  className="mr-3 w-[20px]"
+                  className="mr-3 w-[20px] font-customFont"
                 />
               </p>
               <p>
                 <img
                   src="../src/assets/facebook.png"
                   alt=""
-                  className="mr-3 w-[20px]"
+                  className="mr-3 w-[20px] font-customFont"
                 />
               </p>
               <p>
                 <img
                   src="../src/assets/linkedin.png"
                   alt=""
-                  className="mr-3 w-[20px]"
+                  className="mr-3 w-[20px] font-customFont"
                 />
               </p>
             </div>
@@ -50,9 +50,9 @@ const Footer = () => {
             <h1 className="font-bold font-customFont text-white">ABOUT US</h1>
           </div>
           <div className="flex flex-col p-5">
-            <p className="text-white">About</p>
-            <p className="text-white">Contact</p>
-            <p className="text-white">Blog</p>
+            <p className="text-white font-customFont">About</p>
+            <p className="text-white font-customFont">Contact</p>
+            <p className="text-white font-customFont">Blog</p>
           </div>
         </div>
         <div className="flex justify-center flex-col flex-wrap">
@@ -60,9 +60,9 @@ const Footer = () => {
             <h1 className="font-bold font-customFont text-white">CONTACT</h1>
           </div>
           <div className="flex flex-col p-5">
-            <p className="text-white">About</p>
-            <p className="text-white">Contact</p>
-            <p className="text-white">Blog</p>
+            <p className="text-white font-customFont">About</p>
+            <p className="text-white font-customFont">Contact</p>
+            <p className="text-white font-customFont">Blog</p>
           </div>
         </div>
         <div className="flex justify-center flex-col">
@@ -70,9 +70,9 @@ const Footer = () => {
             <h1 className="font-bold font-customFont text-white">MULATION</h1>
           </div>
           <div className="flex flex-col p-5">
-            <p className="text-white">About</p>
-            <p className="text-white">Contact</p>
-            <p className="text-white">Blog</p>
+            <p className="text-white font-customFont">About</p>
+            <p className="text-white font-customFont">Contact</p>
+            <p className="text-white font-customFont">Blog</p>
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 const Home = () => {
   return (
     <div className="w-full h-full md:flex justify-between items-center px-[8%] py-[0%] md:py-[5%] flex-wrap">
-      <div className="flex justify-between">
+      <div className="flex justify-center mt-5">
         <img
           src="../src/assets/b.jpg"
           alt=""

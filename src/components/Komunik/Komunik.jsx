@@ -10,7 +10,7 @@ const Komunik = () => {
             <h2 className="font-bold text-3xl mb-3 max-w-[500px] font-customFont text-[#333]">
               Know Detail Information About Apartment
             </h2>
-            <p className="max-w-[600px] text-sm font-customFont text-[#333]">
+            <p className="md:max-w-[600px] w-full text-sm font-customFont text-[#333]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
               ducimus suscipit nobis quia quaerat dolor aperiam neque
               perspiciatis quidem possimus.
@@ -25,7 +25,7 @@ const Komunik = () => {
               />
             </div>
             <div className="kanan">
-              <p className="max-w-[400px] text-xs font-customFont text-[#333]">
+              <p className="md:max-w-[400px] w-full text-xs font-customFont text-[#333]">
                 Lorem ipsum dolor sit amet consectetur
               </p>
             </div>
@@ -39,7 +39,7 @@ const Komunik = () => {
               />
             </div>
             <div className="kanan">
-              <p className="max-w-[400px] text-xs font-customFont text-[#333]">
+              <p className="md:max-w-[400px] w-full text-xs font-customFont text-[#333]">
                 Lorem ipsum dolor sit amet consectetur
               </p>
             </div>
@@ -53,7 +53,7 @@ const Komunik = () => {
               />
             </div>
             <div className="kanan">
-              <p className="max-w-[400px] text-xs font-customFont text-[#333]">
+              <p className="md:max-w-[400px] w-full text-xs font-customFont text-[#333]">
                 Lorem ipsum dolor sit amet consectetur
               </p>
             </div>
