@@ -56,7 +56,7 @@ const Kolaborate = () => {
   return (
     <div className="w flex flex-col items-center justify-center px-[5%] py-[3%] md:px-[5%] md:py-[5%]">
       <div>
-        <h1 className="text-4xl font-customFont text-[#333] mb-10">
+        <h1 className="md:text-4xl text-2xl font-bold font-customFont text-[#333] mb-5">
           {" "}
           Data Center Icon Plus
         </h1>

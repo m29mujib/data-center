@@ -3,7 +3,7 @@ import image12 from "../../assets/checklist.png";
 
 const Komunik = () => {
   return (
-    <div className="w-full h-full flex justify-between items-center px-[5%] py-[5%] md:flex-nowrap flex-wrap-reverse">
+    <div className="w-full h-full flex flex-col md:flex-row justify-between items-center px-[5%] py-[5%] md:flex-nowrap flex-wrap-reverse">
       <div className="w-full flex justify-center basis-[50%] p-5">
         <div>
           <div className="atas mt-5 md:mt-0">
@@ -52,7 +52,7 @@ const Komunik = () => {
           </div>
         </div>
       </div>
-      <div className="w-full flex basis-[50%]">
+      <div className="w-full flex justify-center basis-[50%]">
         <img
           src={image11}
           alt=""

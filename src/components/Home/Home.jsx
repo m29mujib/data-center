@@ -2,7 +2,7 @@ import Peta from "../../assets/peta.png";
 import Check from "../../assets/checklist.png";
 const Home = () => {
   return (
-    <div className="w-full h-full flex items-center px-[5%] py-[0%] md:py-[5%] md:flex-nowrap sm:flex-wrap">
+    <div className="w-full h-full flex flex-col md:flex-row items-center px-[5%] py-[0%] md:py-[5%] md:flex-nowrap sm:flex-wrap">
       <div className="flex w-full justify-center mt-5 flex basis-[50%]">
         <img
           src={Peta}
@@ -11,12 +11,12 @@ const Home = () => {
         />
       </div>
       <div className="flex w-full justify-center mt-5 md:mt-0 ml-5 flex basis-[50%]">
-        <div>
+        <div className="w-full flex flex-col justify-center">
           <div className="atas">
             <h1 className="text-blue-600 font-semibold text-xl font-customFont mb-3">
               LOKASI DATA CENTER PLN ICON PLUS
             </h1>
-            <p className="max-w-[600px] text-sm font-customFont text-[#333]">
+            <p className="md:max-w-[600px] max-w-[400px] text-sm font-customFont text-[#333]">
               Berdasarkan historikal yang ada, sejak beroperasi pada tahun 2000,
               lokasi PT PLN ICON PLUS Cinere Gandul tidak pernah mengalami
               banjir, gempa yang mengganggu operasional.
@@ -42,7 +42,7 @@ const Home = () => {
               </h4>
             </div>
           </div>
-          <div className="bawah flex mt-5">
+          <div className="bawah flex items-center mt-5">
             <div className="kiri flex justify-center items-center">
               <img src={Check} alt="" className="w-[20px] mr-5" />
             </div>

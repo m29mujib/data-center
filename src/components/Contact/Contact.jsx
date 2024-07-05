@@ -4,8 +4,8 @@ import F from "../../assets/printer.png";
 import L from "../../assets/placeholder.png";
 const Contact = () => {
   return (
-    <div class="w-full h-screen flex justify-center items-center">
-      <form class="max-w-[500px] h-[500px] bg-[#eaeaea] rounded-xl px-8 py-[50px] mb-4 ">
+    <div class="w-full h-full flex justify-center items-center flex-wrap md:flex-nowrap py-[10%]">
+      <form class="md:max-w-[500px] m-5 w-[400px] h-[500px] md:h-[500px] bg-[#eaeaea] rounded-xl px-8 py-[50px] mb-4 ">
         <div class="mb-4 flex">
           <div className="mr-5">
             <label
@@ -78,11 +78,11 @@ const Contact = () => {
           <h1 className="max-w-[450px] text-[#333] text-4xl font-bold ">
             Formulir ini adalah cara mudah untuk berkomunikasi dengan kami
           </h1>
-          <p className="text-xs max-w-[400px]">
+          <p className="text-xs max-w-[400px] mt-5">
             Untuk pertanyaan lebih lanjut, jangan ragu untuk menghubungi kami
           </p>
         </div>
-        <div className="flex mt-5 items-center">
+        <div className="flex mt-5 items-center mt-5">
           <div className="mr-3">
             <img src={T} alt="" className="w-[30px] h-[30px]" />
           </div>
