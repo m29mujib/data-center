@@ -25,18 +25,18 @@ const Navbar = () => {
         <div className="w-[200px] h-screen bg-[#fff] absolute top-0 right-0 z-10 flex flex-col justify-center items-center transition-all duration-700 ease-in-out transform translate-x-0">
           <ul className="flex flex-col justify-center items-center">
             <li className="flex flex-col justify-center items-center">
-              <a href="" className="p-5 hover:underline hover:text-blue-500">
+              <Link to="/" className="p-5 hover:underline hover:text-blue-500">
                 Home
-              </a>
-              <a href="" className="p-5 hover:underline hover:text-blue-500">
+              </Link>
+              <Link to="#" className="p-5 hover:underline hover:text-blue-500">
                 Layanan
-              </a>
-              <a href="" className="p-5 hover:underline hover:text-blue-500">
+              </Link>
+              <Link to="#" className="p-5 hover:underline hover:text-blue-500">
                 Lokasi
-              </a>
-              <a href="" className="p-5 hover:underline hover:text-blue-500">
+              </Link>
+              <Link to="#" className="p-5 hover:underline hover:text-blue-500">
                 Bantuan
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -63,7 +63,7 @@ const Navbar = () => {
               onMouseLeave={() => setAboutDropdown(false)}
             >
               <Link
-                to={"/home"}
+                to={"#"}
                 className="decoration-0 px-5 font-medium font-customFont text-[#fff] hover:underline hover:text-blue-500"
               >
                 Layanan
