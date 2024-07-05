@@ -1,12 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-<<<<<<< HEAD
-=======
 import logos from "../../assets/a.png";
-import images14 from "../../assets/close.png"
-import more from "../../assets/more.png"
+import images14 from "../../assets/close.png";
+import more from "../../assets/more.png";
 
->>>>>>> dd36665654bf3e1177d7ec4cbd5decd3d05aafdc
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
   const [aboutDropdown, setAboutDropdown] = useState(false);
@@ -61,15 +58,9 @@ const Navbar = () => {
         <ul className="hidden md:flex">
           <li className="relative inline-block">
             {/* start nav main */}
-<<<<<<< HEAD
             <Link
-              to="/"
+              to={"/"}
               className="decoration-0 px-5 font-regular font-customFont text-[#ffffff] hover:underline hover:text-blue-500"
-=======
-            <a
-              href="/"
-              className="decoration-0 px-5 font-regular font-customFont text-[#000000] hover:underline hover:text-blue-500"
->>>>>>> dd36665654bf3e1177d7ec4cbd5decd3d05aafdc
             >
               Home
             </Link>
@@ -78,15 +69,9 @@ const Navbar = () => {
               onMouseEnter={() => setAboutDropdown(true)}
               onMouseLeave={() => setAboutDropdown(false)}
             >
-<<<<<<< HEAD
               <Link
-                to="/home"
+                to={"/home"}
                 className="decoration-0 px-5 font-regular font-customFont text-[#ffffff] hover:underline hover:text-blue-500"
-=======
-              <a
-                href="#"
-                className="decoration-0 px-5 font-regular font-customFont text-[#000000] hover:underline hover:text-blue-500"
->>>>>>> dd36665654bf3e1177d7ec4cbd5decd3d05aafdc
               >
                 Layanan
               </Link>
@@ -96,26 +81,15 @@ const Navbar = () => {
                 }`}
               >
                 <Link
-<<<<<<< HEAD
-                  to="/collocation"
-=======
                   to={"/collocation"}
->>>>>>> dd36665654bf3e1177d7ec4cbd5decd3d05aafdc
                   className="block px-4 py-2 hover:bg-gray-200"
                 >
                   Colocation
                 </Link>
-<<<<<<< HEAD
-                <Link to="/ddos" className="block px-4 py-2 hover:bg-gray-200">
-                  DDOS
-                </Link>
-                <Link to="/dns" className="block px-4 py-2 hover:bg-gray-200">
-                  DNS
-                </Link>
                 <Link
-                  to="/icon-cloud"
-=======
-                <Link to={"/ddos"} className="block px-4 py-2 hover:bg-gray-200">
+                  to={"/ddos"}
+                  className="block px-4 py-2 hover:bg-gray-200"
+                >
                   DDOS
                 </Link>
                 <Link to={"/dns"} className="block px-4 py-2 hover:bg-gray-200">
@@ -123,54 +97,36 @@ const Navbar = () => {
                 </Link>
                 <Link
                   to={"/icon-cloud"}
->>>>>>> dd36665654bf3e1177d7ec4cbd5decd3d05aafdc
                   className="block px-4 py-2 hover:bg-gray-200"
                 >
                   IconCloud
                 </Link>
                 <Link
-<<<<<<< HEAD
-                  to="/icon-filter"
-=======
                   to={"/icon-filter"}
->>>>>>> dd36665654bf3e1177d7ec4cbd5decd3d05aafdc
                   className="block px-4 py-2 hover:bg-gray-200"
                 >
                   IconFilter
                 </Link>
                 <Link
-<<<<<<< HEAD
-                  to="/icon-mail"
-=======
                   to={"/icon-mail"}
->>>>>>> dd36665654bf3e1177d7ec4cbd5decd3d05aafdc
                   className="block px-4 py-2 hover:bg-gray-200"
                 >
                   IconMail
                 </Link>
                 <Link
-<<<<<<< HEAD
-                  to="/icon-mon"
-=======
-                 to={"/icon-mon"}
->>>>>>> dd36665654bf3e1177d7ec4cbd5decd3d05aafdc
+                  to={"/icon-mon"}
                   className="block px-4 py-2 hover:bg-gray-200"
                 >
                   IconMonitoring
                 </Link>
-<<<<<<< HEAD
                 <Link
-                  to="/sanbox"
+                  to={"/sanbox"}
                   className="block px-4 py-2 hover:bg-gray-200"
                 >
-=======
-                <Link to={"/sanbox"} className="block px-4 py-2 hover:bg-gray-200">
->>>>>>> dd36665654bf3e1177d7ec4cbd5decd3d05aafdc
                   SandBox
                 </Link>
               </div>
             </div>
-<<<<<<< HEAD
             <Link
               to="/home"
               className="decoration-0 px-5 font-regular font-customFont text-[#ffffff] hover:underline hover:text-blue-500"
@@ -180,17 +136,6 @@ const Navbar = () => {
             <Link
               to="/home"
               className="decoration-0 px-5 font-regular font-customFont text-[#ffffff] hover:underline hover:text-blue-500"
-=======
-            <a
-              href="/home"
-              className="decoration-0 px-5 font-regular font-customFont text-[#000000] hover:underline hover:text-blue-500"
-            >
-              Lokasi
-            </a>
-            <a
-              href="/home"
-              className="decoration-0 px-5 font-regular font-customFont text-[#000000] hover:underline hover:text-blue-500"
->>>>>>> dd36665654bf3e1177d7ec4cbd5decd3d05aafdc
             >
               Bantuan
             </Link>
