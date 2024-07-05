@@ -1,14 +1,16 @@
+import Peta from "../../assets/peta.png";
+import Check from "../../assets/checklist.png";
 const Home = () => {
   return (
-    <div className="w-full h-full md:flex justify-between items-center px-[8%] py-[0%] md:py-[5%] flex-wrap">
-      <div className="flex justify-center mt-5 ">
+    <div className="w-full h-full flex items-center px-[5%] py-[0%] md:py-[5%] md:flex-nowrap sm:flex-wrap">
+      <div className="flex w-full justify-center mt-5 flex basis-[50%]">
         <img
-          src="../src/assets/peta.png"
+          src={Peta}
           alt=""
-          className="md:w-[600px] md:h-[350px] w-[300px] h-[300px] hover:scale-105 duration-300 rounded-xl"
+          className="md:w-[500px] md:h-[350px] w-[300px] h-[300px] hover:scale-105 duration-300 rounded-xl"
         />
       </div>
-      <div className="flex justify-center mt-5 md:mt-0 ml-5">
+      <div className="flex w-full justify-center mt-5 md:mt-0 ml-5 flex basis-[50%]">
         <div>
           <div className="atas">
             <h1 className="text-blue-600 font-semibold text-xl font-customFont mb-3">
@@ -22,11 +24,7 @@ const Home = () => {
           </div>
           <div className="bawah flex mt-5">
             <div className="kiri flex justify-center items-center">
-              <img
-                src="../src/assets/checklist.png"
-                alt=""
-                className="w-[20px] mr-5"
-              />
+              <img src={Check} alt="" className="w-[20px] mr-5" />
             </div>
             <div className="kanan">
               <h4 className="font-semibold text-xl font-customFont text-[#333] hover:text-[#3163b8] cursor-default">
@@ -36,11 +34,7 @@ const Home = () => {
           </div>
           <div className="bawah flex mt-5">
             <div className="kiri flex justify-center items-center">
-              <img
-                src="../src/assets/checklist.png"
-                alt=""
-                className="w-[20px] mr-5"
-              />
+              <img src={Check} alt="" className="w-[20px] mr-5" />
             </div>
             <div className="kanan">
               <h4 className="font-semibold text-xl font-customFont text-[#333] hover:text-[#3163b8] cursor-default">
@@ -50,11 +44,7 @@ const Home = () => {
           </div>
           <div className="bawah flex mt-5">
             <div className="kiri flex justify-center items-center">
-              <img
-                src="../src/assets/checklist.png"
-                alt=""
-                className="w-[20px] mr-5"
-              />
+              <img src={Check} alt="" className="w-[20px] mr-5" />
             </div>
             <div className="kanan">
               <h4 className="font-semibold text-xl font-customFont text-[#333] hover:text-[#3163b8] cursor-default">

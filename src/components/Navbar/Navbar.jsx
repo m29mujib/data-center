@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
   const [aboutDropdown, setAboutDropdown] = useState(false);
@@ -54,81 +54,84 @@ const Navbar = () => {
         <ul className="hidden md:flex">
           <li className="relative inline-block">
             {/* start nav main */}
-            <a
-              href="/"
+            <Link
+              to="/"
               className="decoration-0 px-5 font-regular font-customFont text-[#ffffff] hover:underline hover:text-blue-500"
             >
               Home
-            </a>
+            </Link>
             <div
               className="relative inline-block group"
               onMouseEnter={() => setAboutDropdown(true)}
               onMouseLeave={() => setAboutDropdown(false)}
             >
-              <a
-                href="#"
+              <Link
+                to="/home"
                 className="decoration-0 px-5 font-regular font-customFont text-[#ffffff] hover:underline hover:text-blue-500"
               >
                 Layanan
-              </a>
+              </Link>
               <div
                 className={`absolute bg-white text-black w-40 mt-2 rounded-md shadow-lg z-10 transition-opacity duration-300 ${
                   aboutDropdownVisible ? "opacity-100" : "opacity-0"
                 }`}
               >
-                <a
-                  href="collocation"
+                <Link
+                  to="/collocation"
                   className="block px-4 py-2 hover:bg-gray-200"
                 >
                   Colocation
-                </a>
-                <a href="ddos" className="block px-4 py-2 hover:bg-gray-200">
+                </Link>
+                <Link to="/ddos" className="block px-4 py-2 hover:bg-gray-200">
                   DDOS
-                </a>
-                <a href="dns" className="block px-4 py-2 hover:bg-gray-200">
+                </Link>
+                <Link to="/dns" className="block px-4 py-2 hover:bg-gray-200">
                   DNS
-                </a>
-                <a
-                  href="icon-cloud"
+                </Link>
+                <Link
+                  to="/icon-cloud"
                   className="block px-4 py-2 hover:bg-gray-200"
                 >
                   IconCloud
-                </a>
-                <a
-                  href="icon-filter"
+                </Link>
+                <Link
+                  to="/icon-filter"
                   className="block px-4 py-2 hover:bg-gray-200"
                 >
                   IconFilter
-                </a>
-                <a
-                  href="icon-mail"
+                </Link>
+                <Link
+                  to="/icon-mail"
                   className="block px-4 py-2 hover:bg-gray-200"
                 >
                   IconMail
-                </a>
-                <a
-                  href="icon-mon"
+                </Link>
+                <Link
+                  to="/icon-mon"
                   className="block px-4 py-2 hover:bg-gray-200"
                 >
                   IconMonitoring
-                </a>
-                <a href="sanbox" className="block px-4 py-2 hover:bg-gray-200">
+                </Link>
+                <Link
+                  to="/sanbox"
+                  className="block px-4 py-2 hover:bg-gray-200"
+                >
                   SandBox
-                </a>
+                </Link>
               </div>
             </div>
-            <a
-              href="/home"
+            <Link
+              to="/home"
               className="decoration-0 px-5 font-regular font-customFont text-[#ffffff] hover:underline hover:text-blue-500"
             >
               Lokasi
-            </a>
-            <a
-              href="/home"
+            </Link>
+            <Link
+              to="/home"
               className="decoration-0 px-5 font-regular font-customFont text-[#ffffff] hover:underline hover:text-blue-500"
             >
               Bantuan
-            </a>
+            </Link>
             {/* <a
               href="/home"
               className="decoration-0 px-5 font-regular font-customFont text-[#ffffff] hover:underline hover:text-blue-500"
@@ -136,12 +139,12 @@ const Navbar = () => {
               Blog
             </a> */}
             {/* end nav main */}
-            <a
-              href="/home"
+            <Link
+              to="/home"
               className="decoration-0 px-5 text-white bg-blue-500 font-semibold font-customFont py-3 rounded-sm hover:bg-blue-700 hover:text-white "
             >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
         <div

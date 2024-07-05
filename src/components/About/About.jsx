@@ -1,3 +1,4 @@
+import P from "../../assets/hp.png";
 const About = () => {
   return (
     <div className="w-full h-screen flex items-center justify-between px-[8%] flex-wrap">
@@ -24,7 +25,7 @@ const About = () => {
         <div className="flex justify-between">
           <div className="md:w-[350px] md:h-[350px] w-[300px] h-[300px] rounded-full bg-blue-600 relative border">
             <img
-              src="../src/assets/hp.png"
+              src={P}
               alt=""
               className="absolute top-[-0px] left-[-0px] md:w-[500px] md:h-[500px] w-[350px] h-[350px]"
             />

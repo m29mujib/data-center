@@ -1,7 +1,8 @@
+import Check from "../../assets/r.jpg";
 const Komunik = () => {
   return (
-    <div className="w-full h-full flex justify-between items-center px-[8%] py-[5%] flex-wrap-reverse">
-      <div className="flex justify-center">
+    <div className="w-full h-full flex justify-between items-center px-[5%] py-[5%] md:flex-nowrap flex-wrap-reverse">
+      <div className="w-full flex justify-center basis-[50%] p-5">
         <div>
           <div className="atas mt-5 md:mt-0">
             <p className="text-blue-600 font-semibold text-xl font-customFont mb-3">
@@ -20,11 +21,7 @@ const Komunik = () => {
           </div>
           <div className="bawah flex mt-5">
             <div className="kiri flex justify-center items-center">
-              <img
-                src="../src/assets/checklist.png"
-                alt=""
-                className="w-[20px] mr-5"
-              />
+              <img src={Check} alt="" className="w-[20px] mr-5" />
             </div>
             <div className="kanan">
               <p className="font-semibold text-xl font-customFont text-[#333] hover:text-[#3163b8] cursor-default">
@@ -34,11 +31,7 @@ const Komunik = () => {
           </div>
           <div className="bawah flex mt-5">
             <div className="kiri flex justify-center items-center">
-              <img
-                src="../src/assets/checklist.png"
-                alt=""
-                className="w-[20px] mr-5"
-              />
+              <img src={Check} alt="" className="w-[20px] mr-5" />
             </div>
             <div className="kanan">
               <p className="font-semibold text-xl font-customFont text-[#333] hover:text-[#3163b8] cursor-default">
@@ -48,11 +41,7 @@ const Komunik = () => {
           </div>
           <div class="bawah flex mt-5">
             <div class="kiri flex justify-center items-center">
-              <img
-                src="../src/assets/checklist.png"
-                alt=""
-                class="w-[20px] mr-5"
-              />
+              <img src={Check} alt="" class="w-[20px] mr-5" />
             </div>
             <div className="kanan">
               <p className="font-semibold text-xl font-customFont text-[#333] hover:text-[#3163b8] cursor-default">
@@ -62,11 +51,11 @@ const Komunik = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center">
+      <div className="w-full flex basis-[50%]">
         <img
-          src="../src/assets/r.jpg"
+          src={Check}
           alt=""
-          className="md:w-[600px] md:h-[370px] w-[300px] h-[300px] hover:scale-105 duration-300"
+          className="md:w-[500px] md:h-[370px] w-[300px] h-[300px] hover:scale-105 duration-300"
         />
       </div>
     </div>
