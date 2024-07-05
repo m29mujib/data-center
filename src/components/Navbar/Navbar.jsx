@@ -48,10 +48,8 @@ const Navbar = () => {
         </div>
       )}
       <div className="flex justify-center items-center">
-        <img src={logos} alt="" className="w-[30px] mr-[8px]" />
-        <h1 className="font-semibold tracking-wide font-customFont text-[#ffffff]">
-          Data Center
-        </h1>
+        <img src={logos} alt="" className="h-8 mr-4" />
+        <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">Data Center</span>
       </div>
 
       <div className="flex items-center justify-right">
