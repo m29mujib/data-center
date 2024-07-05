@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react";
+import logos from "../../assets/a.png";
+import images14 from "../../assets/close.png"
+import more from "../../assets/more.png"
 
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
@@ -44,7 +47,7 @@ const Navbar = () => {
         </div>
       )}
       <div className="flex justify-center items-center">
-        <img src="../src/assets/a.png" alt="" className="w-[30px] mr-[8px]" />
+        <img src={logos} alt="" className="w-[30px] mr-[8px]" />
         <h1 className="font-semibold tracking-wide font-customFont text-[#ffffff]">
           Data Center
         </h1>
@@ -149,10 +152,8 @@ const Navbar = () => {
           onClick={() => setDropdown(!dropdown)}
         >
           <img
-            src={
-              dropdown ? "../src/assets/close.png" : "../src/assets/more.png"
-            }
-            alt=""
+            src={dropdown ? images14 : more}
+            alt={dropdown ? "Close menu" : "Open menu"}
             className="w-[30px] h-[30px] md:hidden text-[#ffffff]"
           />
         </div>
