@@ -3,14 +3,14 @@ import Check from "../../assets/checklist.png";
 const Home = () => {
   return (
     <div className="w-full h-full flex flex-col md:flex-row items-center px-[5%] py-[0%] md:py-[5%] md:flex-nowrap sm:flex-wrap">
-      <div className="flex w-full justify-center mt-5 flex basis-[50%]">
+      <div className="flex w-full justify-center mt-5 basis-[50%]">
         <img
           src={Peta}
           alt=""
-          className="md:w-[500px] md:h-[350px] w-[300px] h-[300px] hover:scale-105 duration-300 rounded-xl"
+          className="md:w-[600px] md:h-[370px] w-[300px] h-[300px] hover:scale-105 duration-300 rounded-xl"
         />
       </div>
-      <div className="flex w-full justify-center mt-5 md:mt-0 ml-5 flex basis-[50%]">
+      <div className=" w-full justify-center mt-5 md:mt-0 ml-5 flex basis-[50%]">
         <div className="w-full flex flex-col justify-center">
           <div className="atas">
             <h1 className="text-blue-600 font-semibold text-xl font-customFont mb-3">

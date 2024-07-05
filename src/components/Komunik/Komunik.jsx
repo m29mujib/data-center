@@ -56,7 +56,7 @@ const Komunik = () => {
         <img
           src={image11}
           alt=""
-          className="md:w-[600px] md:h-[370px] w-[300px] h-[300px] hover:scale-105 duration-300"
+          className="md:w-[600px] md:h-[370px] w-[300px] h-[300px] hover:scale-105 duration-300 rounded-xl"
         />
       </div>
     </div>
