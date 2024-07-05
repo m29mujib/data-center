@@ -25,31 +25,45 @@ const Navbar = () => {
         <div className="w-[200px] h-screen bg-[#fff] absolute top-0 right-0 z-[-99] flex flex-col justify-center items-center origin-right transition-all duration-700 ease-in-out transform translate-x-0">
           <ul className="flex flex-col justify-center items-center">
             <li className="flex flex-col justify-center items-center">
-              <a href="" className="p-5 hover:underline hover:text-blue-500">
+              <Link
+                to="/about"
+                className="p-5 hover:underline hover:text-blue-500"
+              >
                 About
-              </a>
-              <a href="" className="p-5 hover:underline hover:text-blue-500">
+              </Link>
+              <Link
+                to="/contact"
+                className="p-5 hover:underline hover:text-blue-500"
+              >
                 Kontak
-              </a>
-              <a href="" className="p-5 hover:underline hover:text-blue-500">
+              </Link>
+              <Link
+                to="/blog"
+                className="p-5 hover:underline hover:text-blue-500"
+              >
                 Blog
-              </a>
-              <a href="" className="p-5 hover:underline hover:text-blue-500">
+              </Link>
+              <Link
+                to="/apartment"
+                className="p-5 hover:underline hover:text-blue-500"
+              >
                 Apartment
-              </a>
-              <a href="" className="p-5 hover:underline hover:text-blue-500">
+              </Link>
+              <Link to="" className="p-5 hover:underline hover:text-blue-500">
                 Apartment
-              </a>
-              <a href="" className="p-5 hover:underline hover:text-blue-500">
+              </Link>
+              <Link to="" className="p-5 hover:underline hover:text-blue-500">
                 Apartment
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
       )}
       <div className="flex justify-center items-center">
         <img src={logos} alt="" className="h-8 mr-4" />
-        <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">Data Center</span>
+        <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
+          Data Center
+        </span>
       </div>
 
       <div className="flex items-center justify-right">
