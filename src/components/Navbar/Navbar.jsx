@@ -128,13 +128,13 @@ const Navbar = () => {
               </div>
             </div>
             <Link
-              to="/home"
+              to="#"
               className="decoration-0 px-5 font-regular font-customFont text-[#ffffff] hover:underline hover:text-blue-500"
             >
               Lokasi
             </Link>
             <Link
-              to="/home"
+              to="#"
               className="decoration-0 px-5 font-regular font-customFont text-[#ffffff] hover:underline hover:text-blue-500"
             >
               Bantuan
