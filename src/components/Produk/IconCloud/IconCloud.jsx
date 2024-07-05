@@ -1,6 +1,7 @@
 import CountUp, { useCountUp } from "react-countup";
 import React from "react";
 import Navbar from "../../Navbar/Navbar";
+import imageCloud from "../../../assets/IconCloud.gif"
 const IconCloud = () => {
   const incentives = [
     {
@@ -51,7 +52,7 @@ const IconCloud = () => {
               </div>
               <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">
                 <img
-                  src="../src/assets/IconCloud.gif"
+                  src={imageCloud}
                   alt=""
                   className="object-cover object-center"
                 />

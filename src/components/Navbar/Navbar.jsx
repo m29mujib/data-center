@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
@@ -76,45 +77,45 @@ const Navbar = () => {
                   aboutDropdownVisible ? "opacity-100" : "opacity-0"
                 }`}
               >
-                <a
-                  href="collocation"
+                <Link
+                  to={"/collocation"}
                   className="block px-4 py-2 hover:bg-gray-200"
                 >
                   Colocation
-                </a>
-                <a href="ddos" className="block px-4 py-2 hover:bg-gray-200">
+                </Link>
+                <Link to={"/ddos"} className="block px-4 py-2 hover:bg-gray-200">
                   DDOS
-                </a>
-                <a href="dns" className="block px-4 py-2 hover:bg-gray-200">
+                </Link>
+                <Link to={"/dns"} className="block px-4 py-2 hover:bg-gray-200">
                   DNS
-                </a>
-                <a
-                  href="icon-cloud"
+                </Link>
+                <Link
+                  to={"/icon-cloud"}
                   className="block px-4 py-2 hover:bg-gray-200"
                 >
                   IconCloud
-                </a>
-                <a
-                  href="icon-filter"
+                </Link>
+                <Link
+                  to={"/icon-filter"}
                   className="block px-4 py-2 hover:bg-gray-200"
                 >
                   IconFilter
-                </a>
-                <a
-                  href="icon-mail"
+                </Link>
+                <Link
+                  to={"/icon-mail"}
                   className="block px-4 py-2 hover:bg-gray-200"
                 >
                   IconMail
-                </a>
-                <a
-                  href="icon-mon"
+                </Link>
+                <Link
+                 to={"/icon-mon"}
                   className="block px-4 py-2 hover:bg-gray-200"
                 >
                   IconMonitoring
-                </a>
-                <a href="sanbox" className="block px-4 py-2 hover:bg-gray-200">
+                </Link>
+                <Link to={"/sanbox"} className="block px-4 py-2 hover:bg-gray-200">
                   SandBox
-                </a>
+                </Link>
               </div>
             </div>
             <a

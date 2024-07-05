@@ -1,6 +1,7 @@
 import CountUp, { useCountUp } from "react-countup";
 import React from "react";
 import Navbar from "../../Navbar/Navbar";
+import imageDdos  from "../../../assets/DDoS Protection & Hidden Master.gif"
 const DDOS = () => {
   const incentives = [
     {
@@ -56,7 +57,7 @@ const DDOS = () => {
               </div>
               <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">
                 <img
-                  src="../src/assets/DDoS Protection & Hidden Master.gif"
+                  src={imageDdos}
                   alt=""
                   className="object-cover object-center"
                 />

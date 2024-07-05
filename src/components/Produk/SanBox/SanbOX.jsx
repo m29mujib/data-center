@@ -1,6 +1,8 @@
 import CountUp, { useCountUp } from "react-countup";
 import React from "react";
 import Navbar from "../../Navbar/Navbar";
+import sanbox from "../../../assets/sanbox.gif"
+
 const SanBox = () => {
   const incentives = [
     {
@@ -53,7 +55,7 @@ const SanBox = () => {
               </div>
               <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">
                 <img
-                  src="../src/assets/sanbox.gif"
+                  src={sanbox}
                   alt=""
                   className="object-cover object-center"
                 />
