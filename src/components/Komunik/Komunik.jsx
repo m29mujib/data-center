@@ -22,11 +22,7 @@ const Komunik = () => {
           </div>
           <div className="bawah flex mt-5">
             <div className="kiri flex justify-center items-center">
-              <img
-                src="../src/assets/checklist.png"
-                alt=""
-                className="w-[20px] mr-5"
-              />
+              <img src={image12} alt="" className="w-[20px] mr-5" />
             </div>
             <div className="kanan">
               <p className="font-semibold text-xl font-customFont text-[#333] hover:text-[#3163b8] cursor-default">
@@ -36,11 +32,7 @@ const Komunik = () => {
           </div>
           <div className="bawah flex mt-5">
             <div className="kiri flex justify-center items-center">
-              <img
-                src="../src/assets/checklist.png"
-                alt=""
-                className="w-[20px] mr-5"
-              />
+              <img src={image12} alt="" className="w-[20px] mr-5" />
             </div>
             <div className="kanan">
               <p className="font-semibold text-xl font-customFont text-[#333] hover:text-[#3163b8] cursor-default">
@@ -50,11 +42,7 @@ const Komunik = () => {
           </div>
           <div class="bawah flex mt-5">
             <div class="kiri flex justify-center items-center">
-              <img
-                src="../src/assets/checklist.png"
-                alt=""
-                class="w-[20px] mr-5"
-              />
+              <img src={image12} alt="" class="w-[20px] mr-5" />
             </div>
             <div className="kanan">
               <p className="font-semibold text-xl font-customFont text-[#333] hover:text-[#3163b8] cursor-default">
@@ -66,7 +54,7 @@ const Komunik = () => {
       </div>
       <div className="w-full flex basis-[50%]">
         <img
-          src="../src/assets/r.jpg"
+          src={image11}
           alt=""
           className="md:w-[600px] md:h-[370px] w-[300px] h-[300px] hover:scale-105 duration-300"
         />
