@@ -1,6 +1,11 @@
 import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
+import image17 from "../../assets/aa.jpg";
+import image13 from "../../assets/comm1.jpg";
+import image15 from "../../assets/comm2.jpg";
+import image14 from "../../assets/comm3.jpg";
+import image16 from "../../assets/r.jpg";
 
 const Kolaborate = () => {
   const handleDragStart = (e) => e.preventDefault();
@@ -8,7 +13,7 @@ const Kolaborate = () => {
   const items = [
     <div className="mx-[10px]" key="1">
       <img
-        src="../src/assets/comm1.jpg"
+        src={image13}
         className="w-[600px] h-[190px] rounded-lg"
         onDragStart={handleDragStart}
         role="presentation"
@@ -16,7 +21,7 @@ const Kolaborate = () => {
     </div>,
     <div className="mx-[10px]" key="2">
       <img
-        src="../src/assets/comm3.jpg"
+        src={image14}
         className="w-[600px] h-[190px] rounded-lg"
         onDragStart={handleDragStart}
         role="presentation"
@@ -24,7 +29,7 @@ const Kolaborate = () => {
     </div>,
     <div className="mx-[10px]" key="3">
       <img
-        src="../src/assets/comm2.jpg"
+        src={image15}
         className="w-[600px] h-[190px] rounded-lg"
         onDragStart={handleDragStart}
         role="presentation"
@@ -32,7 +37,7 @@ const Kolaborate = () => {
     </div>,
     <div className="mx-[10px]" key="4">
       <img
-        src="../src/assets/r.jpg"
+        src={image16}
         className="w-[600px] h-[190px] rounded-lg"
         onDragStart={handleDragStart}
         role="presentation"
@@ -40,7 +45,7 @@ const Kolaborate = () => {
     </div>,
     <div className="mx-[10px]" key="4">
       <img
-        src="../src/assets/aa.jpg"
+        src={image17}
         className="w-[600px] h-[190px] rounded-lg"
         onDragStart={handleDragStart}
         role="presentation"
@@ -51,7 +56,10 @@ const Kolaborate = () => {
   return (
     <div className="w flex flex-col items-center justify-center px-[5%] py-[3%] md:px-[5%] md:py-[5%]">
       <div>
-        <h1 className="text-4xl font-customFont text-[#333] mb-10"> Data Center Icon Plus</h1>
+        <h1 className="text-4xl font-customFont text-[#333] mb-10">
+          {" "}
+          Data Center Icon Plus
+        </h1>
       </div>
       <div className="w-full h-full mt-5">
         <AliceCarousel

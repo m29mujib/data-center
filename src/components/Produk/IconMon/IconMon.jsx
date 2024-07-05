@@ -1,6 +1,7 @@
 import CountUp, { useCountUp } from "react-countup";
 import React from "react";
 import Navbar from "../../Navbar/Navbar";
+import iconMon from "../../../assets/IconMon - Modified.gif"
 const IconMon = () => {
     const incentives = [
       {
@@ -53,7 +54,7 @@ const IconMon = () => {
               </div>
               <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">
                 <img
-                  src="../src/assets/IconMon - Modified.gif"
+                  src={iconMon}
                   alt=""
                   className="object-cover object-center"
                 />

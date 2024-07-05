@@ -1,6 +1,8 @@
 import CountUp, { useCountUp } from "react-countup";
 import React from "react";
 import Navbar from "../../Navbar/Navbar";
+import iconMail from "../../../assets/Iconmail Blasting & Marketing.gif"
+
 const IconMail = () => {
   const incentives = [
     {
@@ -49,7 +51,7 @@ const IconMail = () => {
               </div>
               <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">
                 <img
-                  src="../src/assets/Iconmail Blasting & Marketing.gif"
+                  src={iconMail}
                   alt=""
                   className="object-cover object-center"
                 />

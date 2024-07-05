@@ -1,6 +1,8 @@
 import CountUp, { useCountUp } from "react-countup";
 import React from "react";
 import Navbar from "../../Navbar/Navbar";
+import dns from "../../../assets/DNS GSLB RV.gif"
+
 const DNS = () => {
   const incentives = [
     {
@@ -48,7 +50,7 @@ const DNS = () => {
               </div>
               <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">
                 <img
-                  src="../src/assets/DNS GSLB RV.gif"
+                  src={dns}
                   alt=""
                   className="object-cover object-center"
                 />
