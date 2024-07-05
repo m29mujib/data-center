@@ -84,11 +84,11 @@ const HorizontalParallax = () => {
                     {texts[index].subtitle}
                   </h2>
                 </div>
-                <div className="bawah flex flex-col w-[90%] items-center w-full">
+                <div className="bawah flex flex-col w-[90%] items-center ">
                   <p className="text-description font-customFont tracking-wide">
                     {texts[index].description}
                   </p>
-                  <p className="text-extended-description font-customFont tracking-wide">
+                  <p className="text-extended-description font-customFont tracking-wide md:px-24 lg:px-24">
                     {texts[index].extendedDescription}
                   </p>
                 </div>

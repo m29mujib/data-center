@@ -22,7 +22,7 @@ const SanBox = () => {
     {
       name: "Behavior Monitoring",
       imageSrc:
-        "https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg",
+        "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
       description:
         "Memantau perilaku file atau kode selama eksekusi dalam sandbox, memungkinkan identifikasi pola perilaku berbahaya untuk pencegahan yang lebih akurat dan efektif.",
     },
