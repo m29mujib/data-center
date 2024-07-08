@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logos from "../../assets/a.png";
 import images14 from "../../assets/close.png";
 import more from "../../assets/more.png";
@@ -8,6 +8,7 @@ const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
   const [aboutDropdown, setAboutDropdown] = useState(false);
   const [aboutDropdownVisible, setAboutDropdownVisible] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     let timer;
@@ -19,22 +20,61 @@ const Navbar = () => {
     return () => clearTimeout(timer);
   }, [aboutDropdown]);
 
+  const isActive = (path) => location.pathname === path;
+  const isLayananActive =
+    location.pathname.includes("/collocation") ||
+    location.pathname.includes("/ddos") ||
+    location.pathname.includes("/dns") ||
+    location.pathname.includes("/icon-cloud") ||
+    location.pathname.includes("/icon-filter") ||
+    location.pathname.includes("/icon-mail") ||
+    location.pathname.includes("/icon-mon") ||
+    location.pathname.includes("/sanbox");
+
   return (
     <div className="w-full h-[50px] bg-black bg-opacity-30 backdrop-blur-lg py-10 px-[8%] flex justify-between items-center fixed top-0 left-0 z-10">
       {dropdown && (
         <div className="w-[200px] h-screen bg-[#fff] absolute top-0 right-0 z-10 flex flex-col justify-center items-center transition-all duration-700 ease-in-out transform translate-x-0">
           <ul className="flex flex-col justify-center items-center">
             <li className="flex flex-col justify-center items-center">
-              <Link to="/" className="p-5 hover:underline hover:text-blue-500">
+              <Link
+                to="/"
+                className={`p-5 ${
+                  isActive("/")
+                    ? "underline text-blue-500"
+                    : "hover:underline hover:text-blue-500"
+                }`}
+              >
                 Home
               </Link>
-              <Link to="#" className="p-5 hover:underline hover:text-blue-500">
+              <Link
+                to="#"
+                className={`p-5 ${
+                  isLayananActive
+                    ? "underline text-blue-500"
+                    : "hover:underline hover:text-blue-500"
+                }`}
+              >
                 Layanan
               </Link>
-              <Link to="#" className="p-5 hover:underline hover:text-blue-500">
+              <Link
+                to="#"
+                className={`p-5 ${
+                  isActive("/lokasi")
+                    ? "underline text-blue-500"
+                    : "hover:underline hover:text-blue-500"
+                }`}
+              >
                 Lokasi
               </Link>
-              <Link to="#" className="p-5 hover:underline hover:text-blue-500">
+              <Link
+                to="#"
+                className={`p-5 ${
+                  isActive("/bantuan")
+                    ? "underline text-blue-500"
+                    : "hover:underline hover:text-blue-500"
+                }`}
+              >
                 Bantuan
               </Link>
             </li>
@@ -53,7 +93,11 @@ const Navbar = () => {
           <li className="relative inline-block">
             <Link
               to={"/"}
-              className="decoration-0 px-5 font-medium font-customFont text-[#fff] hover:underline hover:text-blue-500"
+              className={`decoration-0 px-5 font-medium font-customFont ${
+                isActive("/")
+                  ? "underline text-blue-500"
+                  : "text-[#fff] hover:underline hover:text-blue-500"
+              }`}
             >
               Home
             </Link>
@@ -64,7 +108,11 @@ const Navbar = () => {
             >
               <Link
                 to={"#"}
-                className="decoration-0 px-5 font-medium font-customFont text-[#fff] hover:underline hover:text-blue-500"
+                className={`decoration-0 px-5 font-medium font-customFont ${
+                  isLayananActive
+                    ? "underline text-blue-500"
+                    : "text-[#fff] hover:underline hover:text-blue-500"
+                }`}
               >
                 Layanan
               </Link>
@@ -76,49 +124,75 @@ const Navbar = () => {
                 >
                   <Link
                     to={"/collocation"}
-                    className="block px-4 py-2 hover:bg-gray-200"
+                    className={`block px-4 py-2 ${
+                      isActive("/collocation")
+                        ? "bg-gray-200"
+                        : "hover:bg-gray-200"
+                    }`}
                   >
                     Colocation
                   </Link>
                   <Link
                     to={"/ddos"}
-                    className="block px-4 py-2 hover:bg-gray-200"
+                    className={`block px-4 py-2 ${
+                      isActive("/ddos") ? "bg-gray-200" : "hover:bg-gray-200"
+                    }`}
                   >
                     DDOS
                   </Link>
                   <Link
                     to={"/dns"}
-                    className="block px-4 py-2 hover:bg-gray-200"
+                    className={`block px-4 py-2 ${
+                      isActive("/dns") ? "bg-gray-200" : "hover:bg-gray-200"
+                    }`}
                   >
                     DNS
                   </Link>
                   <Link
                     to={"/icon-cloud"}
-                    className="block px-4 py-2 hover:bg-gray-200"
+                    className={`block px-4 py-2 ${
+                      isActive("/icon-cloud")
+                        ? "bg-gray-200"
+                        : "hover:bg-gray-200"
+                    }`}
                   >
                     IconCloud
                   </Link>
                   <Link
                     to={"/icon-filter"}
-                    className="block px-4 py-2 hover:bg-gray-200"
+                    className={`block px-4 py-2 ${
+                      isActive("/icon-filter")
+                        ? "bg-gray-200"
+                        : "hover:bg-gray-200"
+                    }`}
                   >
                     IconFilter
                   </Link>
                   <Link
                     to={"/icon-mail"}
-                    className="block px-4 py-2 hover:bg-gray-200"
+                    className={`block px-4 py-2 ${
+                      isActive("/icon-mail")
+                        ? "bg-gray-200"
+                        : "hover:bg-gray-200"
+                    }`}
                   >
                     IconMail
                   </Link>
                   <Link
                     to={"/icon-mon"}
-                    className="block px-4 py-2 hover:bg-gray-200"
+                    className={`block px-4 py-2 ${
+                      isActive("/icon-mon")
+                        ? "bg-gray-200"
+                        : "hover:bg-gray-200"
+                    }`}
                   >
                     IconMonitoring
                   </Link>
                   <Link
                     to={"/sanbox"}
-                    className="block px-4 py-2 hover:bg-gray-200"
+                    className={`block px-4 py-2 ${
+                      isActive("/sanbox") ? "bg-gray-200" : "hover:bg-gray-200"
+                    }`}
                   >
                     SandBox
                   </Link>
@@ -127,19 +201,31 @@ const Navbar = () => {
             </div>
             <Link
               to="#"
-              className="decoration-0 px-5 font-medium font-customFont text-[#fff] hover:underline hover:text-blue-500"
+              className={`decoration-0 px-5 font-medium font-customFont ${
+                isActive("#lokasi")
+                  ? "underline text-blue-500"
+                  : "text-[#fff] hover:underline hover:text-blue-500"
+              }`}
             >
               Lokasi
             </Link>
             <Link
               to="#"
-              className="decoration-0 px-5 font-medium font-customFont text-[#fff] hover:underline hover:text-blue-500"
+              className={`decoration-0 px-5 font-medium font-customFont ${
+                isActive("#bantuan")
+                  ? "underline text-blue-500"
+                  : "text-[#fff] hover:underline hover:text-blue-500"
+              }`}
             >
               Bantuan
             </Link>
             <Link
               to="/home"
-              className="decoration-0 px-5 text-white bg-blue-500 font-medium font-customFont py-3 rounded-md hover:bg-blue-700 hover:text-white"
+              className={`decoration-0 px-5 text-white bg-blue-500 font-medium font-customFont py-3 rounded-md ${
+                isActive("/home")
+                  ? "bg-blue-700 text-white"
+                  : "hover:bg-blue-700 hover:text-white"
+              }`}
             >
               Contact
             </Link>
