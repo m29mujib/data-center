@@ -3,6 +3,8 @@ import { ParallaxProvider, Parallax } from "react-scroll-parallax";
 import image1 from "../../assets/comm1.jpg"; // Adjust the path according to your folder structure
 import image2 from "../../assets/comm2.jpg";
 import image3 from "../../assets/comm3.jpg";
+import Left from "../../assets/left-arrow.png";
+import Right from "../../assets/right-arrow.png";
 import "./HarizontalParallax.css"; // Make sure to create and link your CSS file
 
 const HorizontalParallax = () => {
@@ -97,10 +99,10 @@ const HorizontalParallax = () => {
           </Parallax>
         ))}
         <button className="nav-button prev-button" onClick={handlePrev}>
-          &#8249;
+          <img src={Left} className="w-[12px] h-[12px]" />
         </button>
         <button className="nav-button next-button" onClick={handleNext}>
-          &#8250;
+          <img src={Right} className="w-[12px] h-[12px]" />
         </button>
       </div>
     </ParallaxProvider>
