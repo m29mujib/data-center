@@ -220,7 +220,7 @@ const Navbar = () => {
               Bantuan
             </Link>
             <Link
-              to="/home"
+              to="#"
               className={`decoration-0 px-5 text-white bg-blue-500 font-medium font-customFont py-3 rounded-md ${
                 isActive("/home")
                   ? "bg-blue-700 text-white"
