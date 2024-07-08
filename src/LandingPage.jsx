@@ -8,6 +8,7 @@ import Search from "./components/Pencarian/Search";
 import Footer from "./components/Footer/Footer";
 import HorizontalParallax from "./components/BannerParallax/Paralax";
 import Contact from "./components/Contact/Contact";
+import { Lokasi } from "./components/lokasi/Lokasi";
 
 function LandingPage() {
   return (
@@ -21,6 +22,7 @@ function LandingPage() {
       <Kolaborate />
       {/* <Search /> */}
       <Contact />
+      <Lokasi />
       {/* <Search /> */}
       <Footer />
     </>
