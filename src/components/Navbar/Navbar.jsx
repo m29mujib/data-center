@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logos from "../../assets/a.png";
-import images14 from "../../assets/close.png";
+import Images14 from "../../assets/close.png";
 import more from "../../assets/more.png";
 
 const Navbar = () => {
@@ -45,14 +45,76 @@ const Navbar = () => {
               >
                 Home
               </Link>
-              <Link
-                to="#"
-                className={`p-5 ${
-                  isLayananActive ? "text-blue-500" : "hover:text-blue-500"
-                }`}
+              <div
+                className="relative inline-block"
+                onMouseEnter={() => setAboutDropdown(true)}
+                onMouseLeave={() => setAboutDropdown(false)}
               >
-                Layanan
-              </Link>
+                <Link
+                  to="#"
+                  className={`p-5 ${
+                    isLayananActive ? "text-blue-500" : "hover:text-blue-500"
+                  }`}
+                >
+                  Layanan
+                </Link>
+                {aboutDropdownVisible && (
+                  <div
+                    className="absolute bg-white text-black w-40 mt-2 rounded-md shadow-lg z-10"
+                    onMouseEnter={() => setAboutDropdown(true)}
+                    onMouseLeave={() => setAboutDropdown(false)}
+                  >
+                    <Link
+                      to={"/collocation"}
+                      className="block px-4 py-2 hover:bg-gray-200"
+                    >
+                      Colocation
+                    </Link>
+                    <Link
+                      to={"/ddos"}
+                      className="block px-4 py-2 hover:bg-gray-200"
+                    >
+                      DDOS
+                    </Link>
+                    <Link
+                      to={"/dns"}
+                      className="block px-4 py-2 hover:bg-gray-200"
+                    >
+                      DNS
+                    </Link>
+                    <Link
+                      to={"/icon-cloud"}
+                      className="block px-4 py-2 hover:bg-gray-200"
+                    >
+                      IconCloud
+                    </Link>
+                    <Link
+                      to={"/icon-filter"}
+                      className="block px-4 py-2 hover:bg-gray-200"
+                    >
+                      IconFilter
+                    </Link>
+                    <Link
+                      to={"/icon-mail"}
+                      className="block px-4 py-2 hover:bg-gray-200"
+                    >
+                      IconMail
+                    </Link>
+                    <Link
+                      to={"/icon-mon"}
+                      className="block px-4 py-2 hover:bg-gray-200"
+                    >
+                      IconMonitoring
+                    </Link>
+                    <Link
+                      to={"/sanbox"}
+                      className="block px-4 py-2 hover:bg-gray-200"
+                    >
+                      SandBox
+                    </Link>
+                  </div>
+                )}
+              </div>
               <Link
                 to="#"
                 className={`p-5 ${
@@ -228,9 +290,9 @@ const Navbar = () => {
           onClick={() => setDropdown(!dropdown)}
         >
           <img
-            src={dropdown ? images14 : more}
+            src={dropdown ? Images14 : more}
             alt={dropdown ? "Close menu" : "Open menu"}
-            className="w-[30px] h-[30px] md:hidden text-[#ffffff]"
+            className="w-[30px] h-[30px] md:hidden z-50 relative"
           />
         </div>
       </div>
