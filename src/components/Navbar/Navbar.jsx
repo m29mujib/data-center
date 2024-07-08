@@ -40,9 +40,7 @@ const Navbar = () => {
               <Link
                 to="/"
                 className={`p-5 ${
-                  isActive("/")
-                    ? "underline text-blue-500"
-                    : "hover:underline hover:text-blue-500"
+                  isActive("/") ? "text-blue-500" : "hover:text-blue-500"
                 }`}
               >
                 Home
@@ -50,9 +48,7 @@ const Navbar = () => {
               <Link
                 to="#"
                 className={`p-5 ${
-                  isLayananActive
-                    ? "underline text-blue-500"
-                    : "hover:underline hover:text-blue-500"
+                  isLayananActive ? "text-blue-500" : "hover:text-blue-500"
                 }`}
               >
                 Layanan
@@ -60,9 +56,7 @@ const Navbar = () => {
               <Link
                 to="#"
                 className={`p-5 ${
-                  isActive("/lokasi")
-                    ? "underline text-blue-500"
-                    : "hover:underline hover:text-blue-500"
+                  isActive("/lokasi") ? "text-blue-500" : "hover:text-blue-500"
                 }`}
               >
                 Lokasi
@@ -70,9 +64,7 @@ const Navbar = () => {
               <Link
                 to="#"
                 className={`p-5 ${
-                  isActive("/bantuan")
-                    ? "underline text-blue-500"
-                    : "hover:underline hover:text-blue-500"
+                  isActive("/bantuan") ? "text-blue-500" : "hover:text-blue-500"
                 }`}
               >
                 Bantuan
@@ -81,22 +73,22 @@ const Navbar = () => {
           </ul>
         </div>
       )}
-      <div className="flex justify-center items-center">
+      <Link to="/" className="flex justify-center items-center">
         <img src={logos} alt="" className="h-8 mr-4" />
         <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
           Data Center
         </span>
-      </div>
+      </Link>
 
       <div className="flex items-center justify-right">
         <ul className="hidden md:flex">
           <li className="relative inline-block">
             <Link
               to={"/"}
-              className={`decoration-0 px-5 font-medium font-customFont ${
+              className={`no-underline px-5 font-medium font-customFont ${
                 isActive("/")
-                  ? "underline text-blue-500"
-                  : "text-[#fff] hover:underline hover:text-blue-500"
+                  ? "text-blue-500"
+                  : "text-[#fff] hover:text-blue-500"
               }`}
             >
               Home
@@ -108,13 +100,13 @@ const Navbar = () => {
             >
               <Link
                 to={"#"}
-                className={`decoration-0 px-5 font-medium font-customFont ${
+                className={`no-underline px-5 font-medium font-customFont ${
                   isLayananActive
-                    ? "underline text-blue-500"
-                    : "text-[#fff] hover:underline hover:text-blue-500"
+                    ? "text-blue-500"
+                    : "text-[#fff] hover:text-blue-500"
                 }`}
               >
-                Layanan
+                Layanan <span className="ml-1">&#9662;</span>
               </Link>
               {aboutDropdownVisible && (
                 <div
@@ -201,27 +193,27 @@ const Navbar = () => {
             </div>
             <Link
               to="#"
-              className={`decoration-0 px-5 font-medium font-customFont ${
+              className={`no-underline px-5 font-medium font-customFont ${
                 isActive("#lokasi")
-                  ? "underline text-blue-500"
-                  : "text-[#fff] hover:underline hover:text-blue-500"
+                  ? "text-blue-500"
+                  : "text-[#fff] hover:text-blue-500"
               }`}
             >
               Lokasi
             </Link>
             <Link
               to="#"
-              className={`decoration-0 px-5 font-medium font-customFont ${
+              className={`no-underline px-5 font-medium font-customFont ${
                 isActive("#bantuan")
-                  ? "underline text-blue-500"
-                  : "text-[#fff] hover:underline hover:text-blue-500"
+                  ? "text-blue-500"
+                  : "text-[#fff] hover:text-blue-500"
               }`}
             >
               Bantuan
             </Link>
             <Link
-              to="#"
-              className={`decoration-0 px-5 text-white bg-blue-500 font-medium font-customFont py-3 rounded-md ${
+              to="/home"
+              className={`no-underline px-5 text-white bg-blue-500 font-medium font-customFont py-3 rounded-md ${
                 isActive("/home")
                   ? "bg-blue-700 text-white"
                   : "hover:bg-blue-700 hover:text-white"
