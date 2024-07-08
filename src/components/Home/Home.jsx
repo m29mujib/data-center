@@ -1,8 +1,13 @@
 import Peta from "../../assets/peta.png";
 import Check from "../../assets/checklist.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 const Home = () => {
+  AOS.init();
   return (
-    <div className="w-full h-full flex flex-col md:flex-row items-center px-[5%] py-[0%] md:py-[5%] md:flex-nowrap sm:flex-wrap">
+    <div className="w-full h-full flex flex-col md:flex-row items-center px-[5%] py-[0%] md:py-[5%] md:flex-nowrap sm:flex-wrap" data-aos="fade-right" data-aos-duration="3000">
       <div className="flex w-full justify-center mt-5 basis-[50%]">
         <img
           src={Peta}
@@ -10,7 +15,7 @@ const Home = () => {
           className="md:w-[600px] md:h-[370px] w-[300px] h-[300px] hover:scale-105 duration-300 rounded-xl"
         />
       </div>
-      <div className=" w-full justify-center mt-5 md:mt-0 ml-5 flex basis-[50%]">
+      <div className=" w-full justify-center mt-5 md:mt-0 ml-5 flex basis-[50%]" data-aos="fade-left" data-aos-duration="3000">
         <div className="w-full flex flex-col justify-center">
           <div className="atas">
             <h1 className="text-blue-600 font-semibold text-xl font-customFont mb-3">

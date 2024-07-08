@@ -153,7 +153,7 @@ const Navbar = () => {
                   : "text-[#fff] hover:text-blue-500"
               }`}
             >
-              Home
+              Beranda
             </Link>
             <div
               className="relative inline-block"
@@ -281,7 +281,7 @@ const Navbar = () => {
                   : "hover:bg-blue-700 hover:text-white"
               }`}
             >
-              Contact
+              Kontak
             </Link>
           </li>
         </ul>
