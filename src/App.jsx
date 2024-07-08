@@ -9,6 +9,7 @@ import Collocation from "./components/Produk/Collocation/Collocation";
 import IconFilter from "./components/Produk/IconFilter/IconFilter";
 import IconMon from "./components/Produk/IconMon/IconMon";
 import IconMail from "./components/Produk/IconMail/IconMail";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/collocation" element={<Collocation />} />
           <Route path="/icon-filter" element={<IconFilter />} />
           <Route path="/icon-mon" element={<IconMon />} />
+
         </Routes>
       </BrowserRouter>
     </>

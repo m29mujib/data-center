@@ -4,7 +4,7 @@ import F from "../../assets/printer.png";
 import L from "../../assets/placeholder.png";
 const Contact = () => {
   return (
-    <div class="w-full h-full flex justify-center items-center flex-wrap md:flex-nowrap py-[5%] bg-gray-100">
+    <div id="contact" class="w-full h-full flex justify-center items-center flex-wrap md:flex-nowrap py-[5%] bg-gray-100">
       <form class="md:max-w-[500px] m-5 md:m-0 w-[400px] h-[460px] md:h-[500px] bg-[#ededed] rounded-md px-8 py-[50px] mb-4 ">
         <div class="mb-4 flex">
           <div className="mr-5">
