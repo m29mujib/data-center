@@ -1,4 +1,4 @@
-export const Lokasi = () => {
+const Lokasi = () => {
   return (
     <div
       className="w-full h-screen flex flex-col justify-center items-center bg-gray-100"
@@ -17,3 +17,5 @@ export const Lokasi = () => {
     </div>
   );
 };
+
+export default Lokasi;
