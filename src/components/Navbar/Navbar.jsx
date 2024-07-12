@@ -1,10 +1,12 @@
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logos from "../../assets/a.png";
 import Images14 from "../../assets/close.png";
-import downloadIcon from "../../assets/download.png"; // Import your download icon
+// Import your download icon
+import brochurePdf from "../../../src/assets/BrochureIconPLN.pdf"; // pastikan path ini benar
 import more from "../../assets/more.png";
-
 
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
@@ -296,15 +298,11 @@ const Navbar = () => {
             </a>
             {/* Download Button */}
             <a
-              href="../../assets/BrochureIconPLN.pdf" // Path to your PDF file
-              className="no-underline px-5 text-white bg-[#00bcd4] font-medium font-customFont py-3 ml-2 rounded-md hover:bg-[#208c9a]"
-              download="BrochureIconPLN.pdf" // This attribute makes the browser download the file
+              href={brochurePdf}
+              download="brosur.pdf"
+              className="md:ml-5 no-underline px-5 text-white bg-blue-500 font-medium font-customFont py-3 rounded-md hover:bg-blue-700 hover:text-whiteitems-center"
             >
-              <img
-                src={downloadIcon}
-                alt="Download"
-                className="w-3 h-3 inline-block mr-1"
-              />
+              <FontAwesomeIcon icon={faDownload} className="mr-2" />
               Unduh Brosur
             </a>
           </li>
