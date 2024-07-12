@@ -38,7 +38,7 @@ const About = () => {
           </p>
         </div>
         <div className="flex items-center justify-between">
-          <div className="py-[100px] md:py-[0px] ">
+          <div className="py-[100px] md:py-[0px] basis-[50%]">
             <h1
               className="text-5xl font-semibold mb-5 max-w-[500px] font-customFont text-[#333]"
               data-aos="fade-right"
@@ -51,7 +51,8 @@ const About = () => {
               data-aos="fade-right"
               data-aos-duration="3000"
             >
-              Menjadi penyedia solusi TIK terkemuka di Indonesia berbasis jaringan melalui pemanfaatan aset strategis.
+              Menjadi penyedia solusi TIK terkemuka di Indonesia berbasis
+              jaringan melalui pemanfaatan aset strategis.
             </p>
             {/* <p
               className="text-sm max-w-[500px] font-customFont text-[#333]"
@@ -76,12 +77,12 @@ const About = () => {
               Read More
             </button>
           </div>
-          <div className="flex">
+          <div className="flex basis-[50%]">
             <div className="flex justify-between w-full">
               <img
                 src={M}
                 alt=""
-                className="md:w-[400px] md:h-[400px] w-[350px] h-[350px] rounded-md"
+                className="md:w-[600px] md:h-[370px] w-[350px] h-[350px] hover:scale-105 duration-300 rounded-md"
                 data-aos="fade-right"
                 data-aos-duration="3000"
               />
@@ -91,11 +92,11 @@ const About = () => {
       </div>
       <div className="w-full h-full flex px-[8%] flex-wrap justify-center my-[80px]">
         <div className="flex items-center justify-between w-full">
-          <div className="flex">
+          <div className="flex mr-8">
             <img
               src={P}
               alt=""
-              className="md:w-[400px] md:h-[400px] w-[350px] h-[350px] rounded-md"
+              className="md:w-[600px] md:h-[370px] w-[350px] h-[350px] hover:scale-105 duration-300 rounded-md"
               data-aos="fade-left"
               data-aos-duration="3000"
             />
@@ -121,14 +122,18 @@ const About = () => {
               data-aos="fade-left"
               data-aos-duration="3000"
             >
-              Memenuhi kebutuhan dan harapan PLN secara proaktif dengan menyediakan solusi-solusi TIK yang inovatif dan memberikan nilai tambah.
+              Memenuhi kebutuhan dan harapan PLN secara proaktif dengan
+              menyediakan solusi-solusi TIK yang inovatif dan memberikan nilai
+              tambah.
             </p>
             <p
               className="text-sm max-w-[500px] font-customFont text-[#333]"
               data-aos="fade-left"
               data-aos-duration="3000"
             >
-              Membangun organisasi pembelajar yang berkinerja tinggi untuk mendorong Perusahaan mencapai bisnis yang unggul dan menjadi pilihan bagi talenta-talenta terbaik.
+              Membangun organisasi pembelajar yang berkinerja tinggi untuk
+              mendorong Perusahaan mencapai bisnis yang unggul dan menjadi
+              pilihan bagi talenta-talenta terbaik.
             </p>
             <p
               className="text-sm max-w-[500px] font-customFont text-[#333]"
