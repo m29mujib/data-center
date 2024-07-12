@@ -58,7 +58,7 @@ const Kolaborate = () => {
       <div>
         <h1 className="md:text-4xl text-2xl font-bold font-customFont text-[#333] mb-5">
           {" "}
-          Data Center Icon Plus
+          Sertifikasi kami
         </h1>
       </div>
       <div className="w-full h-full mt-5">

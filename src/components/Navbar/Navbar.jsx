@@ -5,6 +5,7 @@ import Images14 from "../../assets/close.png";
 import downloadIcon from "../../assets/download.png"; // Import your download icon
 import more from "../../assets/more.png";
 
+
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
   const [aboutDropdown, setAboutDropdown] = useState(false);
@@ -434,7 +435,6 @@ const Navbar = () => {
             </div>
             <Link
               to="#lokasi"
-              onClick={scrollToContact}
               className={`no-underline px-5 font-medium font-customFont ${
                 isActive("#lokasi")
                   ? "text-blue-500"
@@ -466,8 +466,9 @@ const Navbar = () => {
             </a>
             {/* Download Button */}
             <a
-              href="#download"
+              href="../../assets/BrochureIconPLN.pdf" // Path to your PDF file
               className="no-underline px-5 text-white bg-[#00bcd4] font-medium font-customFont py-3 ml-2 rounded-md hover:bg-[#208c9a]"
+              download="BrochureIconPLN.pdf" // This attribute makes the browser download the file
             >
               <img
                 src={downloadIcon}

@@ -1,7 +1,8 @@
 import CountUp, { useCountUp } from "react-countup";
 import React from "react";
 import Navbar from "../../Navbar/Navbar";
-import iconMail from "../../../assets/Iconmail Blasting & Marketing.gif"
+import iconMail from "../../../assets/Iconmail Blasting & Marketing.gif";
+import Footer from "../../Footer/Footer";
 
 const IconMail = () => {
   const incentives = [
@@ -80,6 +81,7 @@ const IconMail = () => {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </div>
   );

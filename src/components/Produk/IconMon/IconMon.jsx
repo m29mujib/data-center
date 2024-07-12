@@ -1,31 +1,32 @@
 import CountUp, { useCountUp } from "react-countup";
 import React from "react";
 import Navbar from "../../Navbar/Navbar";
-import iconMon from "../../../assets/IconMon - Modified.gif"
+import Footer from "../../Footer/Footer";
+import iconMon from "../../../assets/IconMon - Modified.gif";
 const IconMon = () => {
-    const incentives = [
-      {
-        name: "Real-Time Monitoring",
-        imageSrc:
-          "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
-        description:
-          "Memantau performa jaringan, server, dan aplikasi secara real-time.",
-      },
-      {
-        name: "Statistic Analysis",
-        imageSrc:
-          "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
-        description:
-          "Menyediakan visualisasi data yang mudah dipahami dengan dasbor yang dapat disesuaikan.",
-      },
-      {
-        name: "Service Desk Efficiency",
-        imageSrc:
-          "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
-        description:
-          "Memberikan laporan analitik yang mendalam untuk membantu pengambilan keputusan yang cepat dan tepat.",
-      },
-    ];
+  const incentives = [
+    {
+      name: "Real-Time Monitoring",
+      imageSrc:
+        "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
+      description:
+        "Memantau performa jaringan, server, dan aplikasi secara real-time.",
+    },
+    {
+      name: "Statistic Analysis",
+      imageSrc:
+        "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
+      description:
+        "Menyediakan visualisasi data yang mudah dipahami dengan dasbor yang dapat disesuaikan.",
+    },
+    {
+      name: "Service Desk Efficiency",
+      imageSrc:
+        "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
+      description:
+        "Memberikan laporan analitik yang mendalam untuk membantu pengambilan keputusan yang cepat dan tepat.",
+    },
+  ];
   return (
     <div>
       <Navbar />
@@ -83,9 +84,10 @@ const IconMon = () => {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </div>
   );
-      }
+};
 
 export default IconMon;

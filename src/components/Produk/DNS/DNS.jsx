@@ -2,6 +2,7 @@ import CountUp, { useCountUp } from "react-countup";
 import React from "react";
 import Navbar from "../../Navbar/Navbar";
 import dns from "../../../assets/DNS GSLB RV.gif"
+import Footer from "../../Footer/Footer";
 
 const DNS = () => {
   const incentives = [
@@ -49,11 +50,7 @@ const DNS = () => {
                 </p>
               </div>
               <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">
-                <img
-                  src={dns}
-                  alt=""
-                  className="object-cover object-center"
-                />
+                <img src={dns} alt="" className="object-cover object-center" />
               </div>
             </div>
             <div className="mt-16 grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-3">
@@ -79,6 +76,7 @@ const DNS = () => {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </div>
   );
