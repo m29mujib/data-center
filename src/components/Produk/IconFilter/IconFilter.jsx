@@ -14,10 +14,10 @@ const IconFilter = () => {
       imageSrc:
         "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
       description:
-        "Sistem ini memastikan email yang dikirim/diterima melalui jaringan ICON+ atau provider lain telah difilter dan dibersihkan dari konten berbahaya, difilter oleh dua brand berbeda untuk meningkatkan akurasi dan keandalan proteksi, meningkatkan keamanan dan keandalan komunikasi email.",
+        "Sistem ini memastikan email yang dikirim/diterima melalui jaringan PLN ICON Plus atau provider lain telah difilter dan dibersihkan dari konten berbahaya, difilter oleh dua brand berbeda untuk meningkatkan akurasi dan keandalan proteksi, meningkatkan keamanan dan keandalan komunikasi email.",
     },
     {
-      name: "Optimalisasi Reputasi email",
+      name: "Email Reputation Optimization",
       imageSrc:
         "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
       description:
@@ -44,9 +44,9 @@ const IconFilter = () => {
                 </h2>
                 <p className="mt-4 text-gray-500">
                   ICONMAIL Filtering adalah solusi penyaringan email yang
-                  efektif dari ICON+ yang dirancang untuk melindungi jaringan
-                  dari berbagai ancaman siber. Dengan menggunakan metode
-                  penyaringan berlapis, email yang masuk akan melalui
+                  efektif dari PLN ICON Plus yang dirancang untuk melindungi
+                  jaringan dari berbagai ancaman siber. Dengan menggunakan
+                  metode penyaringan berlapis, email yang masuk akan melalui
                   serangkaian filter dari dua brand berbeda, masing-masing
                   dengan database dan signature mereka sendiri. Pendekatan ini
                   memastikan bahwa proteksi lebih akurat dan andal, karena jika
@@ -60,7 +60,7 @@ const IconFilter = () => {
                 <a
                   href={brochurePdf}
                   download="brosur.pdf"
-                  className="mt-4 md:mt-8 no-underline px-5 text-white bg-blue-500 font-medium font-customFont py-3 rounded-md hover:bg-blue-700 hover:text-white flex items-center justify-center"
+                  className="mt-3 md:mt-5 no-underline px-5 text-blue-500 bg-white border border-blue-500 font-medium font-customFont py-3 rounded-md hover:bg-blue-700 hover:text-white flex items-center justify-center"
                 >
                   <FontAwesomeIcon icon={faDownload} className="mr-2" />
                   Unduh Brosur

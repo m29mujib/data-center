@@ -6,8 +6,8 @@ const Komunik = () => {
     <div className="w-full h-full flex flex-col md:flex-row justify-between items-center px-[5%] py-[5%] md:flex-nowrap flex-wrap-reverse">
       <div
         className="w-full flex justify-center basis-[50%] p-5"
-        data-aos="fade-left"
-        data-aos-duration="2000"
+        data-aos="fade-up"
+        data-aos-duration="3000"
       >
         <div>
           <div className="atas mt-5 md:mt-0">
@@ -58,8 +58,8 @@ const Komunik = () => {
       </div>
       <div
         className="w-full flex justify-center basis-[50%]"
-        data-aos="fade-left"
-        data-aos-duration="2000"
+        data-aos="fade-up"
+        data-aos-duration="3000"
       >
         <img
           src={image11}

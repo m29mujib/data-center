@@ -10,21 +10,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const IconRack = () => {
   const incentives = [
     {
-      name: "Pemantauan yang lebih efisien",
+      name: "More efficient monitoring",
       imageSrc:
         "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
       description:
         "Dengan smart monitoring, Anda dapat memantau kondisi rak secara real-time dari jarak jauh melalui aplikasi atau platform khusus. Hal ini memungkinkan Anda untuk mengidentifikasi masalah dengan cepat dan mengambil tindakan yang diperlukan.",
     },
     {
-      name: "Penghematan biaya",
+      name: "Cost savings",
       imageSrc:
         "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
       description:
         "Dengan adanya smart monitoring, Anda dapat mencegah kerusakan atau kehilangan barang yang disimpan di rak karena dapat melakukan pemantauan secara teratur. Hal ini dapat mengurangi biaya perbaikan atau penggantian barang yang rusak.",
     },
     {
-      name: "Peningkatan keamanan",
+      name: "Security improvements",
       imageSrc:
         "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
       description:
@@ -67,7 +67,7 @@ const IconRack = () => {
                 <a
                   href={brochurePdf}
                   download="brosur.pdf"
-                  className="mt-3 md:mt-5 no-underline px-5 text-white bg-blue-500 font-medium font-customFont py-3 rounded-md hover:bg-blue-700 hover:text-white flex items-center justify-center"
+                  className="mt-3 md:mt-5 no-underline px-5 text-blue-500 bg-white border border-blue-500 font-medium font-customFont py-3 rounded-md hover:bg-blue-700 hover:text-white flex items-center justify-center"
                 >
                   <FontAwesomeIcon icon={faDownload} className="mr-2" />
                   Unduh Brosur

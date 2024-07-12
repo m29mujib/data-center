@@ -259,7 +259,9 @@ const Navbar = () => {
               <Link
                 to="/page-lokasi"
                 className={`p-5 ${
-                  isActive("/page-lokasi") ? "text-blue-500" : "hover:text-blue-500"
+                  isActive("/page-lokasi")
+                    ? "text-blue-500"
+                    : "hover:text-blue-500"
                 }`}
               >
                 Lokasi
@@ -267,7 +269,9 @@ const Navbar = () => {
               <Link
                 to="/page-lokasi"
                 className={`p-5 ${
-                  isActive("/page-lokasi") ? "text-blue-500" : "hover:text-blue-500"
+                  isActive("/page-lokasi")
+                    ? "text-blue-500"
+                    : "hover:text-blue-500"
                 }`}
               >
                 Tentang Kami
@@ -446,7 +450,7 @@ const Navbar = () => {
                   <Link
                     to="/icon-rack"
                     className={`block px-4 py-2 ${
-                      isActive("/icon-mon")
+                      isActive("/icon-rack")
                         ? "bg-gray-200"
                         : "hover:bg-gray-200"
                     }`}
@@ -479,7 +483,7 @@ const Navbar = () => {
               Tentang Kami
             </Link>
             <Link
-            to="/page-contact"
+              to="/page-contact"
               // onClick={scrollToContact}
               className={`no-underline px-5 text-white bg-blue-500 font-medium font-customFont py-3 rounded-md ${
                 isActive("/page-contact")
@@ -492,7 +496,7 @@ const Navbar = () => {
             <a
               href={brochurePdf}
               download="BrosurDataCenterIconPlus.pdf"
-              className="md:ml-5 no-underline px-5 text-white bg-yellow-500 font-medium font-customFont py-3 rounded-md hover:bg-blue-700 hover:text-whiteitems-center"
+              className="md:ml-5 no-underline px-5 text-yellow-500 bg-transparent border-2 border-yellow-500 font-medium font-customFont py-3 rounded-md hover:bg-yellow-500 hover:text-white items-center"
             >
               <FontAwesomeIcon icon={faDownload} className="mr-2" />
               Unduh Brosur

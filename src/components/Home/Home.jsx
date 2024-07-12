@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div
       className="w-full h-full flex flex-col md:flex-row items-center px-[5%] py-[0%] md:py-[5%] md:flex-nowrap sm:flex-wrap"
-      data-aos="fade-right"
+      data-aos="fade-up"
       data-aos-duration="3000"
     >
       <div className="flex w-full justify-center mt-5 basis-[50%]">
@@ -20,7 +20,7 @@ const Home = () => {
       </div>
       <div
         className=" w-full justify-center mt-5 md:mt-0 ml-5 flex basis-[50%]"
-        data-aos="fade-rigth"
+        data-aos="fade-up"
         data-aos-duration="3000"
       >
         <div className="w-full flex flex-col justify-center">

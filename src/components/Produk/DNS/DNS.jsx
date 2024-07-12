@@ -70,7 +70,7 @@ const DNS = () => {
                 <a
                   href={brochurePdf}
                   download="brosur.pdf"
-                  className="mt-4 md:mt-8 no-underline px-5 text-white bg-blue-500 font-medium font-customFont py-3 rounded-md hover:bg-blue-700 hover:text-white flex items-center justify-center"
+                  className="mt-3 md:mt-5 no-underline px-5 text-blue-500 bg-white border border-blue-500 font-medium font-customFont py-3 rounded-md hover:bg-blue-700 hover:text-white flex items-center justify-center"
                 >
                   <FontAwesomeIcon icon={faDownload} className="mr-2" />
                   Unduh Brosur

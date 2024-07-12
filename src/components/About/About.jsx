@@ -11,19 +11,19 @@ const About = () => {
   return (
     <div className="w-full h-full">
       <Navbar />
-      <div className="mt-20 w-full h-full flex flex-col px-[8%] flex-wrap">
+      <div className="mt-8 w-full h-full flex flex-col px-[8%] flex-wrap">
         <div className="flex flex-col my-[80px]">
           <h1
             className=" text-5xl font-semibold mb-5 max-w-[500px] font-customFont text-[#333]"
-            data-aos="fade-right"
-            data-aos-duration="3000"
+            data-aos="fade-up"
+            data-aos-duration="1500"
           >
             Tentang Kami
           </h1>
           <p
             className="text-sm font-customFont text-[#333] w-[90%]"
-            data-aos="fade-right"
-            data-aos-duration="3000"
+            data-aos="fade-up"
+            data-aos-duration="1500"
           >
             PLN Icon Plus, bersama induk perusahaan PT PLN (Persero), terus
             mengembangkan layanan untuk melayani bangsa melalui teknologi
@@ -43,15 +43,15 @@ const About = () => {
           <div className="py-[100px] md:py-[0px] basis-[50%]">
             <h1
               className="text-5xl font-semibold mb-5 max-w-[500px] font-customFont text-[#333]"
-              data-aos="fade-right"
-              data-aos-duration="3000"
+              data-aos="fade-up"
+              data-aos-duration="1500"
             >
               Visi
             </h1>
             <p
               className="text-sm max-w-[500px] font-customFont text-[#333]"
-              data-aos="fade-right"
-              data-aos-duration="3000"
+              data-aos="fade-up"
+              data-aos-duration="1500"
             >
               Menjadi penyedia solusi TIK terkemuka di Indonesia berbasis
               jaringan melalui pemanfaatan aset strategis.
@@ -59,7 +59,7 @@ const About = () => {
             {/* <p
               className="text-sm max-w-[500px] font-customFont text-[#333]"
               data-aos="fade-right"
-              data-aos-duration="3000"
+              data-aos-duration="1500"
             >
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Accusamus, esse.
@@ -71,8 +71,8 @@ const About = () => {
                 src={M}
                 alt=""
                 className="md:w-[600px] md:h-[370px] w-[350px] h-[350px] hover:scale-105 duration-300 rounded-md"
-                data-aos="fade-right"
-                data-aos-duration="3000"
+                data-aos="fade-up"
+                data-aos-duration="1500"
               />
             </div>
           </div>
@@ -86,21 +86,21 @@ const About = () => {
               alt=""
               className="md:w-[600px] md:h-[370px] w-[350px] h-[350px] hover:scale-105 duration-300 rounded-md"
               data-aos="fade-left"
-              data-aos-duration="3000"
+              data-aos-duration="1500"
             />
           </div>
           <div className="py-[100px] md:py-[0px] ">
             <h1
               className="text-5xl font-semibold mb-5 max-w-[500px] font-customFont text-[#333]"
               data-aos="fade-left"
-              data-aos-duration="3000"
+              data-aos-duration="1500"
             >
               Misi
             </h1>
             <p
               className="text-sm max-w-[500px] font-customFont text-[#333]"
               data-aos="fade-left"
-              data-aos-duration="3000"
+              data-aos-duration="1500"
             >
               Memberikan layanan TIK yang terbaik di kelasnya kepada pelanggan
               guna meningkatkan nilai Perusahaan.
@@ -108,7 +108,7 @@ const About = () => {
             <p
               className="text-sm max-w-[500px] font-customFont text-[#333]"
               data-aos="fade-left"
-              data-aos-duration="3000"
+              data-aos-duration="1500"
             >
               Memenuhi kebutuhan dan harapan PLN secara proaktif dengan
               menyediakan solusi-solusi TIK yang inovatif dan memberikan nilai
@@ -117,7 +117,7 @@ const About = () => {
             <p
               className="text-sm max-w-[500px] font-customFont text-[#333]"
               data-aos="fade-left"
-              data-aos-duration="3000"
+              data-aos-duration="1500"
             >
               Membangun organisasi pembelajar yang berkinerja tinggi untuk
               mendorong Perusahaan mencapai bisnis yang unggul dan menjadi
@@ -126,7 +126,7 @@ const About = () => {
             <p
               className="text-sm max-w-[500px] font-customFont text-[#333]"
               data-aos="fade-left"
-              data-aos-duration="3000"
+              data-aos-duration="1500"
             >
               Memberi kontribusi terhadap perkembangan telekomunikasi nasional.
             </p>

@@ -10,11 +10,11 @@ const PageLokasi = () => {
   return (
     <div>
       <Navbar />
-      <div className="mt-20 w-full h-full flex flex-col md:flex-row items-start px-[5%] py-[0%] md:py-[5%]">
+      <div className="mt-8 w-full h-full flex flex-col md:flex-row items-start px-[5%] py-[0%] md:py-[5%]">
         <div
           className="w-full md:w-1/2 flex justify-center mt-5 md:mt-0 ml-5 flex-col"
-          data-aos="fade-right"
-          data-aos-duration="3000"
+          data-aos="fade-up"
+          data-aos-duration="1500"
         >
           <div className="w-full flex flex-col justify-center">
             <div className="atas">
@@ -63,8 +63,7 @@ const PageLokasi = () => {
         {/* card */}
         <div className="w-full md:w-1/2 h-full flex flex-col justify-center items-center mt-10 md:mt-0">
           <div className="bg-white shadow-md rounded-lg overflow-hidden w-full md:w-full mb-10">
-            <div className="p-6">
-              
+            <div className="p-6" data-aos="fade-up" data-aos-duration="1500">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15861.599909127817!2d106.77093690899608!3d-6.3422142737146165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ef7a739accb3%3A0xe5f8789ac9671f2a!2sKantor%20Icon%20Gandul!5e0!3m2!1sid!2sid!4v1720430642133!5m2!1sid!2sid"
                 allowFullScreen
