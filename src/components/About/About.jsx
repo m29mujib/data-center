@@ -72,11 +72,7 @@ const About = () => {
               <img
                 src={M}
                 alt=""
-<<<<<<< HEAD
                 className="md:w-[600px] md:h-[370px] w-[350px] h-[350px] hover:scale-105 duration-300 rounded-md"
-=======
-                className="md:w-[600px] md:h-[350px] w-[350px] h-[350px] rounded-md"
->>>>>>> aef205e3cf86f2ffba1f25d95d08be2370dbac09
                 data-aos="fade-right"
                 data-aos-duration="3000"
               />
@@ -90,11 +86,7 @@ const About = () => {
             <img
               src={P}
               alt=""
-<<<<<<< HEAD
               className="md:w-[600px] md:h-[370px] w-[350px] h-[350px] hover:scale-105 duration-300 rounded-md"
-=======
-              className="md:w-[600px] md:h-[350px] w-[350px] h-[350px] rounded-md"
->>>>>>> aef205e3cf86f2ffba1f25d95d08be2370dbac09
               data-aos="fade-left"
               data-aos-duration="3000"
             />
