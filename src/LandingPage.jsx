@@ -12,10 +12,10 @@ import Contact from "./components/Contact/Contact";
 function LandingPage() {
   return (
     <>
-      <HorizontalParallax />
-      {/* <About /> */}
       <Navbar />
+      <HorizontalParallax />
       <Iklan />
+      <About />
       <Home />
       <Komunik />
       <Kolaborate />
