@@ -96,8 +96,8 @@ const Collocation = () => {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
-
     </div>
   );
 };
