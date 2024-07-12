@@ -51,18 +51,16 @@ const About = () => {
               data-aos="fade-right"
               data-aos-duration="3000"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus voluptatum deleniti expedita quaerat necessitatibus
-              libero?
+              Menjadi penyedia solusi TIK terkemuka di Indonesia berbasis jaringan melalui pemanfaatan aset strategis.
             </p>
-            <p
+            {/* <p
               className="text-sm max-w-[500px] font-customFont text-[#333]"
               data-aos="fade-right"
               data-aos-duration="3000"
             >
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Accusamus, esse.
-            </p>
+            </p> */}
             <button
               className="py-2 px-5 bg-white text-gray-600 rounded-sm mt-10 mr-5 font-customFont text-[#333]"
               data-aos="fade-right"
@@ -115,17 +113,29 @@ const About = () => {
               data-aos="fade-left"
               data-aos-duration="3000"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus voluptatum deleniti expedita quaerat necessitatibus
-              libero?
+              Memberikan layanan TIK yang terbaik di kelasnya kepada pelanggan
+              guna meningkatkan nilai Perusahaan.
             </p>
             <p
               className="text-sm max-w-[500px] font-customFont text-[#333]"
               data-aos="fade-left"
               data-aos-duration="3000"
             >
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Accusamus, esse.
+              Memenuhi kebutuhan dan harapan PLN secara proaktif dengan menyediakan solusi-solusi TIK yang inovatif dan memberikan nilai tambah.
+            </p>
+            <p
+              className="text-sm max-w-[500px] font-customFont text-[#333]"
+              data-aos="fade-left"
+              data-aos-duration="3000"
+            >
+              Membangun organisasi pembelajar yang berkinerja tinggi untuk mendorong Perusahaan mencapai bisnis yang unggul dan menjadi pilihan bagi talenta-talenta terbaik.
+            </p>
+            <p
+              className="text-sm max-w-[500px] font-customFont text-[#333]"
+              data-aos="fade-left"
+              data-aos-duration="3000"
+            >
+              Memberi kontribusi terhadap perkembangan telekomunikasi nasional.
             </p>
             <button
               className="py-2 px-5 bg-white text-gray-600 rounded-sm mt-10 mr-5 font-customFont text-[#333]"
