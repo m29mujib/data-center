@@ -140,6 +140,7 @@ const Navbar = () => {
                       {aboutDNSDropdownVisible && (
                         <div
                           className="absolute bg-white text-black w-40 mt-2 rounded-md shadow-lg z-10"
+                          style={{ top: "0", left: "100%" }}
                           onMouseEnter={() => setAboutDNSDropdown(true)}
                           onMouseLeave={() => setAboutDNSDropdown(false)}
                         >
@@ -194,6 +195,7 @@ const Navbar = () => {
                       {aboutIconMailropdownVisible && (
                         <div
                           className="absolute bg-white text-black w-40 mt-2 rounded-md shadow-lg z-10"
+                          style={{ top: "0", left: "100%" }}
                           onMouseEnter={() => setAboutIconMailDropdown(true)}
                           onMouseLeave={() => setAboutIconMailDropdown(false)}
                         >
@@ -255,7 +257,7 @@ const Navbar = () => {
                 )}
               </div>
               <Link
-                to="#"
+                to="/home"
                 className={`p-5 ${
                   isActive("/lokasi") ? "text-blue-500" : "hover:text-blue-500"
                 }`}
@@ -263,9 +265,9 @@ const Navbar = () => {
                 Lokasi
               </Link>
               <Link
-                to="#"
+                to="/about"
                 className={`p-5 ${
-                  isActive("/bantuan") ? "text-blue-500" : "hover:text-blue-500"
+                  isActive("/about") ? "text-blue-500" : "hover:text-blue-500"
                 }`}
               >
                 Tentang Kami
@@ -340,6 +342,7 @@ const Navbar = () => {
                     {aboutDNSDropdownVisible && (
                       <div
                         className="absolute bg-white text-black w-40 mt-2 rounded-md shadow-lg z-10"
+                        style={{ top: "0", left: "100%" }}
                         onMouseEnter={() => setAboutDNSDropdown(true)}
                         onMouseLeave={() => setAboutDNSDropdown(false)}
                       >
@@ -394,6 +397,7 @@ const Navbar = () => {
                     {aboutIconMailropdownVisible && (
                       <div
                         className="absolute bg-white text-black w-40 mt-2 rounded-md shadow-lg z-10"
+                        style={{ top: "0", left: "100%" }}
                         onMouseEnter={() => setAboutIconMailDropdown(true)}
                         onMouseLeave={() => setAboutIconMailDropdown(false)}
                       >
@@ -462,10 +466,10 @@ const Navbar = () => {
               Lokasi
             </a>
             <Link
-              to="#about"
-              onClick={scrollToContact}
+              to="/about"
+              // onClick={scrollToContact}
               className={`no-underline px-5 font-medium font-customFont ${
-                isActive("#bantuan")
+                isActive("/about")
                   ? "text-blue-500"
                   : "text-[#fff] hover:text-blue-500"
               }`}

@@ -2,20 +2,23 @@ import P from "../../assets/comm2.jpg";
 import M from "../../assets/comm3.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 const About = () => {
   AOS.init({
     once: true,
   });
   return (
     <div className="w-full h-full">
-      <div className="w-full h-full flex flex-col px-[8%] flex-wrap">
+      <Navbar />
+      <div className="mt-20 w-full h-full flex flex-col px-[8%] flex-wrap">
         <div className="flex flex-col my-[80px]">
           <h1
-            className="text-5xl font-semibold mb-5 max-w-[500px] font-customFont text-[#333]"
+            className=" text-5xl font-semibold mb-5 max-w-[500px] font-customFont text-[#333]"
             data-aos="fade-right"
             data-aos-duration="3000"
           >
-            About Us
+            Tentang Kami
           </h1>
           <p
             className="text-sm font-customFont text-[#333] w-[90%]"
@@ -62,27 +65,18 @@ const About = () => {
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Accusamus, esse.
             </p> */}
-            <button
-              className="py-2 px-5 bg-white text-gray-600 rounded-sm mt-10 mr-5 font-customFont text-[#333]"
-              data-aos="fade-right"
-              data-aos-duration="3000"
-            >
-              Iklan disini
-            </button>
-            <button
-              className="py-2 px-5 bg-blue-600 text-white rounded-sm mt-10 font-customFont"
-              data-aos="fade-right"
-              data-aos-duration="3000"
-            >
-              Read More
-            </button>
+            
           </div>
           <div className="flex basis-[50%]">
             <div className="flex justify-between w-full">
               <img
                 src={M}
                 alt=""
+<<<<<<< HEAD
                 className="md:w-[600px] md:h-[370px] w-[350px] h-[350px] hover:scale-105 duration-300 rounded-md"
+=======
+                className="md:w-[600px] md:h-[350px] w-[350px] h-[350px] rounded-md"
+>>>>>>> aef205e3cf86f2ffba1f25d95d08be2370dbac09
                 data-aos="fade-right"
                 data-aos-duration="3000"
               />
@@ -96,7 +90,11 @@ const About = () => {
             <img
               src={P}
               alt=""
+<<<<<<< HEAD
               className="md:w-[600px] md:h-[370px] w-[350px] h-[350px] hover:scale-105 duration-300 rounded-md"
+=======
+              className="md:w-[600px] md:h-[350px] w-[350px] h-[350px] rounded-md"
+>>>>>>> aef205e3cf86f2ffba1f25d95d08be2370dbac09
               data-aos="fade-left"
               data-aos-duration="3000"
             />
@@ -142,23 +140,10 @@ const About = () => {
             >
               Memberi kontribusi terhadap perkembangan telekomunikasi nasional.
             </p>
-            <button
-              className="py-2 px-5 bg-white text-gray-600 rounded-sm mt-10 mr-5 font-customFont text-[#333]"
-              data-aos="fade-left"
-              data-aos-duration="3000"
-            >
-              Iklan disini
-            </button>
-            <button
-              className="py-2 px-5 bg-blue-600 text-white rounded-sm mt-10 font-customFont"
-              data-aos="fade-left"
-              data-aos-duration="3000"
-            >
-              Read More
-            </button>
+            
           </div>
         </div>
-      </div>
+      </div><Footer />
     </div>
   );
 };
