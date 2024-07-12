@@ -15,14 +15,12 @@ function LandingPage() {
       <Navbar />
       <HorizontalParallax />
       <Iklan />
-      <About />
       <Home />
       <Komunik />
+      {/* <About /> */}
       <Kolaborate />
-
       <Contact />
       <Lokasi />
-
       <Footer />
     </>
   );

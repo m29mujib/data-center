@@ -11,7 +11,7 @@ const About = () => {
       <div className="w-full h-full flex flex-col px-[8%] flex-wrap">
         <div className="flex flex-col my-[80px]">
           <h1
-            className="text-5xl font-semibold mb-5 max-w-[500px] font-customFont text-[#333]"
+            className=" text-5xl font-semibold mb-5 max-w-[500px] font-customFont text-[#333]"
             data-aos="fade-right"
             data-aos-duration="3000"
           >

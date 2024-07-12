@@ -29,7 +29,7 @@ const Kolaborate = () => {
     <div className="mx-[10px]" key="1">
       <img
         src={image78}
-        className="w-[600px] h-[190px] rounded-lg"
+        className="w-[200px] h-[110px] rounded-lg"
         onDragStart={handleDragStart}
         role="presentation"
       />
@@ -37,7 +37,7 @@ const Kolaborate = () => {
     <div className="mx-[10px]" key="2">
       <img
         src={image79}
-        className="w-[600px] h-[190px] rounded-lg"
+        className="w-[200px] h-[110px] rounded-lg"
         onDragStart={handleDragStart}
         role="presentation"
       />
@@ -45,7 +45,7 @@ const Kolaborate = () => {
     <div className="mx-[10px]" key="3">
       <img
         src={image81}
-        className="w-[600px] h-[190px] rounded-lg"
+        className="w-[200px] h-[110px] rounded-lg"
         onDragStart={handleDragStart}
         role="presentation"
       />
@@ -53,7 +53,7 @@ const Kolaborate = () => {
     <div className="mx-[10px]" key="4">
       <img
         src={image82}
-        className="w-[600px] h-[190px] rounded-lg"
+        className="w-[200px] h-[110px] rounded-lg"
         onDragStart={handleDragStart}
         role="presentation"
       />
@@ -61,131 +61,131 @@ const Kolaborate = () => {
     <div className="mx-[10px]" key="4">
       <img
         src={image83}
-        className="w-[600px] h-[190px] rounded-lg"
+        className="w-[200px] h-[110px] rounded-lg"
         onDragStart={handleDragStart}
         role="presentation"
       />
     </div>,
     <div className="mx-[10px]" key="4">
-    <img
-      src={image84}
-      className="w-[600px] h-[190px] rounded-lg"
-      onDragStart={handleDragStart}
-      role="presentation"
-    />
-  </div>,
-  <div className="mx-[10px]" key="4">
-  <img
-    src={image85}
-    className="w-[600px] h-[190px] rounded-lg"
-    onDragStart={handleDragStart}
-    role="presentation"
-  />
-</div>,
-<div className="mx-[10px]" key="4">
+      <img
+        src={image84}
+        className="w-[200px] h-[110px] rounded-lg"
+        onDragStart={handleDragStart}
+        role="presentation"
+      />
+    </div>,
+    <div className="mx-[10px]" key="4">
+      <img
+        src={image85}
+        className="w-[200px] h-[110px] rounded-lg"
+        onDragStart={handleDragStart}
+        role="presentation"
+      />
+    </div>,
+    <div className="mx-[10px]" key="4">
       <img
         src={image86}
-        className="w-[600px] h-[190px] rounded-lg"
+        className="w-[200px] h-[110px] rounded-lg"
         onDragStart={handleDragStart}
         role="presentation"
       />
     </div>,
     <div className="mx-[10px]" key="4">
-    <img
-      src={image87}
-      className="w-[600px] h-[190px] rounded-lg"
-      onDragStart={handleDragStart}
-      role="presentation"
-    />
-  </div>,
-  <div className="mx-[10px]" key="4">
-  <img
-    src={image88}
-    className="w-[600px] h-[190px] rounded-lg"
-    onDragStart={handleDragStart}
-    role="presentation"
-  />
-</div>,
-<div className="mx-[10px]" key="4">
+      <img
+        src={image87}
+        className="w-[200px] h-[110px] rounded-lg"
+        onDragStart={handleDragStart}
+        role="presentation"
+      />
+    </div>,
+    <div className="mx-[10px]" key="4">
+      <img
+        src={image88}
+        className="w-[200px] h-[110px] rounded-lg"
+        onDragStart={handleDragStart}
+        role="presentation"
+      />
+    </div>,
+    <div className="mx-[10px]" key="4">
       <img
         src={image89}
-        className="w-[600px] h-[190px] rounded-lg"
+        className="w-[200px] h-[110px] rounded-lg"
         onDragStart={handleDragStart}
         role="presentation"
       />
     </div>,
     <div className="mx-[10px]" key="4">
-    <img
-      src={image90}
-      className="w-[600px] h-[190px] rounded-lg"
-      onDragStart={handleDragStart}
-      role="presentation"
-    />
-  </div>,
-  <div className="mx-[10px]" key="4">
-  <img
-    src={image91}
-    className="w-[600px] h-[190px] rounded-lg"
-    onDragStart={handleDragStart}
-    role="presentation"
-  />
-</div>,
-<div className="mx-[10px]" key="4">
+      <img
+        src={image90}
+        className="w-[200px] h-[110px] rounded-lg"
+        onDragStart={handleDragStart}
+        role="presentation"
+      />
+    </div>,
+    <div className="mx-[10px]" key="4">
+      <img
+        src={image91}
+        className="w-[200px] h-[110px] rounded-lg"
+        onDragStart={handleDragStart}
+        role="presentation"
+      />
+    </div>,
+    <div className="mx-[10px]" key="4">
       <img
         src={image92}
-        className="w-[600px] h-[190px] rounded-lg"
+        className="w-[200px] h-[110px] rounded-lg"
         onDragStart={handleDragStart}
         role="presentation"
       />
     </div>,
     <div className="mx-[10px]" key="4">
-    <img
-      src={image93}
-      className="w-[600px] h-[190px] rounded-lg"
-      onDragStart={handleDragStart}
-      role="presentation"
-    />
-  </div>,
-  <div className="mx-[10px]" key="4">
-  <img
-    src={image94}
-    className="w-[600px] h-[190px] rounded-lg"
-    onDragStart={handleDragStart}
-    role="presentation"
-  />
-</div>,
-<div className="mx-[10px]" key="4">
+      <img
+        src={image93}
+        className="w-[200px] h-[110px] rounded-lg"
+        onDragStart={handleDragStart}
+        role="presentation"
+      />
+    </div>,
+    <div className="mx-[10px]" key="4">
+      <img
+        src={image94}
+        className="w-[200px] h-[110px] rounded-lg"
+        onDragStart={handleDragStart}
+        role="presentation"
+      />
+    </div>,
+    <div className="mx-[10px]" key="4">
       <img
         src={image95}
-        className="w-[600px] h-[190px] rounded-lg"
+        className="w-[200px] h-[110px] rounded-lg"
         onDragStart={handleDragStart}
         role="presentation"
       />
     </div>,
     <div className="mx-[10px]" key="4">
-    <img
-      src={image96}
-      className="w-[600px] h-[190px] rounded-lg"
-      onDragStart={handleDragStart}
-      role="presentation"
-    />
-  </div>,
-  <div className="mx-[10px]" key="4">
-  <img
-    src={image97}
-    className="w-[600px] h-[190px] rounded-lg"
-    onDragStart={handleDragStart}
-    role="presentation"
-  />
-</div>,
-  <div className="mx-[10px]" key="4">
-  <img
-    src={image98}
-    className="w-[600px] h-[190px] rounded-lg"
-    onDragStart={handleDragStart}
-    role="presentation"
-  />
-</div>,
+      <img
+        src={image96}
+        className="w-[200px] h-[110px] rounded-lg"
+        onDragStart={handleDragStart}
+        role="presentation"
+      />
+    </div>,
+    <div className="mx-[10px]" key="4">
+      <img
+        src={image97}
+        className="w-[200px] h-[110px] rounded-lg"
+        onDragStart={handleDragStart}
+        role="presentation"
+      />
+    </div>,
+    <div className="mx-[10px]" key="4">
+      <img
+        src={image98}
+        className="w-[200px] h-[100px] rounded-lg"
+        onDragStart={handleDragStart}
+        role="presentation"
+      />
+    </div>,
   ];
 
   return (
