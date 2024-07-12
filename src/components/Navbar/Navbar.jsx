@@ -444,9 +444,11 @@ const Navbar = () => {
                     ICONSandBox
                   </Link>
                   <Link
-                    to={"https://smartmonitoringrack.plniconpln.id/home"}
+                    to="/icon-rack"
                     className={`block px-4 py-2 ${
-                      isActive("/sanbox") ? "bg-gray-200" : "hover:bg-gray-200"
+                      isActive("/icon-mon")
+                        ? "bg-gray-200"
+                        : "hover:bg-gray-200"
                     }`}
                   >
                     ICONRack

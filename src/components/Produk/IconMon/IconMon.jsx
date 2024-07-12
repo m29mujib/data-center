@@ -40,14 +40,14 @@ const IconMon = () => {
             <div className="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
               <div>
                 <h2 className="text-4xl font-bold tracking-tight text-gray-900">
-                  IconMon
+                  ICONMon
                 </h2>
                 <p className="mt-4 text-gray-500">
-                  IconMon, atau Icon Monitoring, adalah produk Monitoring System
-                  dari PLN Icon Plus yang memberikan wawasan real-time dan
-                  peringatan proaktif, memastikan operasi yang lancar dan
-                  kepuasan pelanggan yang meningkat. Dengan antarmuka yang
-                  user-friendly dan analitik mendalam, IconMon mempermudah
+                  ICONMon, atau Icon Monitoring, adalah produk Observablity
+                  Monitoring System dari PLN Icon Plus yang memberikan wawasan
+                  real-time dan peringatan proaktif, memastikan operasi yang
+                  lancar dan kepuasan pelanggan yang meningkat. Dengan antarmuka
+                  yang user-friendly dan analitik mendalam, ICONMon mempermudah
                   pemantauan dan pengelolaan infrastruktur IT Anda. Sistem ini
                   dirancang untuk mendeteksi dan mencegah masalah sebelum
                   berdampak pada bisnis Anda, memungkinkan tim IT untuk fokus
@@ -62,7 +62,6 @@ const IconMon = () => {
                   <FontAwesomeIcon icon={faDownload} className="mr-2" />
                   Unduh Brosur
                 </a>
-                
               </div>
               <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">
                 <img

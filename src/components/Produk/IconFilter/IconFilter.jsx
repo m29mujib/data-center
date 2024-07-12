@@ -1,36 +1,36 @@
 import CountUp, { useCountUp } from "react-countup";
 import React from "react";
 import Navbar from "../../Navbar/Navbar";
-import imageFilter from "../../../assets/iconFilter.gif"
+import imageFilter from "../../../assets/iconFilter.gif";
 import Footer from "../../Footer/Footer";
 import brochurePdf from "../../../assets/BrochureIconPLN.pdf";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const IconFilter = () => {
-    const incentives = [
-      {
-        name: "Defense in depth protection",
-        imageSrc:
-          "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
-        description:
-          "Sistem ini memastikan email yang dikirim keluar melalui jaringan ICON+ telah difilter dan dibersihkan dari konten berbahaya, meningkatkan keamanan dan keandalan komunikasi email.",
-      },
-      {
-        name: "Optimalisasi Reputasi email",
-        imageSrc:
-          "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
-        description:
-          "Dengan menyaring dan memblokir email berbahaya, ICONMAIL Filter membantu meningkatkan reputasi email perusahaan, mengurangi kemungkinan email ditandai sebagai spam oleh penerima.",
-      },
-      {
-        name: "Sistem Relay ICONMAIL Filter-Out",
-        imageSrc:
-          "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
-        description:
-          "Menggunakan metode perlindungan berlapis, email difilter oleh dua brand filter berbeda untuk meningkatkan akurasi dan keandalan proteksi, meminimalkan risiko ancaman yang lolos.",
-      },
-    ];
+  const incentives = [
+    {
+      name: "Defense in depth protection",
+      imageSrc:
+        "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
+      description:
+        "Sistem ini memastikan email yang dikirim/diterima melalui jaringan ICON+ atau provider lain telah difilter dan dibersihkan dari konten berbahaya, difilter oleh dua brand berbeda untuk meningkatkan akurasi dan keandalan proteksi, meningkatkan keamanan dan keandalan komunikasi email.",
+    },
+    {
+      name: "Optimalisasi Reputasi email",
+      imageSrc:
+        "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
+      description:
+        "Dengan menyaring dan memblokir email berbahaya, ICONMAIL Filtering membantu meningkatkan reputasi email perusahaan, mengurangi kemungkinan email ditandai sebagai spam oleh penerima.",
+    },
+    {
+      name: "Sistem Relay Email Inbound dan Outbound",
+      imageSrc:
+        "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
+      description:
+        "Menggunakan metode perlindungan berlapis, email traffic Inbound dan Outbound dapat di filter untuk meminimalkan risiko ancaman yang lolos.",
+    },
+  ];
   return (
     <div>
       <Navbar />
@@ -40,21 +40,21 @@ const IconFilter = () => {
             <div className="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
               <div>
                 <h2 className="text-4xl font-bold tracking-tight text-gray-900">
-                  IconFilter
+                  ICONMail Filtering
                 </h2>
                 <p className="mt-4 text-gray-500">
-                  ICONMAIL Filter adalah solusi penyaringan email yang efektif
-                  dari ICON+ yang dirancang untuk melindungi jaringan dari
-                  berbagai ancaman siber. Dengan menggunakan metode penyaringan
-                  berlapis, email yang masuk akan melalui serangkaian filter
-                  dari dua brand berbeda, masing-masing dengan database dan
-                  signature mereka sendiri. Pendekatan ini memastikan bahwa
-                  proteksi lebih akurat dan andal, karena jika salah satu filter
-                  melewatkan ancaman, filter lainnya dapat mendeteksinya.
-                  ICONMAIL Filter juga berperan penting dalam optimalisasi
-                  bandwidth jaringan dengan memblokir 30%-50% email berbahaya
-                  setiap harinya, termasuk spam, malware, dan serangan APT
-                  Zeroday.
+                  ICONMAIL Filtering adalah solusi penyaringan email yang
+                  efektif dari ICON+ yang dirancang untuk melindungi jaringan
+                  dari berbagai ancaman siber. Dengan menggunakan metode
+                  penyaringan berlapis, email yang masuk akan melalui
+                  serangkaian filter dari dua brand berbeda, masing-masing
+                  dengan database dan signature mereka sendiri. Pendekatan ini
+                  memastikan bahwa proteksi lebih akurat dan andal, karena jika
+                  salah satu filter melewatkan ancaman, filter lainnya dapat
+                  mendeteksinya. ICONMAIL Filtering juga berperan penting dalam
+                  optimalisasi bandwidth jaringan dengan memblokir 30%-50% email
+                  berbahaya setiap harinya, termasuk spam, malware, dan serangan
+                  APT Zeroday.
                 </p>
                 {/* Button untuk mengunduh brosur */}
                 <a
@@ -101,6 +101,6 @@ const IconFilter = () => {
       </div>
     </div>
   );
-      }
+};
 
 export default IconFilter;

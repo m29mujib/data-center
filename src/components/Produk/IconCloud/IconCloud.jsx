@@ -40,7 +40,7 @@ const IconCloud = () => {
             <div className="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
               <div>
                 <h2 className="text-4xl font-bold tracking-tight text-gray-900">
-                  ICONCLOUD
+                  ICONCloud
                 </h2>
                 <p className="mt-4 text-gray-500">
                   ICONCloud Virtual Data Center menawarkan solusi layanan yang

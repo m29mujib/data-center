@@ -1,7 +1,7 @@
 import CountUp, { useCountUp } from "react-countup";
 import React from "react";
 import Navbar from "../../Navbar/Navbar";
-import dns from "../../../assets/DNS GSLB RV.gif"
+import dns from "../../../assets/DNS GSLB RV.gif";
 import Footer from "../../Footer/Footer";
 import brochurePdf from "../../../assets/BrochureIconPLN.pdf";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
@@ -40,8 +40,9 @@ const DNS = () => {
             <div className="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
               <div>
                 <h2 className="text-4xl font-bold tracking-tight text-gray-900">
-                  DNS GSLB RV
+                  ICONDNS Advance (GSLB)
                 </h2>
+
                 <p className="mt-4 text-gray-500">
                   DNS (Domain Name System) oleh PLN Icon Plus adalah
                   infrastruktur krusial dalam internet yang memetakan nama
@@ -50,6 +51,20 @@ const DNS = () => {
                   ICON DNS Resolver, yang memfasilitasi pencarian cepat alamat
                   IP dari nama domain, dan ICON DNS Authoritative, yang
                   memberikan jawaban akurat atas permintaan DNS.
+                </p>
+                <p className="mt-4 text-gray-500">
+                  High Performance DNS PLN Icon Plus merupakan carriers/telco
+                  grade serta dilengkapi zone transfer secara real time dan di
+                  simpan pada memory sehingga performa dns yang sangat baik.
+                  memiliki redundancy system Active-Active untuk menjaga
+                  Availability layanan DNS.
+                </p>
+                <p className="mt-4 text-gray-500">
+                  Pendistribusian lalu lintas Internet dengan men-translate
+                  domain menjadi alamat IP di antara sejumlah besar server
+                  terhubung yang tersebar di seluruh dunia. DNS PLN Icon Plus
+                  menyediakan manajemen lalu lintas yang cerdas, skalabilitas,
+                  perlindungan dalam 2 Data center(IP) atau lebih.
                 </p>
                 {/* Button untuk mengunduh brosur */}
                 <a

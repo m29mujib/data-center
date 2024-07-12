@@ -40,19 +40,19 @@ const SanBox = () => {
             <div className="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
               <div>
                 <h2 className="text-4xl font-bold tracking-tight text-gray-900">
-                  SandBox
+                  ICONSandBox
                 </h2>
                 <p className="mt-4 text-gray-500">
-                  SandBox Unknown adalah solusi keamanan canggih dari ICON+ yang
+                  SandBox Filtering adalah solusi keamanan canggih dari ICON+ yang
                   dirancang untuk mendeteksi dan menganalisis ancaman yang tidak
                   dikenal dalam lingkungan yang terisolasi. Dengan menggunakan
-                  teknologi sandboxing, SandBox Unknown menjalankan file atau
+                  teknologi sandboxing, Solusi kami menjalankan file atau
                   kode mencurigakan dalam lingkungan virtual yang aman untuk
                   memonitor perilaku berbahaya tanpa risiko terhadap sistem
                   utama. Solusi ini memungkinkan identifikasi ancaman zero-day
                   dan malware yang tidak terdeteksi oleh metode tradisional,
                   memberikan lapisan perlindungan tambahan bagi perusahaan.
-                  Dengan SandBox Unknown, perusahaan dapat meningkatkan keamanan
+                  Dengan ICONSandbox, perusahaan dapat meningkatkan keamanan
                   dan kepercayaan diri mereka dalam menghadapi ancaman siber
                   yang semakin kompleks.
                 </p>

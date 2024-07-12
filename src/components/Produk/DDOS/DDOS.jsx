@@ -41,7 +41,7 @@ const DDOS = () => {
             <div className="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
               <div>
                 <h2 className="text-4xl font-bold tracking-tight text-gray-900">
-                  DDoS Protection & Hidden Master
+                  ICONDNS DDoS Protection
                 </h2>
                 <p className="mt-4 text-gray-500">
                   Perlindungan DDoS dari PLN Icon Plus dirancang untuk
@@ -51,6 +51,7 @@ const DDOS = () => {
                   detik, memastikan ketersediaan dan kinerja layanan tetap
                   optimal.
                 </p>
+                
                 {/* text main */}
                 <p className="mt-4 text-gray-500">
                   Hidden Master dari PLN Icon Plus adalah solusi manajemen
