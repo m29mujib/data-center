@@ -20,7 +20,7 @@ function LandingPage() {
       {/* <About /> */}
       <Kolaborate />
       <Contact />
-      <Lokasi />
+      {/* <Lokasi /> */}
       <Footer />
     </>
   );
