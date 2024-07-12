@@ -4,6 +4,7 @@ import logos from "../../assets/a.png";
 import Images14 from "../../assets/close.png";
 import downloadIcon from "../../assets/download.png"; // Import your download icon
 import more from "../../assets/more.png";
+import pdf from "../../assets/BrochureIconPLN.pdf"
 
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
@@ -296,8 +297,9 @@ const Navbar = () => {
             </a>
             {/* Download Button */}
             <a
-              href="#download"
+              href="{pdf}" // Path to your PDF file
               className="no-underline px-5 text-white bg-[#00bcd4] font-medium font-customFont py-3 ml-2 rounded-md hover:bg-[#208c9a]"
+              download="BrochureIconPLN.pdf" // This attribute makes the browser download the file
             >
               <img
                 src={downloadIcon}
