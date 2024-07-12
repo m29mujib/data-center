@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logos from "../../assets/a.png";
 import Images14 from "../../assets/close.png";
+import downloadIcon from "../../assets/download.png"; // Import your download icon
 import more from "../../assets/more.png";
 
 const Navbar = () => {
@@ -9,14 +10,15 @@ const Navbar = () => {
   const [aboutDropdown, setAboutDropdown] = useState(false);
   const [aboutDropdownVisible, setAboutDropdownVisible] = useState(false);
   const location = useLocation();
+  
 
-  // const scrollToContact = (event) => {
-  //   event.preventDefault();
-  //   const contactElement = document.getElementById("contact");
-  //   if (contactElement) {
-  //     contactElement.scrollIntoView({ behavior: "smooth" });
-  //   }
-  // };
+  const scrollToContact = (event) => {
+    event.preventDefault();
+    const contactElement = document.getElementById('contact', 'lokasi');
+    if (contactElement) {
+      contactElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   useEffect(() => {
     let timer;
@@ -88,37 +90,37 @@ const Navbar = () => {
                       to={"/dns"}
                       className="block px-4 py-2 hover:bg-gray-200"
                     >
-                      DNS
+                      DNS Advance
                     </Link>
                     <Link
                       to={"/icon-cloud"}
                       className="block px-4 py-2 hover:bg-gray-200"
                     >
-                      IconCloud
+                      ICONCloud
                     </Link>
                     <Link
                       to={"/icon-filter"}
                       className="block px-4 py-2 hover:bg-gray-200"
                     >
-                      IconFilter
+                      ICONMail Filtering
                     </Link>
                     <Link
                       to={"/icon-mail"}
                       className="block px-4 py-2 hover:bg-gray-200"
                     >
-                      IconMail
+                      ICONMail Blasting & Marketing
                     </Link>
                     <Link
                       to={"/icon-mon"}
                       className="block px-4 py-2 hover:bg-gray-200"
                     >
-                      IconMonitoring
+                      ICONMonitoring
                     </Link>
                     <Link
                       to={"/sanbox"}
                       className="block px-4 py-2 hover:bg-gray-200"
                     >
-                      SandBox
+                      ICONSandBox
                     </Link>
                   </div>
                 )}
@@ -137,7 +139,7 @@ const Navbar = () => {
                   isActive("/bantuan") ? "text-blue-500" : "hover:text-blue-500"
                 }`}
               >
-                Bantuan
+                Tentang Kami
               </Link>
             </li>
           </ul>
@@ -145,9 +147,9 @@ const Navbar = () => {
       )}
       <Link to="/" className="flex justify-center items-center">
         <img src={logos} alt="" className="h-8 mr-4" />
-        <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
+        {/* <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
           Data Center
-        </span>
+        </span> */}
       </Link>
 
       <div className="flex items-center justify-right">
@@ -208,7 +210,7 @@ const Navbar = () => {
                       isActive("/dns") ? "bg-gray-200" : "hover:bg-gray-200"
                     }`}
                   >
-                    DNS
+                    DNS DDOS Protection
                   </Link>
                   <Link
                     to={"/icon-cloud"}
@@ -218,7 +220,7 @@ const Navbar = () => {
                         : "hover:bg-gray-200"
                     }`}
                   >
-                    IconCloud
+                    ICONCloud
                   </Link>
                   <Link
                     to={"/icon-filter"}
@@ -228,7 +230,7 @@ const Navbar = () => {
                         : "hover:bg-gray-200"
                     }`}
                   >
-                    IconFilter
+                    ICONFilter
                   </Link>
                   <Link
                     to={"/icon-mail"}
@@ -238,7 +240,7 @@ const Navbar = () => {
                         : "hover:bg-gray-200"
                     }`}
                   >
-                    IconMail
+                    ICONMail Blasting & Marketing
                   </Link>
                   <Link
                     to={"/icon-mon"}
@@ -248,7 +250,7 @@ const Navbar = () => {
                         : "hover:bg-gray-200"
                     }`}
                   >
-                    IconMonitoring
+                    ICONMonitoring
                   </Link>
                   <Link
                     to={"/sanbox"}
@@ -279,10 +281,10 @@ const Navbar = () => {
                   : "text-[#fff] hover:text-blue-500"
               }`}
             >
-              Bantuan
+              Tentang Kami
             </Link>
             <a
-              href="#contact"
+              href="#contact" onClick={scrollToContact}
               className={`no-underline px-5 text-white bg-blue-500 font-medium font-customFont py-3 rounded-md ${
                 isActive("#contact")
                   ? "bg-blue-700 text-white"
@@ -290,6 +292,18 @@ const Navbar = () => {
               }`}
             >
               Kontak
+            </a>
+            {/* Download Button */}
+            <a
+              href="#download"
+              className="no-underline px-5 text-white bg-[#00bcd4] font-medium font-customFont py-3 ml-2 rounded-md hover:bg-[#208c9a]"
+            >
+              <img
+                src={downloadIcon}
+                alt="Download"
+                className="w-3 h-3 inline-block mr-1"
+              />
+              Unduh Brosur
             </a>
           </li>
         </ul>
