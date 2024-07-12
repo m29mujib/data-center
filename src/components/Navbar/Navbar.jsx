@@ -470,7 +470,7 @@ const Navbar = () => {
             <a
               href={brochurePdf}
               download="brosur.pdf"
-              className="md:ml-5 no-underline px-5 text-white bg-blue-500 font-medium font-customFont py-3 rounded-md hover:bg-blue-700 hover:text-whiteitems-center"
+              className="md:ml-5 no-underline px-5 text-white bg-yellow-500 font-medium font-customFont py-3 rounded-md hover:bg-blue-700 hover:text-whiteitems-center"
             >
               <FontAwesomeIcon icon={faDownload} className="mr-2" />
               Unduh Brosur
