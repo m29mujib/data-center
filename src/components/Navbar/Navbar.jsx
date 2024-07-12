@@ -22,7 +22,6 @@ const Navbar = () => {
   const scrollToContact = (event) => {
     event.preventDefault();
     const contactElement = document.getElementById('contact');
-    const contactElement = document.getElementById("contact", "lokasi");
     if (contactElement) {
       contactElement.scrollIntoView({ behavior: "smooth" });
     }
