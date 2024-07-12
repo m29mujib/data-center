@@ -11,12 +11,13 @@ const Navbar = () => {
   const [aboutDropdown, setAboutDropdown] = useState(false);
   const [aboutDropdownVisible, setAboutDropdownVisible] = useState(false);
   const location = useLocation();
+  
 
   const scrollToContact = (event) => {
     event.preventDefault();
-    const contactElement = document.getElementById("contact", "lokasi");
+    const contactElement = document.getElementById('contact', 'lokasi');
     if (contactElement) {
-      contactElement.scrollIntoView({ behavior: "smooth" });
+      contactElement.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -265,7 +266,6 @@ const Navbar = () => {
             </div>
             <Link
               to="#lokasi"
-              onClick={scrollToContact}
               className={`no-underline px-5 font-medium font-customFont ${
                 isActive("#lokasi")
                   ? "text-blue-500"
@@ -285,8 +285,7 @@ const Navbar = () => {
               Tentang Kami
             </Link>
             <a
-              href="#contact"
-              onClick={scrollToContact}
+              href="#contact" onClick={scrollToContact}
               className={`no-underline px-5 text-white bg-blue-500 font-medium font-customFont py-3 rounded-md ${
                 isActive("#contact")
                   ? "bg-blue-700 text-white"
