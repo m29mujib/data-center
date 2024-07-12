@@ -18,7 +18,7 @@ const About = () => {
             data-aos="fade-right"
             data-aos-duration="3000"
           >
-            About Us
+            Tentang Kami
           </h1>
           <p
             className="text-sm font-customFont text-[#333] w-[90%]"
@@ -64,27 +64,14 @@ const About = () => {
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Accusamus, esse.
             </p> */}
-            <button
-              className="py-2 px-5 bg-white text-gray-600 rounded-sm mt-10 mr-5 font-customFont text-[#333]"
-              data-aos="fade-right"
-              data-aos-duration="3000"
-            >
-              Iklan disini
-            </button>
-            <button
-              className="py-2 px-5 bg-blue-600 text-white rounded-sm mt-10 font-customFont"
-              data-aos="fade-right"
-              data-aos-duration="3000"
-            >
-              Read More
-            </button>
+            
           </div>
           <div className="flex">
             <div className="flex justify-between w-full">
               <img
                 src={M}
                 alt=""
-                className="md:w-[400px] md:h-[400px] w-[350px] h-[350px] rounded-md"
+                className="md:w-[600px] md:h-[350px] w-[350px] h-[350px] rounded-md"
                 data-aos="fade-right"
                 data-aos-duration="3000"
               />
@@ -98,7 +85,7 @@ const About = () => {
             <img
               src={P}
               alt=""
-              className="md:w-[400px] md:h-[400px] w-[350px] h-[350px] rounded-md"
+              className="md:w-[600px] md:h-[350px] w-[350px] h-[350px] rounded-md"
               data-aos="fade-left"
               data-aos-duration="3000"
             />
@@ -140,20 +127,7 @@ const About = () => {
             >
               Memberi kontribusi terhadap perkembangan telekomunikasi nasional.
             </p>
-            <button
-              className="py-2 px-5 bg-white text-gray-600 rounded-sm mt-10 mr-5 font-customFont text-[#333]"
-              data-aos="fade-left"
-              data-aos-duration="3000"
-            >
-              Iklan disini
-            </button>
-            <button
-              className="py-2 px-5 bg-blue-600 text-white rounded-sm mt-10 font-customFont"
-              data-aos="fade-left"
-              data-aos-duration="3000"
-            >
-              Read More
-            </button>
+            
           </div>
         </div>
       </div><Footer />

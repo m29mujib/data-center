@@ -255,7 +255,7 @@ const Navbar = () => {
                 )}
               </div>
               <Link
-                to="#"
+                to="/home"
                 className={`p-5 ${
                   isActive("/lokasi") ? "text-blue-500" : "hover:text-blue-500"
                 }`}
