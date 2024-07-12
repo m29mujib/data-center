@@ -2,12 +2,15 @@ import P from "../../assets/comm2.jpg";
 import M from "../../assets/comm3.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 const About = () => {
   AOS.init({
     once: true,
   });
   return (
     <div className="w-full h-full">
+      <Navbar />
       <div className="w-full h-full flex flex-col px-[8%] flex-wrap">
         <div className="flex flex-col my-[80px]">
           <h1
@@ -153,7 +156,7 @@ const About = () => {
             </button>
           </div>
         </div>
-      </div>
+      </div><Footer />
     </div>
   );
 };

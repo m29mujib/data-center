@@ -263,9 +263,9 @@ const Navbar = () => {
                 Lokasi
               </Link>
               <Link
-                to="#"
+                to="/about"
                 className={`p-5 ${
-                  isActive("/bantuan") ? "text-blue-500" : "hover:text-blue-500"
+                  isActive("/about") ? "text-blue-500" : "hover:text-blue-500"
                 }`}
               >
                 Tentang Kami
@@ -462,10 +462,10 @@ const Navbar = () => {
               Lokasi
             </a>
             <Link
-              to="#about"
-              onClick={scrollToContact}
+              to="/about"
+              // onClick={scrollToContact}
               className={`no-underline px-5 font-medium font-customFont ${
-                isActive("#bantuan")
+                isActive("/about")
                   ? "text-blue-500"
                   : "text-[#fff] hover:text-blue-500"
               }`}
