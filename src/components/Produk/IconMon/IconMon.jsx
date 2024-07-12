@@ -1,31 +1,36 @@
 import CountUp, { useCountUp } from "react-countup";
 import React from "react";
 import Navbar from "../../Navbar/Navbar";
-import iconMon from "../../../assets/IconMon - Modified.gif"
+import Footer from "../../Footer/Footer";
+import iconMon from "../../../assets/IconMon - Modified.gif";
+import brochurePdf from "../../../assets/BrochureIconPLN.pdf";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const IconMon = () => {
-    const incentives = [
-      {
-        name: "Real-Time Monitoring",
-        imageSrc:
-          "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
-        description:
-          "Memantau performa jaringan, server, dan aplikasi secara real-time.",
-      },
-      {
-        name: "Statistic Analysis",
-        imageSrc:
-          "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
-        description:
-          "Menyediakan visualisasi data yang mudah dipahami dengan dasbor yang dapat disesuaikan.",
-      },
-      {
-        name: "Service Desk Efficiency",
-        imageSrc:
-          "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
-        description:
-          "Memberikan laporan analitik yang mendalam untuk membantu pengambilan keputusan yang cepat dan tepat.",
-      },
-    ];
+  const incentives = [
+    {
+      name: "Real-Time Monitoring",
+      imageSrc:
+        "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
+      description:
+        "Memantau performa jaringan, server, dan aplikasi secara real-time.",
+    },
+    {
+      name: "Statistic Analysis",
+      imageSrc:
+        "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
+      description:
+        "Menyediakan visualisasi data yang mudah dipahami dengan dasbor yang dapat disesuaikan.",
+    },
+    {
+      name: "Service Desk Efficiency",
+      imageSrc:
+        "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
+      description:
+        "Memberikan laporan analitik yang mendalam untuk membantu pengambilan keputusan yang cepat dan tepat.",
+    },
+  ];
   return (
     <div>
       <Navbar />
@@ -48,9 +53,16 @@ const IconMon = () => {
                   berdampak pada bisnis Anda, memungkinkan tim IT untuk fokus
                   pada inovasi dan pengembangan.
                 </p>
-                {/* <p className="mt-4 text-gray-500">
-                    IconMon juga menawarkan integrasi yang mulus dengan berbagai platform dan alat yang sudah Anda gunakan, memberikan fleksibilitas maksimal dan penghematan waktu. Dengan fitur-fitur seperti pelaporan yang dapat disesuaikan, dasbor interaktif, dan notifikasi yang dapat dikonfigurasi, IconMon menjadi solusi yang komprehensif untuk kebutuhan pemantauan Anda.
-                    </p> */}
+                {/* Button untuk mengunduh brosur */}
+                <a
+                  href={brochurePdf}
+                  download="brosur.pdf"
+                  className="mt-4 md:mt-8 no-underline px-5 text-white bg-blue-500 font-medium font-customFont py-3 rounded-md hover:bg-blue-700 hover:text-white flex items-center justify-center"
+                >
+                  <FontAwesomeIcon icon={faDownload} className="mr-2" />
+                  Unduh Brosur
+                </a>
+                
               </div>
               <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">
                 <img
@@ -83,9 +95,10 @@ const IconMon = () => {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </div>
   );
-      }
+};
 
 export default IconMon;

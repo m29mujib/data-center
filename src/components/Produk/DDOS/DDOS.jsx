@@ -1,7 +1,12 @@
-import CountUp, { useCountUp } from "react-countup";
 import React from "react";
 import Navbar from "../../Navbar/Navbar";
-import imageDdos  from "../../../assets/DDoS Protection & Hidden Master.gif"
+import imageDdos from "../../../assets/DDoS Protection & Hidden Master.gif";
+import Footer from "../../Footer/Footer";
+
+import brochurePdf from "../../../assets/BrochureIconPLN.pdf";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const DDOS = () => {
   const incentives = [
     {
@@ -26,6 +31,7 @@ const DDOS = () => {
         "Melindungi data dan infrastruktur dari ancaman cyber dengan teknologi terbaru dan kontrol akses yang ketat.",
     },
   ];
+
   return (
     <div>
       <Navbar />
@@ -45,6 +51,7 @@ const DDOS = () => {
                   detik, memastikan ketersediaan dan kinerja layanan tetap
                   optimal.
                 </p>
+                {/* text main */}
                 <p className="mt-4 text-gray-500">
                   Hidden Master dari PLN Icon Plus adalah solusi manajemen
                   server yang memungkinkan Anda mengendalikan dan mengelola
@@ -54,7 +61,17 @@ const DDOS = () => {
                   penyembunyian yang canggih, memastikan hanya pengguna yang
                   berwenang yang dapat mengaksesnya.
                 </p>
+                {/* Button untuk mengunduh brosur */}
+                <a
+                  href={brochurePdf}
+                  download="brosur.pdf"
+                  className="mt-4 md:mt-8 no-underline px-5 text-white bg-blue-500 font-medium font-customFont py-3 rounded-md hover:bg-blue-700 hover:text-white flex items-center justify-center"
+                >
+                  <FontAwesomeIcon icon={faDownload} className="mr-2" />
+                  Unduh Brosur
+                </a>
               </div>
+
               <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">
                 <img
                   src={imageDdos}
@@ -86,6 +103,7 @@ const DDOS = () => {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </div>
   );

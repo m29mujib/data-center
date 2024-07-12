@@ -1,7 +1,12 @@
 import CountUp, { useCountUp } from "react-countup";
 import React from "react";
 import Navbar from "../../Navbar/Navbar";
-import imageCloud from "../../../assets/IconCloud.gif"
+import imageCloud from "../../../assets/IconCloud.gif";
+import Footer from "../../Footer/Footer";
+import brochurePdf from "../../../assets/BrochureIconPLN.pdf";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const IconCloud = () => {
   const incentives = [
     {
@@ -49,6 +54,15 @@ const IconCloud = () => {
                   pembayaran fleksibel dan menyediakan konektivitas superior
                   dengan latensi rendah untuk performa aplikasi yang optimal.
                 </p>
+                {/* Button untuk mengunduh brosur */}
+                <a
+                  href={brochurePdf}
+                  download="brosur.pdf"
+                  className="mt-4 md:mt-8 no-underline px-5 text-white bg-blue-500 font-medium font-customFont py-3 rounded-md hover:bg-blue-700 hover:text-white flex items-center justify-center"
+                >
+                  <FontAwesomeIcon icon={faDownload} className="mr-2" />
+                  Unduh Brosur
+                </a>
               </div>
               <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">
                 <img
@@ -81,6 +95,7 @@ const IconCloud = () => {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </div>
   );
