@@ -10,6 +10,7 @@ import IconFilter from "./components/Produk/IconFilter/IconFilter";
 import IconMon from "./components/Produk/IconMon/IconMon";
 import IconMail from "./components/Produk/IconMail/IconMail";
 import Contact from "./components/Contact/Contact";
+import ExternalRedirect from "./components/ExternalRedirect/ExternalRedirect";
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
           <Route path="/collocation" element={<Collocation />} />
           <Route path="/icon-filter" element={<IconFilter />} />
           <Route path="/icon-mon" element={<IconMon />} />
-
+          <Route path="/icon-rack" element={<ExternalRedirect url="https://smartmonitoringrack.plniconpln.id/home" />} />
         </Routes>
       </BrowserRouter>
     </>
