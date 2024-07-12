@@ -1,7 +1,8 @@
 import CountUp, { useCountUp } from "react-countup";
 import React from "react";
 import Navbar from "../../Navbar/Navbar";
-import sanbox from "../../../assets/sanbox.gif"
+import sanbox from "../../../assets/sanbox.gif";
+import Footer from "../../Footer/Footer";
 
 const SanBox = () => {
   const incentives = [
@@ -84,6 +85,7 @@ const SanBox = () => {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </div>
   );

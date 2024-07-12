@@ -4,20 +4,19 @@ import logos from "../../assets/a.png";
 import Images14 from "../../assets/close.png";
 import downloadIcon from "../../assets/download.png"; // Import your download icon
 import more from "../../assets/more.png";
-import pdf from "../../assets/BrochureIconPLN.pdf"
+
 
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
   const [aboutDropdown, setAboutDropdown] = useState(false);
   const [aboutDropdownVisible, setAboutDropdownVisible] = useState(false);
   const location = useLocation();
-  
 
   const scrollToContact = (event) => {
     event.preventDefault();
-    const contactElement = document.getElementById('contact', 'lokasi');
+    const contactElement = document.getElementById("contact", "lokasi");
     if (contactElement) {
-      contactElement.scrollIntoView({ behavior: 'smooth' });
+      contactElement.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -285,7 +284,8 @@ const Navbar = () => {
               Tentang Kami
             </Link>
             <a
-              href="#contact" onClick={scrollToContact}
+              href="#contact"
+              onClick={scrollToContact}
               className={`no-underline px-5 text-white bg-blue-500 font-medium font-customFont py-3 rounded-md ${
                 isActive("#contact")
                   ? "bg-blue-700 text-white"
@@ -296,7 +296,7 @@ const Navbar = () => {
             </a>
             {/* Download Button */}
             <a
-              href="{pdf}" // Path to your PDF file
+              href="../../assets/BrochureIconPLN.pdf" // Path to your PDF file
               className="no-underline px-5 text-white bg-[#00bcd4] font-medium font-customFont py-3 ml-2 rounded-md hover:bg-[#208c9a]"
               download="BrochureIconPLN.pdf" // This attribute makes the browser download the file
             >
