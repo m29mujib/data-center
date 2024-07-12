@@ -17,13 +17,21 @@ const Navbar = () => {
   const [aboutDNSDropdown, setAboutDNSDropdown] = useState(false);
   const [aboutDNSDropdownVisible, setaboutDNSDropdownVisible] = useState(false);
   const [aboutIconMailDropdown, setAboutIconMailDropdown] = useState(false);
-  const [aboutIconMailropdownVisible, setaboutIconMailDropdownVisible] = useState(false);
+  const [aboutIconMailropdownVisible, setaboutIconMailDropdownVisible] =
+    useState(false);
   const location = useLocation();
 
-  
   const scrollToContact = (event) => {
     event.preventDefault();
-    const contactElement = document.getElementById('contact');
+    const contactElement = document.getElementById("contact");
+    if (contactElement) {
+      contactElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const scrollToLokasi = (event) => {
+    event.preventDefault();
+    const contactElement = document.getElementById("lokasi");
     if (contactElement) {
       contactElement.scrollIntoView({ behavior: "smooth" });
     }
@@ -86,162 +94,168 @@ const Navbar = () => {
                 Home
               </Link>
               <div
-              className="relative inline-block"
-              onMouseEnter={() => setAboutDropdown(true)}
-              onMouseLeave={() => setAboutDropdown(false)}
-            >
-              <Link
-                to={"#"}
-                className={`no-underline px-5 font-medium font-customFont ${
-                  isLayananActive
-                    ? "text-blue-500"
-                    : "text-[#fff] hover:text-blue-500"
-                }`}
+                className="relative inline-block"
+                onMouseEnter={() => setAboutDropdown(true)}
+                onMouseLeave={() => setAboutDropdown(false)}
               >
-                Layanan <span className="ml-1">&#9662;</span>
-              </Link>
-              {aboutDropdownVisible && (
-                <div
-                  className="absolute bg-white text-black w-40 mt-2 rounded-md shadow-lg z-10"
-                  onMouseEnter={() => setAboutDropdown(true)}
-                  onMouseLeave={() => setAboutDropdown(false)}
+                <Link
+                  to={"#"}
+                  className={`no-underline px-5 font-medium font-customFont ${
+                    isLayananActive
+                      ? "text-blue-500"
+                      : "text-[#fff] hover:text-blue-500"
+                  }`}
                 >
-                  <Link
-                    to={"/collocation"}
-                    className={`block px-4 py-2 ${
-                      isActive("/collocation")
-                        ? "bg-gray-200"
-                        : "hover:bg-gray-200"
-                    }`}
-                  >
-                    ICONColocation
-                  </Link>
+                  Layanan <span className="ml-1">&#9662;</span>
+                </Link>
+                {aboutDropdownVisible && (
                   <div
-              className="relative inline-block"
-              onMouseEnter={() => setAboutDNSDropdown(true)}
-              onMouseLeave={() => setAboutDNSDropdown(false)}
-            >
-              <Link
-                to={"#"}
-                className={`no-underline px-4 font-medium font-customFont ${
-                  isLayananActive
-                    ? "text-blue-500"
-                    : "text-[#000000] hover:text-blue-500"
-                }`}
-              >
-                ICONDNS <span className="ml-1">&#9662;</span>
-              </Link>
-              {aboutDNSDropdownVisible && (
-                <div
-                  className="absolute bg-white text-black w-40 mt-2 rounded-md shadow-lg z-10"
-                  onMouseEnter={() => setAboutDNSDropdown(true)}
-                  onMouseLeave={() => setAboutDNSDropdown(false)}
-                >
-              
-                  <Link
-                    to={"/ddos"}
-                    className={`block px-4 py-2 ${
-                      isActive("/ddos") ? "bg-gray-200" : "hover:bg-gray-200"
-                    }`}
+                    className="absolute bg-white text-black w-40 mt-2 rounded-md shadow-lg z-10"
+                    onMouseEnter={() => setAboutDropdown(true)}
+                    onMouseLeave={() => setAboutDropdown(false)}
                   >
-                   DNS DDOS Protection
-                  </Link>
-                  <Link
-                    to={"/dns"}
-                    className={`block px-4 py-2 ${
-                      isActive("/dns") ? "bg-gray-200" : "hover:bg-gray-200"
-                    }`}
-                  >
-                    DNS Advance (GSLB)
-                  </Link>
-                </div>
-              )}
-            </div>
-                  <Link
-                    to={"/icon-cloud"}
-                    className={`block px-4 py-2 ${
-                      isActive("/icon-cloud")
-                        ? "bg-gray-200"
-                        : "hover:bg-gray-200"
-                    }`}
-                  >
-                    ICONCloud
-                  </Link>
-                  <div
-              className="relative inline-block"
-              onMouseEnter={() => setAboutIconMailDropdown(true)}
-              onMouseLeave={() => setAboutIconMailDropdown(false)}
-            >
-              <Link
-                to={"#"}
-                className={`no-underline px-4 font-medium font-customFont ${
-                  isLayananActive
-                    ? "text-blue-500"
-                    : "text-[#000000] hover:text-blue-500"
-                }`}
-              >
-                ICONMail <span className="ml-1">&#9662;</span>
-              </Link>
-              {aboutIconMailropdownVisible && (
-                <div
-                  className="absolute bg-white text-black w-40 mt-2 rounded-md shadow-lg z-10"
-                  onMouseEnter={() => setAboutIconMailDropdown(true)}
-                  onMouseLeave={() => setAboutIconMailDropdown(false)}
-                >
-              
-              <Link
-                    to={"/icon-filter"}
-                    className={`block px-4 py-2 ${
-                      isActive("/icon-filter")
-                        ? "bg-gray-200"
-                        : "hover:bg-gray-200"
-                    }`}
-                  >
-                   Filtering
-                  </Link>
-                  <Link
-                    to={"/icon-mail"}
-                    className={`block px-4 py-2 ${
-                      isActive("/icon-mail")
-                        ? "bg-gray-200"
-                        : "hover:bg-gray-200"
-                    }`}
-                  >
-                 Blasting & Marketing
-                  </Link>
-                </div>
-              )}
-            </div>
-               
-                  <Link
-                    to={"/icon-mon"}
-                    className={`block px-4 py-2 ${
-                      isActive("/icon-mon")
-                        ? "bg-gray-200"
-                        : "hover:bg-gray-200"
-                    }`}
-                  >
-                    ICONMonitoring
-                  </Link>
-                  <Link
-                    to={"/sanbox"}
-                    className={`block px-4 py-2 ${
-                      isActive("/sanbox") ? "bg-gray-200" : "hover:bg-gray-200"
-                    }`}
-                  >
-                    ICONSandBox
-                  </Link>
-                  <Link
-                    to={"https://smartmonitoringrack.plniconpln.id/home"}
-                    className={`block px-4 py-2 ${
-                      isActive("/sanbox") ? "bg-gray-200" : "hover:bg-gray-200"
-                    }`}
-                  >
-                    ICONRack
-                  </Link>
-                </div>
-              )}
-            </div>
+                    <Link
+                      to={"/collocation"}
+                      className={`block px-4 py-2 ${
+                        isActive("/collocation")
+                          ? "bg-gray-200"
+                          : "hover:bg-gray-200"
+                      }`}
+                    >
+                      ICONColocation
+                    </Link>
+                    <div
+                      className="relative inline-block"
+                      onMouseEnter={() => setAboutDNSDropdown(true)}
+                      onMouseLeave={() => setAboutDNSDropdown(false)}
+                    >
+                      <Link
+                        to={"#"}
+                        className={`no-underline px-4 font-medium font-customFont ${
+                          isLayananActive
+                            ? "text-blue-500"
+                            : "text-[#000000] hover:text-blue-500"
+                        }`}
+                      >
+                        ICONDNS <span className="ml-1">&#9662;</span>
+                      </Link>
+                      {aboutDNSDropdownVisible && (
+                        <div
+                          className="absolute bg-white text-black w-40 mt-2 rounded-md shadow-lg z-10"
+                          onMouseEnter={() => setAboutDNSDropdown(true)}
+                          onMouseLeave={() => setAboutDNSDropdown(false)}
+                        >
+                          <Link
+                            to={"/ddos"}
+                            className={`block px-4 py-2 ${
+                              isActive("/ddos")
+                                ? "bg-gray-200"
+                                : "hover:bg-gray-200"
+                            }`}
+                          >
+                            DNS DDOS Protection
+                          </Link>
+                          <Link
+                            to={"/dns"}
+                            className={`block px-4 py-2 ${
+                              isActive("/dns")
+                                ? "bg-gray-200"
+                                : "hover:bg-gray-200"
+                            }`}
+                          >
+                            DNS Advance (GSLB)
+                          </Link>
+                        </div>
+                      )}
+                    </div>
+                    <Link
+                      to={"/icon-cloud"}
+                      className={`block px-4 py-2 ${
+                        isActive("/icon-cloud")
+                          ? "bg-gray-200"
+                          : "hover:bg-gray-200"
+                      }`}
+                    >
+                      ICONCloud
+                    </Link>
+                    <div
+                      className="relative inline-block"
+                      onMouseEnter={() => setAboutIconMailDropdown(true)}
+                      onMouseLeave={() => setAboutIconMailDropdown(false)}
+                    >
+                      <Link
+                        to={"#"}
+                        className={`no-underline px-4 font-medium font-customFont ${
+                          isLayananActive
+                            ? "text-blue-500"
+                            : "text-[#000000] hover:text-blue-500"
+                        }`}
+                      >
+                        ICONMail <span className="ml-1">&#9662;</span>
+                      </Link>
+                      {aboutIconMailropdownVisible && (
+                        <div
+                          className="absolute bg-white text-black w-40 mt-2 rounded-md shadow-lg z-10"
+                          onMouseEnter={() => setAboutIconMailDropdown(true)}
+                          onMouseLeave={() => setAboutIconMailDropdown(false)}
+                        >
+                          <Link
+                            to={"/icon-filter"}
+                            className={`block px-4 py-2 ${
+                              isActive("/icon-filter")
+                                ? "bg-gray-200"
+                                : "hover:bg-gray-200"
+                            }`}
+                          >
+                            Filtering
+                          </Link>
+                          <Link
+                            to={"/icon-mail"}
+                            className={`block px-4 py-2 ${
+                              isActive("/icon-mail")
+                                ? "bg-gray-200"
+                                : "hover:bg-gray-200"
+                            }`}
+                          >
+                            Blasting & Marketing
+                          </Link>
+                        </div>
+                      )}
+                    </div>
+
+                    <Link
+                      to={"/icon-mon"}
+                      className={`block px-4 py-2 ${
+                        isActive("/icon-mon")
+                          ? "bg-gray-200"
+                          : "hover:bg-gray-200"
+                      }`}
+                    >
+                      ICONMonitoring
+                    </Link>
+                    <Link
+                      to={"/sanbox"}
+                      className={`block px-4 py-2 ${
+                        isActive("/sanbox")
+                          ? "bg-gray-200"
+                          : "hover:bg-gray-200"
+                      }`}
+                    >
+                      ICONSandBox
+                    </Link>
+                    <Link
+                      to={"https://smartmonitoringrack.plniconpln.id/home"}
+                      className={`block px-4 py-2 ${
+                        isActive("/sanbox")
+                          ? "bg-gray-200"
+                          : "hover:bg-gray-200"
+                      }`}
+                    >
+                      ICONRack
+                    </Link>
+                  </div>
+                )}
+              </div>
               <Link
                 to="#"
                 className={`p-5 ${
@@ -272,7 +286,9 @@ const Navbar = () => {
             <Link
               to="/"
               className={`no-underline px-5 font-medium font-customFont ${
-                isActive("/") ? "text-blue-500" : "text-[#fff] hover:text-blue-500"
+                isActive("/")
+                  ? "text-blue-500"
+                  : "text-[#fff] hover:text-blue-500"
               }`}
             >
               Beranda
@@ -285,7 +301,9 @@ const Navbar = () => {
               <Link
                 to="#"
                 className={`no-underline px-5 font-medium font-customFont ${
-                  isLayananActive ? "text-blue-500" : "text-[#fff] hover:text-blue-500"
+                  isLayananActive
+                    ? "text-blue-500"
+                    : "text-[#fff] hover:text-blue-500"
                 }`}
               >
                 Layanan <span className="ml-1">&#9662;</span>
@@ -299,106 +317,118 @@ const Navbar = () => {
                   <Link
                     to="/collocation"
                     className={`block px-4 py-2 ${
-                      isActive("/collocation") ? "bg-gray-200" : "hover:bg-gray-200"
+                      isActive("/collocation")
+                        ? "bg-gray-200"
+                        : "hover:bg-gray-200"
                     }`}
                   >
                     ICONColocation
                   </Link>
                   <div
-              className="relative inline-block"
-              onMouseEnter={() => setAboutDNSDropdown(true)}
-              onMouseLeave={() => setAboutDNSDropdown(false)}
-            >
-              <Link
-                to={"#"}
-                className={`no-underline px-4 font-medium font-customFont ${
-                  isLayananActive
-                    ? "text-blue-500"
-                    : "text-[#000000] hover:text-blue-500"
-                }`}
-              >
-                ICONDNS <span className="ml-1">&#9662;</span>
-              </Link>
-              {aboutDNSDropdownVisible && (
-                <div
-                  className="absolute bg-white text-black w-40 mt-2 rounded-md shadow-lg z-10"
-                  onMouseEnter={() => setAboutDNSDropdown(true)}
-                  onMouseLeave={() => setAboutDNSDropdown(false)}
-                >
-              
-                  <Link
-                    to="/ddos"
-                    className={`block px-4 py-2 ${
-                      isActive("/ddos") ? "bg-gray-200" : "hover:bg-gray-200"
-                    }`}
+                    className="relative inline-block"
+                    onMouseEnter={() => setAboutDNSDropdown(true)}
+                    onMouseLeave={() => setAboutDNSDropdown(false)}
                   >
-                   DNS DDOS Protection
-                  </Link>
-                  <Link
-                    to="/dns"
-                    className={`block px-4 py-2 ${
-                      isActive("/dns") ? "bg-gray-200" : "hover:bg-gray-200"
-                    }`}
-                  >
-                    DNS Advance (GSLB)
-                  </Link>
-                </div>
-              )}
-            </div>
+                    <Link
+                      to={"#"}
+                      className={`no-underline px-4 font-medium font-customFont ${
+                        isLayananActive
+                          ? "text-blue-500"
+                          : "text-[#000000] hover:text-blue-500"
+                      }`}
+                    >
+                      ICONDNS <span className="ml-1">&#9662;</span>
+                    </Link>
+                    {aboutDNSDropdownVisible && (
+                      <div
+                        className="absolute bg-white text-black w-40 mt-2 rounded-md shadow-lg z-10"
+                        onMouseEnter={() => setAboutDNSDropdown(true)}
+                        onMouseLeave={() => setAboutDNSDropdown(false)}
+                      >
+                        <Link
+                          to="/ddos"
+                          className={`block px-4 py-2 ${
+                            isActive("/ddos")
+                              ? "bg-gray-200"
+                              : "hover:bg-gray-200"
+                          }`}
+                        >
+                          DNS DDOS Protection
+                        </Link>
+                        <Link
+                          to="/dns"
+                          className={`block px-4 py-2 ${
+                            isActive("/dns")
+                              ? "bg-gray-200"
+                              : "hover:bg-gray-200"
+                          }`}
+                        >
+                          DNS Advance (GSLB)
+                        </Link>
+                      </div>
+                    )}
+                  </div>
                   <Link
                     to="/icon-cloud"
                     className={`block px-4 py-2 ${
-                      isActive("/icon-cloud") ? "bg-gray-200" : "hover:bg-gray-200"
+                      isActive("/icon-cloud")
+                        ? "bg-gray-200"
+                        : "hover:bg-gray-200"
                     }`}
                   >
                     ICONCloud
                   </Link>
                   <div
-              className="relative inline-block"
-              onMouseEnter={() => setAboutIconMailDropdown(true)}
-              onMouseLeave={() => setAboutIconMailDropdown(false)}
-            >
-              <Link
-                to={"#"}
-                className={`no-underline px-4 font-medium font-customFont ${
-                  isLayananActive
-                    ? "text-blue-500"
-                    : "text-[#000000] hover:text-blue-500"
-                }`}
-              >
-                ICONMail <span className="ml-1">&#9662;</span>
-              </Link>
-              {aboutIconMailropdownVisible && (
-                <div
-                  className="absolute bg-white text-black w-40 mt-2 rounded-md shadow-lg z-10"
-                  onMouseEnter={() => setAboutIconMailDropdown(true)}
-                  onMouseLeave={() => setAboutIconMailDropdown(false)}
-                >
-              
-              <Link
-                    to={"/icon-filter"}
-                    className={`block px-4 py-2 ${
-                      isActive("/icon-filter") ? "bg-gray-200" : "hover:bg-gray-200"
-                    }`}
+                    className="relative inline-block"
+                    onMouseEnter={() => setAboutIconMailDropdown(true)}
+                    onMouseLeave={() => setAboutIconMailDropdown(false)}
                   >
-                   Filtering
-                  </Link>
-                  <Link
-                    to="/icon-mail"
-                    className={`block px-4 py-2 ${
-                      isActive("/icon-mail") ? "bg-gray-200" : "hover:bg-gray-200"
-                    }`}
-                  >
-                 Blasting & Marketing
-                  </Link>
-                </div>
-              )}
-            </div>
-               
+                    <Link
+                      to={"#"}
+                      className={`no-underline px-4 font-medium font-customFont ${
+                        isLayananActive
+                          ? "text-blue-500"
+                          : "text-[#000000] hover:text-blue-500"
+                      }`}
+                    >
+                      ICONMail <span className="ml-1">&#9662;</span>
+                    </Link>
+                    {aboutIconMailropdownVisible && (
+                      <div
+                        className="absolute bg-white text-black w-40 mt-2 rounded-md shadow-lg z-10"
+                        onMouseEnter={() => setAboutIconMailDropdown(true)}
+                        onMouseLeave={() => setAboutIconMailDropdown(false)}
+                      >
+                        <Link
+                          to={"/icon-filter"}
+                          className={`block px-4 py-2 ${
+                            isActive("/icon-filter")
+                              ? "bg-gray-200"
+                              : "hover:bg-gray-200"
+                          }`}
+                        >
+                          Filtering
+                        </Link>
+                        <Link
+                          to="/icon-mail"
+                          className={`block px-4 py-2 ${
+                            isActive("/icon-mail")
+                              ? "bg-gray-200"
+                              : "hover:bg-gray-200"
+                          }`}
+                        >
+                          Blasting & Marketing
+                        </Link>
+                      </div>
+                    )}
+                  </div>
+
                   <Link
                     to="/icon-mon"
                     className={`block px-4 py-2 ${
-                      isActive("/icon-mon") ? "bg-gray-200" : "hover:bg-gray-200"
+                      isActive("/icon-mon")
+                        ? "bg-gray-200"
+                        : "hover:bg-gray-200"
                     }`}
                   >
                     ICONMonitoring
@@ -422,18 +452,24 @@ const Navbar = () => {
                 </div>
               )}
             </div>
-            <Link
-              to="#lokasi"
+            <a
+              href="#lokasi"
+              onClick={scrollToLokasi}
               className={`no-underline px-5 font-medium font-customFont ${
-                isActive("#lokasi") ? "text-blue-500" : "text-[#fff] hover:text-blue-500"
+                isActive("#lokasi")
+                  ? "text-blue-500"
+                  : "text-[#fff] hover:text-blue-500"
               }`}
             >
               Lokasi
-            </Link>
+            </a>
             <Link
-              to="#"
+              to="#about"
+              onClick={scrollToContact}
               className={`no-underline px-5 font-medium font-customFont ${
-                isActive("#bantuan") ? "text-blue-500" : "text-[#fff] hover:text-blue-500"
+                isActive("#bantuan")
+                  ? "text-blue-500"
+                  : "text-[#fff] hover:text-blue-500"
               }`}
             >
               Tentang Kami
@@ -442,7 +478,9 @@ const Navbar = () => {
               href="#contact"
               onClick={scrollToContact}
               className={`no-underline px-5 text-white bg-blue-500 font-medium font-customFont py-3 rounded-md ${
-                isActive("#contact") ? "bg-blue-700 text-white" : "hover:bg-blue-700 hover:text-white"
+                isActive("#contact")
+                  ? "bg-blue-700 text-white"
+                  : "hover:bg-blue-700 hover:text-white"
               }`}
             >
               Kontak

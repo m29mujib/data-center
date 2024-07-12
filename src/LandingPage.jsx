@@ -5,7 +5,7 @@ import Home from "./components/Home/Home";
 import Komunik from "./components/Komunik/Komunik";
 import Kolaborate from "../src/components/Kolaborate/Kolaborate";
 import Footer from "../src/components/Footer/Footer";
-import Lokasi from "./components/Lokasi/Lokasi";
+import Lokasi from "./components/lokasi/Lokasi";
 import HorizontalParallax from "./components/BannerParallax/Paralax";
 import Contact from "./components/Contact/Contact";
 
