@@ -1,6 +1,9 @@
 export const Lokasi = () => {
   return (
-    <div className="w-full h-screen flex flex-col justify-center items-center bg-gray-100">
+    <div
+      className="w-full h-screen flex flex-col justify-center items-center bg-gray-100"
+      id="lokasi"
+    >
       <div className="w-full h-full flex flex-col justify-center items-center">
         <h1 className="text-4xl font-bold text-[#333] mb-10">Lokasi Kami</h1>
         <iframe
