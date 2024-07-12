@@ -25,19 +25,18 @@ const About = () => {
             data-aos="fade-right"
             data-aos-duration="3000"
           >
-            Company Profile PLN Icon Plus PLN Icon Plus, bersama induk
-            perusahaan PT PLN (Persero), terus mengembangkan layanan untuk
-            melayani bangsa melalui teknologi informasi, komunikasi, dan
-            transisi energi. Kami terus berinovasi menyediakan solusi Beyond kWh
-            dengan menyediakan penawaran lengkap yang mencakup teknologi
-            jaringan serat optik end-to-end, layanan terkelola infrastruktur,
-            pusat data, platform digital kelas atas, dan solusi layanan managed
-            service perangkat yang andal. PLN Icon Plus beroperasi dengan
-            dukungan aset strategis infrastruktur Right of Way (RoW) PLN,
-            memungkinkan kami untuk menjangkau seluruh Indonesia, bahkan di
-            daerah yang paling terpencil sekalipun. Kami lebih dari siap untuk
-            merangkul transformasi digital menuju lingkungan yang cerdas dan
-            hijau di Indonesia
+            PLN Icon Plus, bersama induk perusahaan PT PLN (Persero), terus
+            mengembangkan layanan untuk melayani bangsa melalui teknologi
+            informasi, komunikasi, dan transisi energi. Kami terus berinovasi
+            menyediakan solusi Beyond kWh dengan menyediakan penawaran lengkap
+            yang mencakup teknologi jaringan serat optik end-to-end, layanan
+            terkelola infrastruktur, pusat data, platform digital kelas atas,
+            dan solusi layanan managed service perangkat yang andal. PLN Icon
+            Plus beroperasi dengan dukungan aset strategis infrastruktur Right
+            of Way (RoW) PLN, memungkinkan kami untuk menjangkau seluruh
+            Indonesia, bahkan di daerah yang paling terpencil sekalipun. Kami
+            lebih dari siap untuk merangkul transformasi digital menuju
+            lingkungan yang cerdas dan hijau di Indonesia
           </p>
         </div>
         <div className="flex items-center justify-between">
@@ -65,7 +64,6 @@ const About = () => {
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Accusamus, esse.
             </p> */}
-            
           </div>
           <div className="flex basis-[50%]">
             <div className="flex justify-between w-full">
@@ -132,10 +130,10 @@ const About = () => {
             >
               Memberi kontribusi terhadap perkembangan telekomunikasi nasional.
             </p>
-            
           </div>
         </div>
-      </div><Footer />
+      </div>
+      <Footer />
     </div>
   );
 };
