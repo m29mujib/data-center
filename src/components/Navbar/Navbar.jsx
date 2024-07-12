@@ -7,6 +7,8 @@ import Images14 from "../../assets/close.png";
 // Import your download icon
 import brochurePdf from "../../../src/assets/BrochureIconPLN.pdf"; // pastikan path ini benar
 import more from "../../assets/more.png";
+import pdf from "../../assets/BrochureIconPLN.pdf";
+import ExternalRedirect from "../ExternalRedirect/ExternalRedirect"; // Pastikan import ini benar
 
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
@@ -18,9 +20,10 @@ const Navbar = () => {
   const [aboutIconMailropdownVisible, setaboutIconMailDropdownVisible] = useState(false);
   const location = useLocation();
 
+  
   const scrollToContact = (event) => {
     event.preventDefault();
-    const contactElement = document.getElementById("contact", "lokasi");
+    const contactElement = document.getElementById('contact');
     if (contactElement) {
       contactElement.scrollIntoView({ behavior: "smooth" });
     }
@@ -65,7 +68,8 @@ const Navbar = () => {
     location.pathname.includes("/icon-filter") ||
     location.pathname.includes("/icon-mail") ||
     location.pathname.includes("/icon-mon") ||
-    location.pathname.includes("/sanbox");
+    location.pathname.includes("/sanbox") ||
+    location.pathname.includes("/icon-rack");
 
   return (
     <div className="w-full h-[50px] bg-black bg-opacity-30 backdrop-blur-lg py-10 px-[8%] flex justify-between items-center fixed top-0 left-0 z-10">
@@ -260,20 +264,15 @@ const Navbar = () => {
       )}
       <Link to="/" className="flex justify-center items-center">
         <img src={logos} alt="" className="h-8 mr-4" />
-        {/* <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
-          Data Center
-        </span> */}
       </Link>
 
       <div className="flex items-center justify-right">
         <ul className="hidden md:flex">
           <li className="relative inline-block">
             <Link
-              to={"/"}
+              to="/"
               className={`no-underline px-5 font-medium font-customFont ${
-                isActive("/")
-                  ? "text-blue-500"
-                  : "text-[#fff] hover:text-blue-500"
+                isActive("/") ? "text-blue-500" : "text-[#fff] hover:text-blue-500"
               }`}
             >
               Beranda
@@ -284,11 +283,9 @@ const Navbar = () => {
               onMouseLeave={() => setAboutDropdown(false)}
             >
               <Link
-                to={"#"}
+                to="#"
                 className={`no-underline px-5 font-medium font-customFont ${
-                  isLayananActive
-                    ? "text-blue-500"
-                    : "text-[#fff] hover:text-blue-500"
+                  isLayananActive ? "text-blue-500" : "text-[#fff] hover:text-blue-500"
                 }`}
               >
                 Layanan <span className="ml-1">&#9662;</span>
@@ -300,11 +297,9 @@ const Navbar = () => {
                   onMouseLeave={() => setAboutDropdown(false)}
                 >
                   <Link
-                    to={"/collocation"}
+                    to="/collocation"
                     className={`block px-4 py-2 ${
-                      isActive("/collocation")
-                        ? "bg-gray-200"
-                        : "hover:bg-gray-200"
+                      isActive("/collocation") ? "bg-gray-200" : "hover:bg-gray-200"
                     }`}
                   >
                     ICONColocation
@@ -332,7 +327,7 @@ const Navbar = () => {
                 >
               
                   <Link
-                    to={"/ddos"}
+                    to="/ddos"
                     className={`block px-4 py-2 ${
                       isActive("/ddos") ? "bg-gray-200" : "hover:bg-gray-200"
                     }`}
@@ -340,7 +335,7 @@ const Navbar = () => {
                    DNS DDOS Protection
                   </Link>
                   <Link
-                    to={"/dns"}
+                    to="/dns"
                     className={`block px-4 py-2 ${
                       isActive("/dns") ? "bg-gray-200" : "hover:bg-gray-200"
                     }`}
@@ -351,11 +346,9 @@ const Navbar = () => {
               )}
             </div>
                   <Link
-                    to={"/icon-cloud"}
+                    to="/icon-cloud"
                     className={`block px-4 py-2 ${
-                      isActive("/icon-cloud")
-                        ? "bg-gray-200"
-                        : "hover:bg-gray-200"
+                      isActive("/icon-cloud") ? "bg-gray-200" : "hover:bg-gray-200"
                     }`}
                   >
                     ICONCloud
@@ -385,19 +378,15 @@ const Navbar = () => {
               <Link
                     to={"/icon-filter"}
                     className={`block px-4 py-2 ${
-                      isActive("/icon-filter")
-                        ? "bg-gray-200"
-                        : "hover:bg-gray-200"
+                      isActive("/icon-filter") ? "bg-gray-200" : "hover:bg-gray-200"
                     }`}
                   >
                    Filtering
                   </Link>
                   <Link
-                    to={"/icon-mail"}
+                    to="/icon-mail"
                     className={`block px-4 py-2 ${
-                      isActive("/icon-mail")
-                        ? "bg-gray-200"
-                        : "hover:bg-gray-200"
+                      isActive("/icon-mail") ? "bg-gray-200" : "hover:bg-gray-200"
                     }`}
                   >
                  Blasting & Marketing
@@ -407,11 +396,9 @@ const Navbar = () => {
             </div>
                
                   <Link
-                    to={"/icon-mon"}
+                    to="/icon-mon"
                     className={`block px-4 py-2 ${
-                      isActive("/icon-mon")
-                        ? "bg-gray-200"
-                        : "hover:bg-gray-200"
+                      isActive("/icon-mon") ? "bg-gray-200" : "hover:bg-gray-200"
                     }`}
                   >
                     ICONMonitoring
@@ -438,9 +425,7 @@ const Navbar = () => {
             <Link
               to="#lokasi"
               className={`no-underline px-5 font-medium font-customFont ${
-                isActive("#lokasi")
-                  ? "text-blue-500"
-                  : "text-[#fff] hover:text-blue-500"
+                isActive("#lokasi") ? "text-blue-500" : "text-[#fff] hover:text-blue-500"
               }`}
             >
               Lokasi
@@ -448,9 +433,7 @@ const Navbar = () => {
             <Link
               to="#"
               className={`no-underline px-5 font-medium font-customFont ${
-                isActive("#bantuan")
-                  ? "text-blue-500"
-                  : "text-[#fff] hover:text-blue-500"
+                isActive("#bantuan") ? "text-blue-500" : "text-[#fff] hover:text-blue-500"
               }`}
             >
               Tentang Kami
@@ -459,14 +442,11 @@ const Navbar = () => {
               href="#contact"
               onClick={scrollToContact}
               className={`no-underline px-5 text-white bg-blue-500 font-medium font-customFont py-3 rounded-md ${
-                isActive("#contact")
-                  ? "bg-blue-700 text-white"
-                  : "hover:bg-blue-700 hover:text-white"
+                isActive("#contact") ? "bg-blue-700 text-white" : "hover:bg-blue-700 hover:text-white"
               }`}
             >
               Kontak
             </a>
-            {/* Download Button */}
             <a
               href={brochurePdf}
               download="brosur.pdf"
