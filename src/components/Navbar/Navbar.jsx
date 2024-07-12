@@ -140,6 +140,7 @@ const Navbar = () => {
                       {aboutDNSDropdownVisible && (
                         <div
                           className="absolute bg-white text-black w-40 mt-2 rounded-md shadow-lg z-10"
+                          style={{ top: "0", left: "100%" }}
                           onMouseEnter={() => setAboutDNSDropdown(true)}
                           onMouseLeave={() => setAboutDNSDropdown(false)}
                         >
@@ -194,6 +195,7 @@ const Navbar = () => {
                       {aboutIconMailropdownVisible && (
                         <div
                           className="absolute bg-white text-black w-40 mt-2 rounded-md shadow-lg z-10"
+                          style={{ top: "0", left: "100%" }}
                           onMouseEnter={() => setAboutIconMailDropdown(true)}
                           onMouseLeave={() => setAboutIconMailDropdown(false)}
                         >
@@ -340,6 +342,7 @@ const Navbar = () => {
                     {aboutDNSDropdownVisible && (
                       <div
                         className="absolute bg-white text-black w-40 mt-2 rounded-md shadow-lg z-10"
+                        style={{ top: "0", left: "100%" }}
                         onMouseEnter={() => setAboutDNSDropdown(true)}
                         onMouseLeave={() => setAboutDNSDropdown(false)}
                       >
@@ -394,6 +397,7 @@ const Navbar = () => {
                     {aboutIconMailropdownVisible && (
                       <div
                         className="absolute bg-white text-black w-40 mt-2 rounded-md shadow-lg z-10"
+                        style={{ top: "0", left: "100%" }}
                         onMouseEnter={() => setAboutIconMailDropdown(true)}
                         onMouseLeave={() => setAboutIconMailDropdown(false)}
                       >
