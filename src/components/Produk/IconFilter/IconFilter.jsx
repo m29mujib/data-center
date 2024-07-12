@@ -2,6 +2,7 @@ import CountUp, { useCountUp } from "react-countup";
 import React from "react";
 import Navbar from "../../Navbar/Navbar";
 import imageFilter from "../../../assets/iconFilter.gif"
+import Footer from "../../Footer/Footer";
 
 const IconFilter = () => {
     const incentives = [
@@ -84,6 +85,7 @@ const IconFilter = () => {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </div>
   );

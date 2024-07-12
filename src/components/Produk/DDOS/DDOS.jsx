@@ -1,7 +1,9 @@
 import CountUp, { useCountUp } from "react-countup";
 import React from "react";
 import Navbar from "../../Navbar/Navbar";
-import imageDdos  from "../../../assets/DDoS Protection & Hidden Master.gif"
+import imageDdos from "../../../assets/DDoS Protection & Hidden Master.gif"
+import Footer from "../../Footer/Footer";
+
 const DDOS = () => {
   const incentives = [
     {
@@ -86,6 +88,7 @@ const DDOS = () => {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </div>
   );

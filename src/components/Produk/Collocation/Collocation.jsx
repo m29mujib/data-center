@@ -2,6 +2,7 @@ import CountUp, { useCountUp } from "react-countup";
 import React from "react";
 import Navbar from "../../Navbar/Navbar";
 import collocation from '../../../assets/Collocation.gif';
+import Footer from "../../Footer/Footer";
 
 const Collocation = () => {
   const incentives = [
@@ -84,7 +85,7 @@ const Collocation = () => {
           </div>
         </div>
       </div>
-      <Footer />
+
     </div>
   );
 };

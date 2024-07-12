@@ -1,7 +1,8 @@
 import CountUp, { useCountUp } from "react-countup";
 import React from "react";
 import Navbar from "../../Navbar/Navbar";
-import imageCloud from "../../../assets/IconCloud.gif"
+import imageCloud from "../../../assets/IconCloud.gif";
+import Footer from "../../Footer/Footer";
 const IconCloud = () => {
   const incentives = [
     {
@@ -81,6 +82,7 @@ const IconCloud = () => {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </div>
   );
