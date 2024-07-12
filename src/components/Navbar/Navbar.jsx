@@ -7,8 +7,6 @@ import Images14 from "../../assets/close.png";
 // Import your download icon
 import brochurePdf from "../../../src/assets/BrochureIconPLN.pdf"; // pastikan path ini benar
 import more from "../../assets/more.png";
-import pdf from "../../assets/BrochureIconPLN.pdf";
-import ExternalRedirect from "../ExternalRedirect/ExternalRedirect"; // Pastikan import ini benar
 
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
@@ -449,7 +447,7 @@ const Navbar = () => {
             </a>
             <a
               href={brochurePdf}
-              download="brosur.pdf"
+              download="BrosurDataCenterIconPlus.pdf"
               className="md:ml-5 no-underline px-5 text-white bg-yellow-500 font-medium font-customFont py-3 rounded-md hover:bg-blue-700 hover:text-whiteitems-center"
             >
               <FontAwesomeIcon icon={faDownload} className="mr-2" />
