@@ -257,17 +257,21 @@ const Navbar = () => {
                 )}
               </div>
               <Link
-                to="/home"
+                to="/page-lokasi"
                 className={`p-5 ${
-                  isActive("/lokasi") ? "text-blue-500" : "hover:text-blue-500"
+                  isActive("/page-lokasi")
+                    ? "text-blue-500"
+                    : "hover:text-blue-500"
                 }`}
               >
                 Lokasi
               </Link>
               <Link
-                to="/about"
+                to="/page-lokasi"
                 className={`p-5 ${
-                  isActive("/about") ? "text-blue-500" : "hover:text-blue-500"
+                  isActive("/page-lokasi")
+                    ? "text-blue-500"
+                    : "hover:text-blue-500"
                 }`}
               >
                 Tentang Kami
@@ -444,9 +448,11 @@ const Navbar = () => {
                     ICONSandBox
                   </Link>
                   <Link
-                    to={"https://smartmonitoringrack.plniconpln.id/home"}
+                    to="/icon-rack"
                     className={`block px-4 py-2 ${
-                      isActive("/sanbox") ? "bg-gray-200" : "hover:bg-gray-200"
+                      isActive("/icon-rack")
+                        ? "bg-gray-200"
+                        : "hover:bg-gray-200"
                     }`}
                   >
                     ICONRack
@@ -454,17 +460,17 @@ const Navbar = () => {
                 </div>
               )}
             </div>
-            <a
-              href="#lokasi"
-              onClick={scrollToLokasi}
+            <Link
+              to="/page-lokasi"
+              // onClick={scrollToContact}
               className={`no-underline px-5 font-medium font-customFont ${
-                isActive("#lokasi")
+                isActive("/page-lokasi")
                   ? "text-blue-500"
                   : "text-[#fff] hover:text-blue-500"
               }`}
             >
               Lokasi
-            </a>
+            </Link>
             <Link
               to="/about"
               // onClick={scrollToContact}
@@ -476,21 +482,21 @@ const Navbar = () => {
             >
               Tentang Kami
             </Link>
-            <a
-              href="#contact"
-              onClick={scrollToContact}
+            <Link
+              to="/page-contact"
+              // onClick={scrollToContact}
               className={`no-underline px-5 text-white bg-blue-500 font-medium font-customFont py-3 rounded-md ${
-                isActive("#contact")
+                isActive("/page-contact")
                   ? "bg-blue-700 text-white"
                   : "hover:bg-blue-700 hover:text-white"
               }`}
             >
               Kontak
-            </a>
+            </Link>
             <a
               href={brochurePdf}
               download="BrosurDataCenterIconPlus.pdf"
-              className="md:ml-5 no-underline px-5 text-white bg-yellow-500 font-medium font-customFont py-3 rounded-md hover:bg-blue-700 hover:text-whiteitems-center"
+              className="md:ml-5 no-underline px-5 text-yellow-500 bg-transparent border-2 border-yellow-500 font-medium font-customFont py-3 rounded-md hover:bg-yellow-500 hover:text-white items-center"
             >
               <FontAwesomeIcon icon={faDownload} className="mr-2" />
               Unduh Brosur

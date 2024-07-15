@@ -14,21 +14,21 @@ const IconMail = () => {
       imageSrc:
         "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
       description:
-        "Memungkinkan pengiriman email dalam jumlah besar dengan cepat dan tepat sasaran, mendukung kampanye pemasaran digital yang efektif.",
+        "Hingga saat ini kami sudah mengirimkan lebih dari 10 Juta email setiap bulannya. Anda dapat mengirimkan ke banyak email sekaligus menggunakan ICONMAIL hanya dengan 3 langkah mudah.",
     },
     {
-      name: "Advanced Campaign Analytics",
+      name: "Easy Template and Advanced Report Analytics",
       imageSrc:
         "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
       description:
-        "Dilengkapi dengan fitur analitik yang memberikan wawasan mendalam tentang kinerja kampanye, membantu perusahaan mengukur keberhasilan dan mengoptimalkan strategi pemasaran.",
+        "Hanya butuh beberapa menit untuk membuat email cantik dan profesional menggunakan fitur drag and drop, tanpa memerlukan keahlian khusus.  Dari setiap email yang dikirimkan Anda akan melihat laporan seperti email dibuka, siapa yang membuka, link di klik, berapa kali link diklik, spam serta unsubscribe.",
     },
     {
-      name: "Security and Layered Filtering",
+      name: "Complete Email Delivery Solution",
       imageSrc:
         "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
       description:
-        "Sistem penyaringan berlapis dari ICON+ memastikan email yang dikirim bersih dari konten berbahaya, menjaga reputasi dan integritas komunikasi bisnis.",
+        "Platform 3 in 1 ini mendukung Email Transaksional, Email Marketing, dan Validasi Email dengan deliverability superior, integrasi mudah, dan infrastruktur scalable, cocok untuk otomatisasi email Anda.",
     },
   ];
   return (
@@ -40,23 +40,24 @@ const IconMail = () => {
             <div className="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
               <div>
                 <h2 className="text-4xl font-bold tracking-tight text-gray-900">
-                  Iconmail Blasting & Marketing
+                  ICONMail Blasting & Marketing
                 </h2>
                 <p className="mt-4 text-gray-500">
-                  ICONMAIL Blasting & Marketing adalah layanan pengiriman email
-                  massal dari ICON+ yang dirancang untuk memenuhi kebutuhan
-                  kampanye pemasaran digital. Dengan platform yang aman dan
-                  andal, layanan ini memungkinkan pengiriman email dalam jumlah
-                  besar secara efisien dan tepat sasaran. ICONMAIL Blasting &
-                  Marketing dilengkapi dengan fitur analitik canggih yang
-                  memberikan wawasan mendalam tentang kinerja kampanye, membantu
-                  perusahaan mengoptimalkan strategi pemasaran mereka.
+                  ICONMail Blasting & Marketing adalah layanan pengiriman email
+                  superior massal dari ICON+ yang dirancang untuk memenuhi
+                  kebutuhan kampanye pemasaran digital. Dengan platform yang
+                  aman dan andal, layanan ini memungkinkan pengiriman email
+                  dalam jumlah sangat besar dalam waktu bersamaan secara efisien
+                  dan tepat sasaran. ICONMail Blasting & Marketing dilengkapi
+                  dengan fitur analitik canggih yang memberikan wawasan mendalam
+                  tentang kinerja kampanye, membantu perusahaan mengoptimalkan
+                  strategi pemasaran mereka.
                 </p>
                 {/* Button untuk mengunduh brosur */}
                 <a
                   href={brochurePdf}
                   download="brosur.pdf"
-                  className="mt-4 md:mt-8 no-underline px-5 text-white bg-blue-500 font-medium font-customFont py-3 rounded-md hover:bg-blue-700 hover:text-white flex items-center justify-center"
+                  className="mt-3 md:mt-5 no-underline px-5 text-blue-500 bg-white border border-blue-500 font-medium font-customFont py-3 rounded-md hover:bg-blue-700 hover:text-white flex items-center justify-center"
                 >
                   <FontAwesomeIcon icon={faDownload} className="mr-2" />
                   Unduh Brosur

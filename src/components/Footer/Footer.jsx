@@ -25,11 +25,7 @@ const Footer = () => {
                 Tentang Kami
               </a>
             </li>
-            <li>
-              <a href="#" className="hover:underline me-4 md:me-6">
-                Kebijakan Perusahaan
-              </a>
-            </li>
+            
 
             <li>
               <a href="#" className="hover:underline">

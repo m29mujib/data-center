@@ -11,12 +11,12 @@ const About = () => {
   return (
     <div className="w-full h-full">
       <Navbar />
-      <div className="mt-20 w-full h-full flex flex-col px-[8%] flex-wrap">
+      <div className="mt-8 w-full h-full flex flex-col px-[8%] flex-wrap">
         <div className="flex flex-col my-[80px]">
           <h1
             className=" text-5xl font-semibold mb-5 max-w-[500px] font-customFont text-[#333]"
-            data-aos="fade-right"
-            data-aos-duration="3000"
+            data-aos="fade-up"
+            data-aos-duration="1500"
           >
             Tentang Kami
           </h1>
@@ -25,27 +25,26 @@ const About = () => {
             data-aos="fade-right"
             data-aos-duration="3000"
           >
-            Company Profile PLN Icon Plus PLN Icon Plus, bersama induk
-            perusahaan PT PLN (Persero), terus mengembangkan layanan untuk
-            melayani bangsa melalui teknologi informasi, komunikasi, dan
-            transisi energi. Kami terus berinovasi menyediakan solusi Beyond kWh
-            dengan menyediakan penawaran lengkap yang mencakup teknologi
-            jaringan serat optik end-to-end, layanan terkelola infrastruktur,
-            pusat data, platform digital kelas atas, dan solusi layanan managed
-            service perangkat yang andal. PLN Icon Plus beroperasi dengan
-            dukungan aset strategis infrastruktur Right of Way (RoW) PLN,
-            memungkinkan kami untuk menjangkau seluruh Indonesia, bahkan di
-            daerah yang paling terpencil sekalipun. Kami lebih dari siap untuk
-            merangkul transformasi digital menuju lingkungan yang cerdas dan
-            hijau di Indonesia
+            PLN Icon Plus, bersama induk perusahaan PT PLN (Persero), terus
+            mengembangkan layanan untuk melayani bangsa melalui teknologi
+            informasi, komunikasi, dan transisi energi. Kami terus berinovasi
+            menyediakan solusi Beyond kWh dengan menyediakan penawaran lengkap
+            yang mencakup teknologi jaringan serat optik end-to-end, layanan
+            terkelola infrastruktur, pusat data, platform digital kelas atas,
+            dan solusi layanan managed service perangkat yang andal. PLN Icon
+            Plus beroperasi dengan dukungan aset strategis infrastruktur Right
+            of Way (RoW) PLN, memungkinkan kami untuk menjangkau seluruh
+            Indonesia, bahkan di daerah yang paling terpencil sekalipun. Kami
+            lebih dari siap untuk merangkul transformasi digital menuju
+            lingkungan yang cerdas dan hijau di Indonesia
           </p>
         </div>
         <div className="flex items-center justify-between w-full md:flex-nowrap flex-wrap">
           <div className="md:py-[100px] py-[0px] ">
             <h1
               className="text-5xl font-semibold mb-5 max-w-[500px] font-customFont text-[#333]"
-              data-aos="fade-right"
-              data-aos-duration="3000"
+              data-aos="fade-up"
+              data-aos-duration="1500"
             >
               Visi
             </h1>
@@ -79,21 +78,21 @@ const About = () => {
               alt=""
               className="md:w-[600px] md:h-[370px] w-[350px] h-[350px] hover:scale-105 duration-300 rounded-md mt-5 md:mt-0"
               data-aos="fade-left"
-              data-aos-duration="3000"
+              data-aos-duration="1500"
             />
           </div>
           <div className="md:py-[100px] py-[0px] ">
             <h1
               className="text-5xl font-semibold mb-5 max-w-[500px] font-customFont text-[#333]"
               data-aos="fade-left"
-              data-aos-duration="3000"
+              data-aos-duration="1500"
             >
               Misi
             </h1>
             <p
               className="text-sm max-w-[500px] font-customFont text-[#333]"
               data-aos="fade-left"
-              data-aos-duration="3000"
+              data-aos-duration="1500"
             >
               Memberikan layanan TIK yang terbaik di kelasnya kepada pelanggan
               guna meningkatkan nilai Perusahaan.
@@ -101,7 +100,7 @@ const About = () => {
             <p
               className="text-sm max-w-[500px] font-customFont text-[#333]"
               data-aos="fade-left"
-              data-aos-duration="3000"
+              data-aos-duration="1500"
             >
               Memenuhi kebutuhan dan harapan PLN secara proaktif dengan
               menyediakan solusi-solusi TIK yang inovatif dan memberikan nilai
@@ -110,7 +109,7 @@ const About = () => {
             <p
               className="text-sm max-w-[500px] font-customFont text-[#333]"
               data-aos="fade-left"
-              data-aos-duration="3000"
+              data-aos-duration="1500"
             >
               Membangun organisasi pembelajar yang berkinerja tinggi untuk
               mendorong Perusahaan mencapai bisnis yang unggul dan menjadi
@@ -119,7 +118,7 @@ const About = () => {
             <p
               className="text-sm max-w-[500px] font-customFont text-[#333]"
               data-aos="fade-left"
-              data-aos-duration="3000"
+              data-aos-duration="1500"
             >
               Memberi kontribusi terhadap perkembangan telekomunikasi nasional.
             </p>

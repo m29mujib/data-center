@@ -202,7 +202,7 @@ const Kolaborate = () => {
           items={items}
           infinite
           autoPlay
-          autoPlayInterval={3000}
+          autoPlayInterval={1500}
           responsive={{
             0: { items: 1 },
             640: { items: 2 },
