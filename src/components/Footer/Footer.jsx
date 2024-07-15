@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import A from "../../assets/logo.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
@@ -21,16 +22,15 @@ const Footer = () => {
           </a>
           <ul className="flex justify-center flex-wrap jmb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
             <li>
-              <a href="#" className="hover:underline me-4 md:me-6">
+              <Link to="/about" className="hover:underline me-4 md:me-6">
                 Tentang Kami
-              </a>
+              </Link>
             </li>
-            
 
             <li>
-              <a href="#" className="hover:underline">
+              <Link to="/page-contact" className="hover:underline">
                 Kontak
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

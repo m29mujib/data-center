@@ -1,6 +1,6 @@
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logos from "../../assets/a.png";
 import Images14 from "../../assets/close.png";
@@ -10,6 +10,7 @@ import more from "../../assets/more.png";
 
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
+  const [unduh, setUnduh] = useState(false);
   const [aboutDropdown, setAboutDropdown] = useState(false);
   const [aboutDropdownVisible, setAboutDropdownVisible] = useState(false);
   const [aboutDNSDropdown, setAboutDNSDropdown] = useState(false);
@@ -18,14 +19,15 @@ const Navbar = () => {
   const [aboutIconMailropdownVisible, setaboutIconMailDropdownVisible] =
     useState(false);
   const location = useLocation();
+  const myRef = useRef(null);
 
-  const scrollToContact = (event) => {
-    event.preventDefault();
-    const contactElement = document.getElementById("contact");
-    if (contactElement) {
-      contactElement.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  // const scrollToContact = (event) => {
+  //   event.preventDefault();
+  //   const contactElement = document.getElementById("contact");
+  //   if (contactElement) {
+  //     contactElement.scrollIntoView({ behavior: "smooth" });
+  //   }
+  // };
 
   const scrollToLokasi = (event) => {
     event.preventDefault();
@@ -80,9 +82,9 @@ const Navbar = () => {
   return (
     <div className="w-full h-[50px] bg-black bg-opacity-30 backdrop-blur-lg py-10 px-[8%] flex justify-between items-center fixed top-0 left-0 z-10">
       {dropdown && (
-        <div className="w-[200px] h-screen bg-[#fff] absolute top-0 right-0 z-10 flex flex-col justify-center items-center transition-all duration-700 ease-in-out transform translate-x-0">
-          <ul className="flex flex-col justify-center items-center">
-            <li className="flex flex-col justify-center items-center">
+        <div className="w-[250px] h-screen bg-[#fff] absolute top-0 right-0 z-10 flex flex-col justify-between transition-all duration-700 ease-in-out transform translate-x-0">
+          <ul className="flex flex-col py-20 px-3">
+            <li className="flex flex-col ">
               <Link
                 to="/"
                 className={`p-5 ${
@@ -98,7 +100,7 @@ const Navbar = () => {
               >
                 <Link
                   to={"#"}
-                  className={`no-underline px-5 font-medium font-customFont ${
+                  className={`no-underline p-5 font-medium font-customFont ${
                     isLayananActive
                       ? "text-blue-500"
                       : "text-[#333] hover:text-blue-500"
@@ -146,7 +148,7 @@ const Navbar = () => {
                         >
                           <Link
                             to={"/ddos"}
-                            className={`block px-4 py-2 ${
+                            className={`block text-sm px-4 py-2 ${
                               isActive("/ddos")
                                 ? "bg-gray-200"
                                 : "hover:bg-gray-200"
@@ -156,7 +158,7 @@ const Navbar = () => {
                           </Link>
                           <Link
                             to={"/dns"}
-                            className={`block px-4 py-2 ${
+                            className={`block px-4 text-sm py-2 ${
                               isActive("/dns")
                                 ? "bg-gray-200"
                                 : "hover:bg-gray-200"
@@ -267,7 +269,7 @@ const Navbar = () => {
                 Lokasi
               </Link>
               <Link
-                to="/page-lokasi"
+                to="/about"
                 className={`p-5 ${
                   isActive("/page-lokasi")
                     ? "text-blue-500"
@@ -276,8 +278,28 @@ const Navbar = () => {
               >
                 Tentang Kami
               </Link>
+              <Link
+                to="/page-contact"
+                className={`p-5 ${
+                  isActive("/page-contact")
+                    ? "text-blue-500"
+                    : "hover:text-blue-500"
+                }`}
+              >
+                Kontak
+              </Link>
             </li>
           </ul>
+          <div className="px-3 flex justify-center mb-5">
+            <a
+              href={brochurePdf}
+              download="BrosurDataCenterIconPlus.pdf"
+              className="md:ml-5 no-underline md:px-5 px-3 text-yellow-500 bg-transparent border-2 border-yellow-500 font-medium font-customFont md:py-3 py-1 rounded-md hover:bg-yellow-500 hover:text-white items-center"
+            >
+              <FontAwesomeIcon icon={faDownload} className="mr-2" />
+              Unduh Brosur
+            </a>
+          </div>
         </div>
       )}
       <Link to="/" className="flex justify-center items-center">
@@ -493,16 +515,18 @@ const Navbar = () => {
             >
               Kontak
             </Link>
-            <a
-              href={brochurePdf}
-              download="BrosurDataCenterIconPlus.pdf"
-              className="md:ml-5 no-underline px-5 text-yellow-500 bg-transparent border-2 border-yellow-500 font-medium font-customFont py-3 rounded-md hover:bg-yellow-500 hover:text-white items-center"
-            >
-              <FontAwesomeIcon icon={faDownload} className="mr-2" />
-              Unduh Brosur
-            </a>
           </li>
         </ul>
+
+        <a
+          href={brochurePdf}
+          download="BrosurDataCenterIconPlus.pdf"
+          className="md:ml-5 mr-3 no-underline text-sm md:text-md px-3 text-yellow-500 bg-transparent border-2 border-yellow-500 font-medium font-customFont py-1 rounded-md hover:bg-yellow-500 hover:text-white items-center"
+        >
+          <FontAwesomeIcon icon={faDownload} className="mr-2" />
+          Unduh Brosur
+        </a>
+
         <div
           className="md:hidden pointer"
           onClick={() => setDropdown(!dropdown)}

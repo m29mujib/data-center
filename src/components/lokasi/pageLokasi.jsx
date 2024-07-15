@@ -8,20 +8,20 @@ import Footer from "../Footer/Footer";
 const PageLokasi = () => {
   AOS.init();
   return (
-    <div>
+    <div className="mt-[80px]">
       <Navbar />
       <div className="mt-8 w-full h-full flex flex-col md:flex-row items-start px-[5%] py-[0%] md:py-[5%]">
         <div
-          className="w-full md:w-1/2 flex justify-center mt-5 md:mt-0 ml-5 flex-col"
+          className="w-full md:w-1/2 flex justify-center mt-5 md:mt-0 flex-col"
           data-aos="fade-up"
           data-aos-duration="1500"
         >
-          <div className="w-full flex flex-col justify-center">
+          <div className="w-full flex flex-col justify-center px-5">
             <div className="atas">
               <h2 className="text-4xl font-bold tracking-tight text-gray-900">
                 Lokasi Data Center PLN Icon Plus
               </h2>
-              <p className="mt-4 md:max-w-[600px] max-w-[400px] text-sm font-customFont text-[#333]">
+              <p className="mt-4 md:max-w-[600px] w-full max-w-[500px] text-sm font-customFont text-[#333]">
                 Berdasarkan historikal yang ada, sejak beroperasi pada tahun
                 2000, lokasi PT PLN ICON PLUS Cinere Gandul tidak pernah
                 mengalami banjir, gempa yang mengganggu operasional.

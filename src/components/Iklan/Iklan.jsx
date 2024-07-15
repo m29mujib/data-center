@@ -11,7 +11,7 @@ const Iklan = () => {
 
   return (
     <div className="flex flex-col md:px-20 py-[3%]">
-      <div className="w-full mt-5 flex flex-wrap md:justify-evenly justify-center items-center bg-white shadow-md rounded-lg border border-gray-300">
+      <div className="w-full mt-5 flex flex-wrap md:justify-evenly justify-center items-center bg-white md:shadow-md rounded-lg border border-gray-300">
         <div className="p-5  border-gray-300">
           <div className="flex flex-col md:flex-row items-center rounded-lg">
             <div className="md:w-20">
