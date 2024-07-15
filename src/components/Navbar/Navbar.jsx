@@ -101,7 +101,7 @@ const Navbar = () => {
                   className={`no-underline px-5 font-medium font-customFont ${
                     isLayananActive
                       ? "text-blue-500"
-                      : "text-[#fff] hover:text-blue-500"
+                      : "text-[#333] hover:text-blue-500"
                   }`}
                 >
                   Layanan <span className="ml-1">&#9662;</span>

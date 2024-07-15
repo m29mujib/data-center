@@ -21,7 +21,7 @@ const About = () => {
             Tentang Kami
           </h1>
           <p
-            className="text-sm font-customFont text-[#333] w-[90%]"
+            className="text-sm font-customFont text-[#333] md:w-[90%] w-full"
             data-aos="fade-right"
             data-aos-duration="3000"
           >
@@ -40,8 +40,8 @@ const About = () => {
             hijau di Indonesia
           </p>
         </div>
-        <div className="flex items-center justify-between">
-          <div className="py-[100px] md:py-[0px] basis-[50%]">
+        <div className="flex items-center justify-between w-full md:flex-nowrap flex-wrap">
+          <div className="md:py-[100px] py-[0px] ">
             <h1
               className="text-5xl font-semibold mb-5 max-w-[500px] font-customFont text-[#333]"
               data-aos="fade-right"
@@ -50,33 +50,20 @@ const About = () => {
               Visi
             </h1>
             <p
-              className="text-sm max-w-[500px] font-customFont text-[#333]"
+              className="text-sm md:max-w-[500px] w-full font-customFont text-[#333]"
               data-aos="fade-right"
               data-aos-duration="3000"
             >
               Menjadi penyedia solusi TIK terkemuka di Indonesia berbasis
               jaringan melalui pemanfaatan aset strategis.
             </p>
-            {/* <p
-              className="text-sm max-w-[500px] font-customFont text-[#333]"
-              data-aos="fade-right"
-              data-aos-duration="3000"
-            >
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Accusamus, esse.
-            </p> */}
-            
           </div>
-          <div className="flex basis-[50%]">
+          <div className="flex mt-5 ">
             <div className="flex justify-between w-full">
               <img
                 src={M}
                 alt=""
-<<<<<<< HEAD
                 className="md:w-[600px] md:h-[370px] w-[350px] h-[350px] hover:scale-105 duration-300 rounded-md"
-=======
-                className="md:w-[600px] md:h-[350px] w-[350px] h-[350px] rounded-md"
->>>>>>> aef205e3cf86f2ffba1f25d95d08be2370dbac09
                 data-aos="fade-right"
                 data-aos-duration="3000"
               />
@@ -85,21 +72,17 @@ const About = () => {
         </div>
       </div>
       <div className="w-full h-full flex px-[8%] flex-wrap justify-center my-[80px]">
-        <div className="flex items-center justify-between w-full">
-          <div className="flex mr-8">
+        <div className="flex items-center justify-between w-full flex-wrap-reverse md:flex-nowrap">
+          <div className="flex md:mr-8 mr-0">
             <img
               src={P}
               alt=""
-<<<<<<< HEAD
-              className="md:w-[600px] md:h-[370px] w-[350px] h-[350px] hover:scale-105 duration-300 rounded-md"
-=======
-              className="md:w-[600px] md:h-[350px] w-[350px] h-[350px] rounded-md"
->>>>>>> aef205e3cf86f2ffba1f25d95d08be2370dbac09
+              className="md:w-[600px] md:h-[370px] w-[350px] h-[350px] hover:scale-105 duration-300 rounded-md mt-5 md:mt-0"
               data-aos="fade-left"
               data-aos-duration="3000"
             />
           </div>
-          <div className="py-[100px] md:py-[0px] ">
+          <div className="md:py-[100px] py-[0px] ">
             <h1
               className="text-5xl font-semibold mb-5 max-w-[500px] font-customFont text-[#333]"
               data-aos="fade-left"
@@ -140,10 +123,10 @@ const About = () => {
             >
               Memberi kontribusi terhadap perkembangan telekomunikasi nasional.
             </p>
-            
           </div>
         </div>
-      </div><Footer />
+      </div>
+      <Footer />
     </div>
   );
 };
