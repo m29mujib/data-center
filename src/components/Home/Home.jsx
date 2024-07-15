@@ -35,31 +35,31 @@ const Home = () => {
             </p>
           </div>
           <div className="bawah flex mt-5">
-            <div className="kiri flex justify-center items-center">
-              <img src={Check} alt="" className="w-[20px] mr-5" />
+            <div className="kiri flex ">
+              <img src={Check} alt="" className="w-[20px] h-[20px] mr-5" />
             </div>
             <div className="kanan">
-              <h4 className="font-semibold text-xl font-customFont text-[#333] hover:text-[#3163b8] cursor-default">
+              <h4 className="font-semibold text-md font-customFont text-[#333] hover:text-[#3163b8] cursor-default">
                 Berada pada Lokasi Objek Vital Nasional
               </h4>
             </div>
           </div>
           <div className="bawah flex mt-5">
-            <div className="kiri flex justify-center items-center">
-              <img src={Check} alt="" className="w-[20px] mr-5" />
+            <div className="kiri flex ">
+              <img src={Check} alt="" className="w-[20px] h-[20px] mr-5" />
             </div>
-            <div className="kanan">
-              <h4 className="font-semibold text-xl font-customFont text-[#333] hover:text-[#3163b8] cursor-default">
+            <div className="kanan flex flex-wrap">
+              <h4 className="font-semibold text-md font-customFont ml-2 text-[#333] hover:text-[#3163b8] cursor-default">
                 Kemampuan Bangunan Terhadap Gempa Hingga 6,5 SR
               </h4>
             </div>
           </div>
           <div className="bawah flex items-center mt-5">
-            <div className="kiri flex justify-center items-center">
-              <img src={Check} alt="" className="w-[20px] mr-5" />
+            <div className="kiri flex ">
+              <img src={Check} alt="" className="w-[20px] h-[20px] mr-5" />
             </div>
             <div className="kanan">
-              <h4 className="font-semibold text-xl font-customFont text-[#333] hover:text-[#3163b8] cursor-default">
+              <h4 className="font-semibold ml-[-10px] text-md font-customFont text-[#333] hover:text-[#3163b8] cursor-default">
                 Berlokasi di Cinere Gandul
               </h4>
             </div>

@@ -82,25 +82,25 @@ const Navbar = () => {
   return (
     <div className="w-full h-[50px] bg-black bg-opacity-30 backdrop-blur-lg py-10 px-[8%] flex justify-between items-center fixed top-0 left-0 z-10">
       {dropdown && (
-        <div className="w-[250px] h-screen bg-[#fff] absolute top-0 right-0 z-10 flex flex-col justify-between transition-all duration-700 ease-in-out transform translate-x-0">
+        <div className="w-[250px] h-screen bg-[#fff] absolute top-0 right-0 z-10 flex flex-col justify-between transition-all duration-700 ease-in-out transform">
           <ul className="flex flex-col py-20 px-3">
             <li className="flex flex-col ">
               <Link
                 to="/"
-                className={`p-5 ${
+                className={`p-5 font-medium ${
                   isActive("/") ? "text-blue-500" : "hover:text-blue-500"
                 }`}
               >
                 Home
               </Link>
               <div
-                className="relative inline-block"
+                className="relative inline-block py-5 w-full"
                 onMouseEnter={() => setAboutDropdown(true)}
                 onMouseLeave={() => setAboutDropdown(false)}
               >
                 <Link
                   to={"#"}
-                  className={`no-underline p-5 font-medium font-customFont ${
+                  className={`w-full no-underline p-5 font-medium font-customFont ${
                     isLayananActive
                       ? "text-blue-500"
                       : "text-[#333] hover:text-blue-500"
@@ -260,7 +260,7 @@ const Navbar = () => {
               </div>
               <Link
                 to="/page-lokasi"
-                className={`p-5 ${
+                className={`p-5 font-medium ${
                   isActive("/page-lokasi")
                     ? "text-blue-500"
                     : "hover:text-blue-500"
@@ -270,7 +270,7 @@ const Navbar = () => {
               </Link>
               <Link
                 to="/about"
-                className={`p-5 ${
+                className={`p-5 font-medium ${
                   isActive("/page-lokasi")
                     ? "text-blue-500"
                     : "hover:text-blue-500"
@@ -280,7 +280,7 @@ const Navbar = () => {
               </Link>
               <Link
                 to="/page-contact"
-                className={`p-5 ${
+                className={`p-5 font-medium ${
                   isActive("/page-contact")
                     ? "text-blue-500"
                     : "hover:text-blue-500"
@@ -290,7 +290,7 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
-          <div className="px-3 flex justify-center mb-5">
+          <div className="px-3 flex justify-center mb-5 w-full absolute bottom-10 left-0 transform translate-y-1/2 tranlate-x-1/2">
             <a
               href={brochurePdf}
               download="BrosurDataCenterIconPlus.pdf"
@@ -307,7 +307,7 @@ const Navbar = () => {
       </Link>
 
       <div className="flex items-center justify-right">
-        <ul className="hidden md:flex">
+        <ul className="hidden md:hidden lg:flex">
           <li className="relative inline-block">
             <Link
               to="/"
@@ -521,20 +521,20 @@ const Navbar = () => {
         <a
           href={brochurePdf}
           download="BrosurDataCenterIconPlus.pdf"
-          className="md:ml-5 mr-3 no-underline text-sm md:text-md px-3 text-yellow-500 bg-transparent border-2 border-yellow-500 font-medium font-customFont py-1 rounded-md hover:bg-yellow-500 hover:text-white items-center"
+          className="md:ml-5 text-xs mr-3 no-underline text-sm md:text-md px-3 text-yellow-500 bg-transparent border-2 border-yellow-500 font-medium font-customFont py-1 rounded-md hover:bg-yellow-500 hover:text-white items-center"
         >
           <FontAwesomeIcon icon={faDownload} className="mr-2" />
           Unduh Brosur
         </a>
 
         <div
-          className="md:hidden pointer"
+          className="block pointer 2xl:hidden"
           onClick={() => setDropdown(!dropdown)}
         >
           <img
             src={dropdown ? Images14 : more}
             alt={dropdown ? "Close menu" : "Open menu"}
-            className="w-[30px] h-[30px] md:hidden z-50 relative"
+            className="w-[30px] h-[30px] sm:block md:block lg:block xl:hidden z-50 relative"
           />
         </div>
       </div>
