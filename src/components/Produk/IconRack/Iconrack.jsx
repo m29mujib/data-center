@@ -1,8 +1,7 @@
-import CountUp, { useCountUp } from "react-countup";
 import React from "react";
 import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
-import iconRack from "../../../assets/iconrack.png";
+import iconRack from "../../../assets/iconrack.gif";
 import brochurePdf from "../../../assets/BrochureIconPLN.pdf";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

@@ -507,7 +507,7 @@ const Navbar = () => {
             <Link
               to="/page-contact"
               // onClick={scrollToContact}
-              className={`no-underline px-5 text-white bg-blue-500 font-medium font-customFont py-3 rounded-md ${
+              className={`md:ml-5 mr-3 no-underline text-sm md:text-md px-10  text-white bg-blue-500 font-medium font-customFont py-4 rounded-md ${
                 isActive("/page-contact")
                   ? "bg-blue-700 text-white"
                   : "hover:bg-blue-700 hover:text-white"
@@ -521,7 +521,7 @@ const Navbar = () => {
         <a
           href={brochurePdf}
           download="BrosurDataCenterIconPlus.pdf"
-          className="md:ml-5 text-xs mr-3 no-underline text-sm md:text-md px-3 text-yellow-500 bg-transparent border-2 border-yellow-500 font-medium font-customFont py-1 rounded-md hover:bg-yellow-500 hover:text-white items-center"
+          className="md:ml-5 mr-3 no-underline text-sm md:text-md px-3 text-yellow-500 bg-transparent border-2 border-yellow-500 font-medium font-customFont py-3 rounded-md hover:bg-yellow-500 hover:text-white items-center"
         >
           <FontAwesomeIcon icon={faDownload} className="mr-2" />
           Unduh Brosur
