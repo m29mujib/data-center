@@ -10,7 +10,7 @@ import IconFilter from "./components/Produk/IconFilter/IconFilter";
 import IconMon from "./components/Produk/IconMon/IconMon";
 import IconMail from "./components/Produk/IconMail/IconMail";
 import Contact from "./components/Contact/Contact";
-import IconRack from "./components/Produk/IconRack/Iconrack"
+import IconRack from "./components/Produk/IconRack/Iconrack";
 import IconFirewall from "./components/Produk/IconFirewall/IconFirewall";
 import ExternalRedirect from "./components/ExternalRedirect/ExternalRedirect";
 import PageLokasi from "./components/lokasi/pageLokasi";
@@ -28,6 +28,7 @@ function App() {
           <Route path="/page-contact" element={<PageContact />} />
           <Route path="/icon-cloud" element={<IconCloud />} />
           <Route path="/icon-mail" element={<IconMail />} />
+          <Route path="/icon-firewall" element={<IconFirewall />} />
           <Route path="/dns" element={<DNS />} />
           <Route path="/ddos" element={<DDOS />} />
           <Route path="/sanbox" element={<Sanbox />} />

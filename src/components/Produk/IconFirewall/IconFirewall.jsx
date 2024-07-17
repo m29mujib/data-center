@@ -1,7 +1,7 @@
 import CountUp, { useCountUp } from "react-countup";
 import React from "react";
 import Navbar from "../../Navbar/Navbar";
-import imageFilter from "../../../assets/iconFilter.gif";
+import iconFirewall from "../../../assets/FIREWALL.gif";
 import Footer from "../../Footer/Footer";
 import brochurePdf from "../../../assets/BrochureIconPLN.pdf";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
@@ -10,25 +10,25 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const IconFirewall = () => {
   const incentives = [
     {
-      name: "Defense in depth protection",
+      name: "Keamanan Tingkat Tinggi",
       imageSrc:
         "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
       description:
-        "Sistem ini memastikan email yang dikirim/diterima melalui jaringan PLN ICON Plus atau provider lain telah difilter dan dibersihkan dari konten berbahaya, difilter oleh dua brand berbeda untuk meningkatkan akurasi dan keandalan proteksi, meningkatkan keamanan dan keandalan komunikasi email.",
+        "Melindungi dari berbagai ancaman siber termasuk exploit, virus, dan malware.",
     },
     {
-      name: "Email Reputation Optimization",
+      name: "Efisiensi Biaya",
       imageSrc:
         "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
       description:
-        "Dengan menyaring dan memblokir email berbahaya, ICONMAIL Filtering membantu meningkatkan reputasi email perusahaan, mengurangi kemungkinan email ditandai sebagai spam oleh penerima.",
+        "Mengurangi kebutuhan investasi perangkat keras dengan solusi berbasis virtualisasi",
     },
     {
-      name: "Sistem Relay Email Inbound dan Outbound",
+      name: "Fleksibilitas dan Skalabilitas",
       imageSrc:
         "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
       description:
-        "Menggunakan metode perlindungan berlapis, email traffic Inbound dan Outbound dapat di filter untuk meminimalkan risiko ancaman yang lolos.",
+        "Mudah disesuaikan dengan kebutuhan bisnis yang berkembang, tanpa perlu perubahan infrastruktur besar.",
     },
   ];
   return (
@@ -40,21 +40,15 @@ const IconFirewall = () => {
             <div className="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
               <div>
                 <h2 className="text-4xl font-bold tracking-tight text-gray-900">
-                  ICONMail Filtering
+                  Firewall as a Service
                 </h2>
                 <p className="mt-4 text-gray-500">
-                  ICONMAIL Filtering adalah solusi penyaringan email yang
-                  efektif dari PLN ICON Plus yang dirancang untuk melindungi
-                  jaringan dari berbagai ancaman siber. Dengan menggunakan
-                  metode penyaringan berlapis, email yang masuk akan melalui
-                  serangkaian filter dari dua brand berbeda, masing-masing
-                  dengan database dan signature mereka sendiri. Pendekatan ini
-                  memastikan bahwa proteksi lebih akurat dan andal, karena jika
-                  salah satu filter melewatkan ancaman, filter lainnya dapat
-                  mendeteksinya. ICONMAIL Filtering juga berperan penting dalam
-                  optimalisasi bandwidth jaringan dengan memblokir 30%-50% email
-                  berbahaya setiap harinya, termasuk spam, malware, dan serangan
-                  APT Zeroday.
+                  Firewall as a Service adalah layanan keamanan jaringan
+                  berbasis virtualisasi yang dirancang untuk pelanggan ICONCloud
+                  dan Colocation Data Center. Layanan ini memberikan
+                  perlindungan terhadap ancaman exploit, virus, dan malware yang
+                  berasal dari internet, memastikan bahwa data dan sistem
+                  pelanggan tetap aman dari serangan berbahaya
                 </p>
                 {/* Button untuk mengunduh brosur */}
                 <a
@@ -68,7 +62,7 @@ const IconFirewall = () => {
               </div>
               <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">
                 <img
-                  src={imageFilter}
+                  src={iconFirewall}
                   alt=""
                   className="object-cover object-center"
                 />

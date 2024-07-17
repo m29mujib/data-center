@@ -364,7 +364,7 @@ const Navbar = () => {
                     ICONColocation
                   </Link>
                   <div
-                    className="relative inline-block"
+                    className="relative inline-block py-2"
                     onMouseEnter={() => setAboutDNSDropdown(true)}
                     onMouseLeave={() => setAboutDNSDropdown(false)}
                   >
@@ -412,13 +412,13 @@ const Navbar = () => {
                   {/* new */}
 
                   <div
-                    className="relative inline-block"
+                    className="relative inline-block py-2"
                     onMouseEnter={() => setIconCloudDropdown(true)}
                     onMouseLeave={() => setIconCloudDropdown(false)}
                   >
                     <Link
                       to={"#"}
-                      className={`no-underline px-4 font-medium font-customFont ${
+                      className={`no-underline p-4 font-medium font-customFont ${
                         isLayananActive
                           ? "text-blue-500"
                           : "text-[#000000] hover:text-blue-500"
@@ -436,7 +436,7 @@ const Navbar = () => {
                         <Link
                           to={"/icon-firewall"}
                           className={`block px-4 py-2 ${
-                            isActive("/icon-cloud/firewall")
+                            isActive("/icon-firewall")
                               ? "bg-gray-200"
                               : "hover:bg-gray-200"
                           }`}
@@ -458,7 +458,7 @@ const Navbar = () => {
                   </div>
 
                   <div
-                    className="relative inline-block"
+                    className="relative inline-block py-2"
                     onMouseEnter={() => setAboutIconMailDropdown(true)}
                     onMouseLeave={() => setAboutIconMailDropdown(false)}
                   >
