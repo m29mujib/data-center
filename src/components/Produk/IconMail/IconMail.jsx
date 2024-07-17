@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "../../Navbar/Navbar";
 import iconMail from "../../../assets/Iconmail Blasting & Marketing.gif";
 import Footer from "../../Footer/Footer";
-import brochurePdf from "../../../assets/BrochureIconPLN.pdf";
+import brochurePdf from "../../../assets/Brosur-ICONMailblasting(20240717).pdf";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -56,7 +56,7 @@ const IconMail = () => {
                 {/* Button untuk mengunduh brosur */}
                 <a
                   href={brochurePdf}
-                  download="brosur.pdf"
+                  download="Brosur-ICONMailblasting.pdf"
                   className="mt-3 md:mt-5 no-underline px-5 text-blue-500 bg-white border border-blue-500 font-medium font-customFont py-3 rounded-md hover:bg-blue-700 hover:text-white flex items-center justify-center"
                 >
                   <FontAwesomeIcon icon={faDownload} className="mr-2" />
