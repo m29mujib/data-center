@@ -11,6 +11,7 @@ import IconMon from "./components/Produk/IconMon/IconMon";
 import IconMail from "./components/Produk/IconMail/IconMail";
 import Contact from "./components/Contact/Contact";
 import IconRack from "./components/Produk/IconRack/Iconrack"
+import IconFirewall from "./components/Produk/IconFirewall/IconFirewall";
 import ExternalRedirect from "./components/ExternalRedirect/ExternalRedirect";
 import PageLokasi from "./components/lokasi/pageLokasi";
 import PageContact from "./components/Contact/PageContact";
@@ -34,6 +35,8 @@ function App() {
           <Route path="/icon-filter" element={<IconFilter />} />
           <Route path="/icon-mon" element={<IconMon />} />
           <Route path="/icon-rack" element={<IconRack />} />
+          <Route path="/icon-firewall" element={<IconFirewall />} />
+
           {/* <Route path="/icon-rack" element={<ExternalRedirect url="https://smartmonitoringrack.plniconpln.id/home" />} /> */}
         </Routes>
       </BrowserRouter>

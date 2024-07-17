@@ -16,6 +16,9 @@ const Navbar = () => {
   const [aboutDNSDropdown, setAboutDNSDropdown] = useState(false);
   const [aboutDNSDropdownVisible, setaboutDNSDropdownVisible] = useState(false);
   const [aboutIconMailDropdown, setAboutIconMailDropdown] = useState(false);
+  const [iconCloudDropdown, setIconCloudDropdown] = useState(false);
+  const [iconCloudDropdownVisible, setIconCloudDropdownVisible] =
+    useState(false);
   const [aboutIconMailropdownVisible, setaboutIconMailDropdownVisible] =
     useState(false);
   const location = useLocation();
@@ -36,6 +39,16 @@ const Navbar = () => {
       contactElement.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  useEffect(() => {
+    let timer;
+    if (!iconCloudDropdown) {
+      timer = setTimeout(() => setIconCloudDropdownVisible(false), 200);
+    } else {
+      setIconCloudDropdownVisible(true);
+    }
+    return () => clearTimeout(timer);
+  }, [iconCloudDropdown]);
 
   useEffect(() => {
     let timer;
@@ -395,16 +408,55 @@ const Navbar = () => {
                       </div>
                     )}
                   </div>
-                  <Link
-                    to="/icon-cloud"
-                    className={`block px-4 py-2 ${
-                      isActive("/icon-cloud")
-                        ? "bg-gray-200"
-                        : "hover:bg-gray-200"
-                    }`}
+
+                  {/* new */}
+
+                  <div
+                    className="relative inline-block"
+                    onMouseEnter={() => setIconCloudDropdown(true)}
+                    onMouseLeave={() => setIconCloudDropdown(false)}
                   >
-                    ICONCloud
-                  </Link>
+                    <Link
+                      to={"#"}
+                      className={`no-underline px-4 font-medium font-customFont ${
+                        isLayananActive
+                          ? "text-blue-500"
+                          : "text-[#000000] hover:text-blue-500"
+                      }`}
+                    >
+                      ICONCloud <span className="ml-1">&#9662;</span>
+                    </Link>
+                    {iconCloudDropdownVisible && (
+                      <div
+                        className="absolute bg-white text-black w-40 mt-2 rounded-md shadow-lg z-10"
+                        style={{ top: "0", left: "100%" }}
+                        onMouseEnter={() => setIconCloudDropdown(true)}
+                        onMouseLeave={() => setIconCloudDropdown(false)}
+                      >
+                        <Link
+                          to={"/icon-firewall"}
+                          className={`block px-4 py-2 ${
+                            isActive("/icon-cloud/firewall")
+                              ? "bg-gray-200"
+                              : "hover:bg-gray-200"
+                          }`}
+                        >
+                          Firewall as a Service
+                        </Link>
+                        <Link
+                          to={"/icon-cloud"}
+                          className={`block px-4 py-2 ${
+                            isActive("/icon-cloud/cloud")
+                              ? "bg-gray-200"
+                              : "hover:bg-gray-200"
+                          }`}
+                        >
+                          Cloud as a service
+                        </Link>
+                      </div>
+                    )}
+                  </div>
+
                   <div
                     className="relative inline-block"
                     onMouseEnter={() => setAboutIconMailDropdown(true)}
