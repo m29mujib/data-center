@@ -14,21 +14,21 @@ const HorizontalParallax = () => {
     {
       title: "Percayakan keamanan data Anda bersama kami",
       subtitle: "Data Center PLN Icon Plus",
-      description: "Depok, Gandul",
+      // description: "Depok, Gandul",
       extendedDescription:
         "Kami menawarkan solusi keamanan data terdepan dengan teknologi terbaru. Tim kami yang berpengalaman selalu siap memberikan dukungan yang Anda butuhkan. Dengan fasilitas canggih dan infrastruktur yang andal, data Anda akan terlindungi setiap saat.",
     },
     {
       title: "Profesional dan terpercaya",
       subtitle: "Keunggulan Layanan Kami",
-      description: "Pakar IT Berpengalaman",
+      // description: "Pakar IT Berpengalaman",
       extendedDescription:
         "Kami memiliki reputasi yang solid dalam menyediakan layanan profesional dan terpercaya. Kepuasan pelanggan adalah prioritas utama kami. Dengan tim ahli yang berdedikasi, kami menjamin bahwa semua kebutuhan IT Anda terpenuhi dengan standar tertinggi.",
     },
     {
       title: "Inovasi Tanpa Batas",
       subtitle: "Teknologi Masa Depan",
-      description: "Pusat Riset dan Pengembangan",
+      // description: "Pusat Riset dan Pengembangan",
       extendedDescription:
         "Kami berkomitmen untuk memberikan layanan terbaik dengan standar kualitas yang tinggi. Inovasi adalah kunci kami dalam mengembangkan solusi yang dapat diandalkan. Mari bekerja sama untuk mencapai tujuan Anda dan membawa bisnis Anda menuju masa depan yang lebih cerah.",
     },
@@ -37,7 +37,7 @@ const HorizontalParallax = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length);
-    }, 5000); // Change slide every 5 seconds
+    }, 15000); // Change slide every 5 seconds
 
     return () => clearInterval(interval);
   }, [images.length]);
