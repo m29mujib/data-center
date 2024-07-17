@@ -1,14 +1,149 @@
-import G from "../../assets/gmail.png";
-import T from "../../assets/phone-call.png";
-import F from "../../assets/printer.png";
-import L from "../../assets/placeholder.png";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
+
 const PageContact = () => {
   return (
     <div>
       <Navbar />
+
       <div
+        id="flexbox-style"
+        class="kirimemail-content bg-[#0096a7] text-white kirimemail-form"
+      >
+        <span id="act_host" class="hidden"></span>
+        <div class="kirimemail-form-body">
+          <div class="form-content">
+            <div class="kirimemail-form-youtube-wrap ">
+              <div class="kirimemail-form-youtube"></div>
+            </div>
+            <h1 class="kirimemail-form-headline">
+              Dapatkan Penawaran Eksklusif dari Kami Sekarang
+            </h1>
+            <div class="kirimemail-form-description">
+              Isi formulir ini untuk info terbaru dan penawaran spesial dari
+              kami. Tim kami akan segera menghubungi Anda.
+            </div>
+          </div>
+        </div>
+        <div class="kirimemail-form-field">
+          <div class="form-content">
+            <form
+              id="keform"
+              class="simple_form new_form_submission"
+              accept-charset="UTF-8"
+              method="POST"
+              action="https://app.iconmail.id/form/form-utama-landing-page-icon-Yqu79Yx9"
+            >
+              <div class="kirimemail-custom-field">
+                <div class="form full">
+                  <div>
+                    <input
+                      name="full_name"
+                      placeholder="Nama"
+                      type="text"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form full">
+                  <div>
+                    <input
+                      name="email"
+                      placeholder="Email"
+                      type="email"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form full">
+                  <div>
+                    <input
+                      name="subscriber_field_values_6"
+                      placeholder="No. Telepon/WA "
+                      type="tel"
+                      code=""
+                      value=""
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form full">
+                  <div>
+                    <input
+                      name="subscriber_field_values_7"
+                      placeholder="Nama Perusahaan"
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                </div>
+
+                <div class="form full">
+                  <div>
+                    <select name="subscriber_field_values_8">
+                      <option value="">-- Pilih Salah Satu Produk --</option>
+                      <option value="ICONColocation">ICONColocation</option>
+                      <option value="ICONDNS">ICONDNS</option>
+                      <option value="ICONCloud">ICONCloud</option>
+                      <option value="ICONMail">ICONMail</option>
+                      <option value="ICONMonitoring">ICONMonitoring</option>
+                      <option value="ICONSandBox">ICONSandBox</option>
+                      <option value="ICONRack">ICONRack</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form full">
+                  <div>
+                    <select name="subscriber_field_values_9">
+                      <option value="">
+                        -- Dari Mana Anda Mengetahui Produk Kami? --
+                      </option>
+                      <option value="Google">Google</option>
+                      <option value="Social Media (Facebook, Instagram, LinkedIn, dll)">
+                        Social Media (Facebook, Instagram, LinkedIn, dll)
+                      </option>
+                      <option value="Email">Email</option>
+                      <option value="Youtube">Youtube</option>
+                      <option value="Rekan Kerja">Rekan Kerja</option>
+                      <option value="Lainnya">Lainnya</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="kirimemail-custom-option"></div>
+
+                <div class="form-controls">
+                  <button
+                    type="submit"
+                    class="button slate kirimemail-btn-submit bg-[#182657]"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      {/* <style>
+					#hosted-form,
+					.kirimemail-content {
+													background-color: #0096a7							!important;
+																			color: #ffffff							!important;
+											}
+					#hosted-form .kirimemail-btn-submit,
+					.kirimemail-content .kirimemail-btn-submit {
+													background-color: #182657							!important;
+							box-shadow: 0 0 0 1px#182657!important;
+																			color: #ffffff							!important;
+											}
+				</style> */}
+      {/* <div
         id="contact"
         class="mt-20 w-full h-full flex justify-center items-center flex-wrap md:flex-nowrap py-[5%] bg-gray-100"
       >
@@ -135,7 +270,7 @@ const PageContact = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <Footer />
     </div>
   );
