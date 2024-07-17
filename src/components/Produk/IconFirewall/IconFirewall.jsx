@@ -7,7 +7,7 @@ import brochurePdf from "../../../assets/BrochureIconPLN.pdf";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const IconFirewall = () => {
+const Firewall = () => {
   const incentives = [
     {
       name: "Keamanan Tingkat Tinggi",
@@ -97,4 +97,4 @@ const IconFirewall = () => {
   );
 };
 
-export default IconFirewall;
+export default Firewall;

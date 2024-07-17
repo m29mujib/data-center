@@ -451,7 +451,7 @@ const Navbar = () => {
                               : "hover:bg-gray-200"
                           }`}
                         >
-                          Cloud as a service
+                          Virtualisasi
                         </Link>
                       </div>
                     )}
