@@ -5,7 +5,7 @@ import { Link, useLocation } from "react-router-dom";
 import logos from "../../assets/a.png";
 import Images14 from "../../assets/close.png";
 // Import your download icon
-import brochurePdf from "../../../src/assets/BrochureIconPLN.pdf"; // pastikan path ini benar
+import brochurePdf from "../../../src/assets/BrochureIconPLN(20240718).pdf"; // pastikan path ini benar
 import more from "../../assets/more.png";
 
 const Navbar = () => {
@@ -342,7 +342,7 @@ const Navbar = () => {
           <div className="px-3 flex justify-center mb-5 w-full absolute bottom-10 left-0 transform translate-y-1/2 tranlate-x-1/2">
             <a
               href={brochurePdf}
-              download="BrosurDataCenterIconPlus.pdf"
+              download="Brosur-DataCenter-IconPlus.pdf"
               className="md:ml-5 no-underline md:px-5 px-3 text-yellow-500 bg-transparent border-2 border-yellow-500 font-medium font-customFont md:py-3 py-1 rounded-md hover:bg-yellow-500 hover:text-white items-center"
             >
               <FontAwesomeIcon icon={faDownload} className="mr-2" />
@@ -608,7 +608,7 @@ const Navbar = () => {
 
         <a
           href={brochurePdf}
-          download="BrosurDataCenterIconPlus.pdf"
+          download="Brosur-DataCenter-IconPlus.pdf"
           className="md:ml-5 mr-3 no-underline text-sm md:text-md px-3 text-yellow-500 bg-transparent border-2 border-yellow-500 font-medium font-customFont py-3 rounded-md hover:bg-yellow-500 hover:text-white items-center"
         >
           <FontAwesomeIcon icon={faDownload} className="mr-2" />
